@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+value=$(cat ~/.config/wayfire.ini | grep -E "plugins = "); 
+
+echo $value | grep crosshair &>/dev/null && plugins=$(echo $value | sed "s/crosshair//g") || plugins=$(echo $value | sed "s/plugins = /plugins = crosshair /g"); sed -i "s/plugins = .*autostart.*/$plugins/g" ~/.config/wayfire.ini
+
