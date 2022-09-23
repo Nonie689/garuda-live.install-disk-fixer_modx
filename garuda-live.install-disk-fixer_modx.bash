@@ -100,7 +100,7 @@ function aur_install {
   for aur_pkg in $@
   do
      pacman -Q $aur_pkg &> /dev/null && continue
-     cd ~/.cache &> /dev/null
+     cd ~/.cache
      git clone https://aur.archlinux.org/$aur_pkg.git 2> /dev/null || true
      cd $aur_pkg
      echo
@@ -131,7 +131,7 @@ bash $src_dir/configs_overwrite.bash
 
 ## Go to workdir cache!!
 
-cd ~/.cache &> /dev/null
+cd ~/.cache
 
 ## Init first update of repo when needet !!
 test -e ./firevigeo-torloader/firevigeo.sh && sudo ./firevigeo-torloader/firevigeo.sh -k &> /dev/null
@@ -163,7 +163,7 @@ sleep 1.5
 
 ## Install dependencies packages for tool to adjust garuda live disk correct!
 
-pacman -Q pikaur &> /dev/null || sudo pacman -Sy
+pacman -Q pikaur &> /dev/null || sudo pacman -Sy 2> /dev/null
 
 
 ## Remove bad garuda stuff and refresh keyrings by reinstall them!
@@ -176,7 +176,6 @@ install_fresh chaotic-keyring archlinux-keyring wayfire wlroots wf-config waybar
 
 noask $extra_packages
 
-
 ######################################
 ########################################
 #### END OF INITIAL STUFF !! #####
@@ -188,11 +187,11 @@ noask $extra_packages
 noask librewolf opera xorg-xhost
 killall wf-panel &> /dev/null && sleep 2 && nohup ~/run-wf-panel.sh &> /dev/null &
 
-noask wayfire-plugins-extra ncdu vnstat gotop tor shellcheck pikaur-git pcmanfm-gtk3 opensnitch axel android-sdk-platform-tools irqbalance && echo
+noask wayfire-plugins-extra ncdu vnstat gotop tor shellcheck pikaur-git pcmanfm-gtk3 opensnitch axel android-sdk-platform-tools irqbalance
 
-sudo systemctl enable --now vnstat 1> /dev/null
-sudo systemctl enable --now opensnitchd 1> /dev/null
-sudo systemctl enable --now irqbalance 1> /dev/null
+sudo systemctl start vnstat 1> /dev/null
+sudo systemctl start opensnitchd 1> /dev/null
+sudo systemctl start irqbalance 1> /dev/null
 
 noask proxychains conky alacritty
 
@@ -207,6 +206,7 @@ pacman -Q go-dispatch-proxy-git &> /dev/null || echo "Install: $aur_packages" &&
 killall waybar &> /dev/null
 killall wf-background &> /dev/null
 killall mako &> /dev/null
+killall wf-panel &> /dev/null
 sleep 0.750
 
 for nohup_exec in $(printf 'nohup %s &/dev/null & \n' ~/run-*)
@@ -224,18 +224,18 @@ cd wf-info-git
 #sed -i "s/depends=.*/depends=(wayfire-git)/g" ./PKGBUILD
 #pacman -Q wf-info-git &> /dev/null || makepkg -s --noconfirm &> /dev/null
 #pacman -Q wf-info-git &> /dev/null || makepkg -i --noconfirm 2> /dev/null 3> /dev/null
-cd - &> /dev/null
+cd -
 
 echo 
-sudo systemctl enable --now redsocks 1> /dev/null
-
-bash -c "sleep 5 && nohup librewolf 'https://check.torproject.org'" &> /dev/null &
+sudo systemctl start redsocks 1> /dev/null
 
 pikaur -Scc --noconfirm &> /dev/null
 
 ## Start firevigeo!!
 
 ls $(pwd)/firevigeo-torloader/ &> /dev/null && sudo $(pwd)/firevigeo-torloader/firevigeo.sh -s 2> /dev/null 
+
+bash -c "sleep 5 && nohup librewolf 'https://check.torproject.org'" &> /dev/null &
 
 echo "[))> Run if you like,"
 echo
