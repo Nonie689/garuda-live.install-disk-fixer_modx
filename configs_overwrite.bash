@@ -1,6 +1,7 @@
 
+git checkout -b custom-config origin/main
 
-trap "false" INT
+trap "exit 130" INT
 
 echo
 echo Changing the config!
