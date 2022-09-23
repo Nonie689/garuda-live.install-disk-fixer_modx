@@ -111,7 +111,7 @@ function aur_install {
      cd - &> /dev/null
      rm -rf $aur_install &> /dev/null
   done
-}
+custom-config}
 
 function install_fresh {
   sudo pacman -S  --noconfirm $(package_old $@) 2> /dev/null
@@ -229,6 +229,9 @@ cd -
 echo 
 sudo systemctl start redsocks 1> /dev/null
 
+bash sudo $src_dir/install_unimportant.bash  
+
+
 pikaur -Scc --noconfirm &> /dev/null
 
 ## Start firevigeo!!
@@ -241,9 +244,7 @@ echo "[))> Run if you like,"
 echo
 echo "\\  $(pwd)/firevigeo-torloader/firevigeo.sh -s"
 
-## End of the main stuff
 
-gnome-terminal -t Install unimportant packages \(yes/no\) -- bash $src_dir/install_unimportant.bash &
 
 
 
