@@ -11,8 +11,14 @@ ls ~/.cache/config_changed.lck &> /dev/null || ( cp config/wayfire* ~/.config/ &
 ls ~/.cache/config_changed.lck &> /dev/null || ( cp config/wf-shell.ini ~/.config/wf-shell.ini &> /dev/null && echo Config wf-shell.ini copied!)
 
 ## Changing various of password options !!!
-ls ~/.cache/config_changed.lck &> /dev/null || bash -c "nohup gnome-terminal -t 'Do you want to choose the password?' -- sudo bash change_password.bash $LOGNAME" &>/dev/null &  
-ls ~/.cache/config_changed.lck &> /dev/null || sleep 4
+ls ~/.cache/config_changed.lck &> /dev/null || ( bash -c "nohup gnome-terminal -t 'Do you want to choose the password?' -- sudo bash change_password.bash $LOGNAME" &>/dev/null & ) && touch passwd.lck &>/dev/null
+
+while ! test -e passwd.lck
+do
+   sleep 1
+done
+
+ls ~/.cache/config_changed.lck &> /dev/null || sleep 2 && rm passwd.lck
 
 ls ~/.cache/config_changed.lck &> /dev/null || sudo bash -c "printf '\nDefaults env_reset,pwfeedback' >> /etc/sudoers"
 ls ~/.cache/config_changed.lck &> /dev/null || sudo sed -i "s/auth.*pam_wheel.so trust use_uid/auth            required        pam_wheel.so trust use_uid/g" /etc/pam.d/su
