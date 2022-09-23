@@ -111,7 +111,8 @@ function aur_install {
      cd - &> /dev/null
      rm -rf $aur_install &> /dev/null
   done
-custom-config}
+custom-config
+}
 
 function install_fresh {
   sudo pacman -S  --noconfirm $(package_old $@) 2> /dev/null
