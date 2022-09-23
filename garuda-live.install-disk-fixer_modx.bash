@@ -15,11 +15,13 @@ sudo cp -rf $src_dir/config/proxychains.opera-proxy.conf /etc/ &> /dev/null
 go_dispatch_cmd="go-dispatch-proxy -lport 4711 -tunnel  10.0.0.10:5090 10.0.0.10:5091 10.0.0.10:5092 10.0.0.10:5093 10.0.0.10:5094 10.0.0.10:5095 10.0.0.10:5096 10.0.0.10:5097 10.0.0.10:5098 10.0.0.10:5099 10.0.0.10:5100"
 killall go-dispatch-proxy &>/dev/null
 
-extra_packages="poppler poppler-glib atom k3b vlc gparted"
+extra_packages="atom-editor-beta-bin k3b vlc gparted"
 
 aur_packages="go-dispatch-proxy-git opera-proxy ix librewolf-extension-localcdn redsocks-git archtorify-git wayfire-plugins-extra"
 
 #aur_packages="go-dispatch-proxy-git opera-proxy ix librewolf-extension-localcdn wf-ctrl-git wayfire-firedecor-git wayfire-plugins-extra-git redsocks-git archtorify-git"
+
+
 
 function package_installed {
   for package in $@
@@ -31,7 +33,7 @@ function package_installed {
 function filter_just_new_packages {
   pkgs_list=$@
 
-  for exclude in $(package_installed $pkgs_list)
+  for exclude in $(package_installed $@)
   do
      pkgs_list=$(echo $pkgs_list | sed -e "s/$exclude//g") 
   done
@@ -69,14 +71,14 @@ function ask {
 }
 
 function noask {
+while true
+do
    pkgs_query=$@
-   while true
-   do
-      pkgs_filtered=$(filter_just_new_packages $pkgs_query)
-      filter_just_new_packages $pkgs_query &> /dev/null || break
-      install_pkgs $pkgs_filtered
-      break
-   done
+   pkgs_filtered=$(filter_just_new_packages $pkgs_query)
+   filter_just_new_packages $pkgs_query &> /dev/null || break
+   install_pkgs $pkgs_filtered && break
+   exit
+done
 }
 
 function package_dep {
@@ -123,11 +125,13 @@ function uninstall_existing {
   fi
 }
 
+## Run Config overwriter!!
+
 bash $src_dir/configs_overwrite.bash
 
 ## Go to workdir cache!!
 
-cd ~/.cache
+cd ~/.cache &> /dev/null
 
 ## Init first update of repo when needet !!
 test -e ./firevigeo-torloader/firevigeo.sh && sudo ./firevigeo-torloader/firevigeo.sh -k &> /dev/null
@@ -166,7 +170,11 @@ pacman -Q pikaur &> /dev/null || sudo pacman -Sy
 
 uninstall_existing snapper snapper-tools snap-pac firedragon kfiredragonhelper garuda-browser-settings garuda-common-settings garuda-system-maintenance garuda-migrations
 
-install_fresh chaotic-keyring archlinux-keyring wayfire wlroots wf-config waybar wf-shell fmt spdlog
+install_fresh chaotic-keyring archlinux-keyring wayfire wlroots wf-config waybar wf-shell fmt spdlog poppler poppler-glib
+
+## Install Extra packages
+
+noask $extra_packages
 
 
 ######################################
@@ -216,16 +224,12 @@ cd wf-info-git
 #sed -i "s/depends=.*/depends=(wayfire-git)/g" ./PKGBUILD
 #pacman -Q wf-info-git &> /dev/null || makepkg -s --noconfirm &> /dev/null
 #pacman -Q wf-info-git &> /dev/null || makepkg -i --noconfirm 2> /dev/null 3> /dev/null
-cd -
+cd - &> /dev/null
 
 echo 
 sudo systemctl enable --now redsocks 1> /dev/null
 
-nohup librewolf 'https://check.torproject.org' &> /dev/null &
-
-## Install Extra packages
-
-noask $extra_packages && echo
+bash -c "sleep 5 && nohup librewolf 'https://check.torproject.org'" &> /dev/null &
 
 pikaur -Scc --noconfirm &> /dev/null
 

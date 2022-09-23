@@ -34,8 +34,7 @@ chmod +x ~/run-*
 
 
 ## Install waysudo - qt sudo workaround !!
-ls ~/.cache/config_changed.lck &> /dev/null || sudo cp -rf waysudo /usr/bin/ &> /dev/null
-ls ~/.cache/config_changed.lck &> /dev/null || sudo chmod +x /usr/bin/waysudo
+sudo cp -rf waysudo /usr/bin/ &> /dev/null && sudo chmod +x /usr/bin/waysudo
 
 ## Install librewolf addons !!!
 echo

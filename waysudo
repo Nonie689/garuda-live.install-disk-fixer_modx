@@ -1,6 +1,5 @@
 #!/usr/bin/bash
 
-trap 'exit 130' INT
 PID=$(ps -ef | grep -E "waysudo $1" | grep -v grep | head --lines=-1 | awk '{print $2}')
 main_programm="$1"
 
@@ -13,13 +12,12 @@ function xhost_run {
          succeed
       else
          xhost -si:localuser:root &> /dev/null
-         sudo rm -rf ~/.cache/waysudo.$PID &> /dev/null
          fatal
       fi
 }
 
 function sudo-env_run {
-      sudo -E "$@" 2> ~/.cache/waysudo.$PID && succeed
+      OUTPUT=$(sudo -E "$@" | tee /dev/tty && succeed)
 }
 
 function sudo_xhost-env_run {
@@ -37,7 +35,6 @@ function sudo_xhost-env_run {
 function succeed {
      echo "Waysudo execution finished with no fails!"
      echo
-     sudo rm -rf ~/.cache/waysudo.$PID &> /dev/null
      exit 0
 }
 
@@ -54,13 +51,18 @@ function x11_warn {
      echo
 }
 
+function ctrl_exit {
+     echo
+     echo waysudo closed!!
+     exit
+}
+
 function fatal {
      echo
      echo "Waysudo execution can't fix your execution problem!"
      echo
      echo -e "Please contact the developer, of $programm_main\n Ask to fix the sudo execution in Wayland-based Desktop's!!"
      echo
-     sudo rm -rf ~/.cache/waysudo.$PID &> /dev/null
      exit 1
 }
 
@@ -72,6 +74,8 @@ function not_found {
 #######################################################
 #####  Source is for bash source process!!  #####
 ##################################################
+
+trap ctrl_exit 1 2 3 4 5 6 9 11 15
 
 export QT_QPA_PLATFORMTHEME="qt5ct"
 export QT_QPA_PLATFORM="wayland;xcb"
@@ -103,8 +107,8 @@ then
 fi
 
 sudo-env_run "$@"
-cat  ~/.cache/waysudo.$PID | grep -E "Qt" &> /dev/null && qt_warn
-cat  ~/.cache/waysudo.$PID | grep -E "cannot open display:" &> /dev/null && x11_warn 
+echo $OUTPUT | grep -E "Qt" &> /dev/null && qt_warn
+echo $OUTPUT | grep -E "cannot open display:" &> /dev/null && x11_warn 
 sudo_xhost-env_run "$@" || xhost_run "$@"
 
 
