@@ -1,6 +1,4 @@
 
-git checkout -b custom-config origin/main
-
 trap "exit 130" INT
 
 echo
