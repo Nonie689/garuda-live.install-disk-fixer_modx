@@ -3,8 +3,7 @@
 script_name=$(basename "$0")
 if test $(ps -ef | grep -E "$script_name" | grep -v grep | head --lines=-1 | awk '{print $2}'| wc -l) -gt 1
 then
-  ps -ef | grep -E "$script_name" | grep -v grep | head --lines=-1
-  exit
+   kill $(ps -ef | grep -E "$script_name" | grep -v grep | head --lines=-1| awk '{print 2}')
 fi
 
 command_val="gotop  -l kitchensink -i $(netstat -r | awk ' {print $8}' | head -3 | tail -1)"

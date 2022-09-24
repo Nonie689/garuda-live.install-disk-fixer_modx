@@ -33,13 +33,7 @@ cat ~/.config/fish/config.fish | grep -E "source ~/bashrc_my_settings.conf"  &> 
 
 ## Install htop config file and simple startup scripts !!!
 cp -rf config/htop/ ~/config/
-sudo cp -rf config/nanorc  /etc/nanorc 
-cp -rf config/opensnitch/ ~/.config/ 
-
-cp -rf simple-startup-scripts/* ~/
-chmod +x ~/run-*
-chmod +x ~/firevigeo
-
+chmod +x ~/exec-simple-startup-scripts_watchdog.sh
 
 ## Install waysudo - qt sudo workaround !!
 sudo cp -rf waysudo /usr/bin/ &> /dev/null && sudo chmod +x /usr/bin/waysudo

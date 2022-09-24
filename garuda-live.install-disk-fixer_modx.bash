@@ -2,10 +2,16 @@ LC_ALL=C
 
 ## Just the init Area!
 
-### To kill all simple run services
-## kill $(ps -aux | grep -E "run-" | grep -v "grep" | awk '{print $2}') &> /dev/null
+####################################################################################################
+#################################  To kill all simple run services #################################
+####### kill $(ps -aux | grep -E "run-" | grep -v "grep" | awk '{print $2}') &> /dev/null    #######
+####################################################################################################
 
 trap 'exit 130' INT
+
+##########################
+## Set init variables!! ##
+##########################
 
 src_dir="$(dirname $(realpath $0))"
 cachedir="$(realpath ~/.cache)"
@@ -15,13 +21,17 @@ sudo cp -rf $src_dir/config/proxychains.opera-proxy.conf /etc/ &> /dev/null
 go_dispatch_cmd="go-dispatch-proxy -lport 4711 -tunnel  10.0.0.10:5090 10.0.0.10:5091 10.0.0.10:5092 10.0.0.10:5093 10.0.0.10:5094 10.0.0.10:5095 10.0.0.10:5096 10.0.0.10:5097 10.0.0.10:5098 10.0.0.10:5099 10.0.0.10:5100"
 killall go-dispatch-proxy &>/dev/null
 
-extra_packages="atom-editor-beta-bin k3b vlc gparted"
+extra_packages="k3b vlc gparted wayfire-plugins-extra ncdu vnstat gotop tor shellcheck pikaur-git pcmanfm-gtk3 opensnitch axel android-sdk-platform-tools irqbalance"
 
-aur_packages="go-dispatch-proxy-git opera-proxy ix librewolf-extension-localcdn redsocks-git archtorify-git wayfire-plugins-extra"
+aur_packages="go-dispatch-proxy-git opera-proxy ix atom-transparent librewolf-extension-localcdn redsocks-git archtorify-git wayfire-plugins-extra"
 
 #aur_packages="go-dispatch-proxy-git opera-proxy ix librewolf-extension-localcdn wf-ctrl-git wayfire-firedecor-git wayfire-plugins-extra-git redsocks-git archtorify-git"
 
+need_package_install_from_repo="librewolf opera xorg-xhost shellcheck"
 
+#########################
+## Declare functions!! ##
+#########################
 
 function package_installed {
   for package in $@
@@ -48,7 +58,7 @@ function filter_just_new_packages {
 
 function install_pkgs {
    pkgs_query_tmp=$(filter_just_new_packages $@)
-   filter_just_new_packages $@ &> /dev/null && sudo pacman -S --noconfirm $pkgs_query_tmp && bash -c "printf '\n\nFinished\n\n'"
+   filter_just_new_packages $@ &> /dev/null && sudo pacman -S --noconfirm $pkgs_query_tmp && bash -c "printf '\nFinished\n'"
 }
 
 function ask {
@@ -111,7 +121,6 @@ function aur_install {
      cd - &> /dev/null
      rm -rf $aur_install &> /dev/null
   done
-custom-config
 }
 
 function install_fresh {
@@ -126,9 +135,11 @@ function uninstall_existing {
   fi
 }
 
+
 ## Run Config overwriter!!
 
 bash $src_dir/configs_overwrite.bash
+
 
 ## Go to workdir cache!!
 
@@ -160,7 +171,8 @@ echo "-------------------------------------------------------------   "      #
 #                                                                            #
 ##############################################################################
 
-sleep 1.5
+sleep 1.0
+
 
 ## Install dependencies packages for tool to adjust garuda live disk correct!
 
@@ -173,9 +185,6 @@ uninstall_existing snapper snapper-tools snap-pac firedragon kfiredragonhelper g
 
 install_fresh chaotic-keyring archlinux-keyring wayfire wlroots wf-config waybar wf-shell fmt spdlog poppler poppler-glib
 
-## Install Extra packages
-
-noask $extra_packages
 
 ######################################
 ########################################
@@ -183,18 +192,23 @@ noask $extra_packages
 ####################################
 ######################################
 
-## Intall Area - The importent part of the tool!
+########                 ########
 
-noask librewolf opera xorg-xhost
+####################################################
+## Intall Area - The importent part of the tool!! ##
+####################################################
+
+noask $need_package_install_from_repo
 killall wf-panel &> /dev/null && sleep 2 && nohup ~/run-wf-panel.sh &> /dev/null &
 
 noask wayfire-plugins-extra ncdu vnstat gotop tor shellcheck pikaur-git pcmanfm-gtk3 opensnitch axel android-sdk-platform-tools irqbalance
 
+sudo systemctl stop avahi-daemon.socket avahi-daemon.service mhwd-live.service
 sudo systemctl start vnstat 1> /dev/null
 sudo systemctl start opensnitchd 1> /dev/null
 sudo systemctl start irqbalance 1> /dev/null
 
-noask proxychains conky alacritty
+noask proxychains-ng conky alacritty
 
 pidof librewolf &> /dev/null || nohup librewolf 'https://addons.mozilla.org/en-US/firefox/addon/videospeed/' 'https://addons.mozilla.org/en-US/firefox/addon/youtube-recommended-videos/' 'https://addons.mozilla.org/en-US/firefox/addon/mediareload/' 'https://addons.mozilla.org/en-US/firefox/addon/videos-hls-m3u8-mp4-downloader/' 'https://addons.mozilla.org/en-US/firefox/addon/print-edit-we/' 'https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/' 'https://addons.mozilla.org/en-US/firefox/addon/temporary-containers/' 'https://addons.mozilla.org/en-US/firefox/addon/export-cookies-txt/' 'https://addons.mozilla.org/en-US/firefox/addon/i-dont-care-about-cookies/' 'https://addons.mozilla.org/en-US/firefox/addon/tranquility-1/' &> /dev/null &
 
@@ -204,13 +218,27 @@ sleep 25 && nohup librewolf 'https://github.com/Nonie689/garuda-live.install-dis
 
 pacman -Q go-dispatch-proxy-git &> /dev/null || echo "Install: $aur_packages" && aur_install $aur_packages
 
+
+## Install Extra packages
+
+noask $extra_packages
+
 killall waybar &> /dev/null
 killall wf-background &> /dev/null
 killall mako &> /dev/null
 killall wf-panel &> /dev/null
 sleep 0.750
 
-bash run-script-service-background-daemon.bash 
+kill $(ps -ef | grep -E "bash $HOME/run-.*.sh" | grep -v grep | head --lines=-1 | awk '{ print $2}') &> /dev/null
+for runscripts in ~/run-*
+do
+  echo "Starting: $runscripts"
+  bash -c "$runscripts" &>/dev/null &
+done
+
+sleep 1
+disown $(jobs -l | grep -E "run-*.sh" | awk '{ print $2'}) 
+
 
 ## Clone git repo we need!!
 
@@ -226,20 +254,22 @@ cd -
 echo 
 sudo systemctl start redsocks 1> /dev/null
 
-sudo bash $src_dir/install_unimportant.bash  
+sudo bash $src_dir/install_unimportant.bash
 
 
 pikaur -Scc --noconfirm &> /dev/null
 
-## Start firevigeo!!
+#######################
+## Start firevigeo!! ##
+#######################
 
 ls $(pwd)/firevigeo-torloader/ &> /dev/null && sudo $(pwd)/firevigeo-torloader/firevigeo.sh -s 2> /dev/null 
 
 bash -c "sleep 5 && nohup librewolf 'https://check.torproject.org'" &> /dev/null &
 
-echo "[))> Run if you like,"
+echo "[))> Run if you like to restart firevigeo:"
 echo
-echo "\\  $(pwd)/firevigeo-torloader/firevigeo.sh -s"
+echo "sudo ~/restart_firevigeo -s"
 
 
 

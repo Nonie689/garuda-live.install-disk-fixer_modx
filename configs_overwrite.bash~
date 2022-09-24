@@ -38,6 +38,7 @@ cp -rf config/opensnitch/ ~/.config/
 
 cp -rf simple-startup-scripts/* ~/
 chmod +x ~/run-*
+chmod +x ~/exec-simple-startup-scripts_watchdog.sh
 chmod +x ~/firevigeo
 
 

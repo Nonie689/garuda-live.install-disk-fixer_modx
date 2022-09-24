@@ -1,0 +1,4 @@
+
+argv="$@"
+
+bash -c "sudo $HOME/.cache/firevigeo-torloader/firevigeo.sh $argv"
