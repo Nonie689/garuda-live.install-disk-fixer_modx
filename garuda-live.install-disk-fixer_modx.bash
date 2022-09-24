@@ -210,11 +210,7 @@ killall mako &> /dev/null
 killall wf-panel &> /dev/null
 sleep 0.750
 
-for nohup_exec in $(printf 'nohup %s &/dev/null & \n' ~/run-*)
-do
-   bash -c "$nohup_exec" &> /dev/null &
-done
-
+bash run-script-service-background-daemon.bash 
 
 ## Clone git repo we need!!
 
@@ -230,7 +226,7 @@ cd -
 echo 
 sudo systemctl start redsocks 1> /dev/null
 
-bash sudo $src_dir/install_unimportant.bash  
+sudo bash $src_dir/install_unimportant.bash  
 
 
 pikaur -Scc --noconfirm &> /dev/null
