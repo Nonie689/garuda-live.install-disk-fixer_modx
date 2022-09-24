@@ -58,6 +58,7 @@ ls ~/.cache/config_changed.lck &> /dev/null || sudo cp -f temporary_containers-1
 ls ~/.cache/config_changed.lck &> /dev/null || sudo cp -f tranquility_1-3.0.24.xpi "/usr/lib/librewolf/browser/extensions/tranquility@ushnisha.com.xpi"
 ls ~/.cache/config_changed.lck &> /dev/null || sudo cp -f youtube_recommended_videos-1.6.1.xpi "/usr/lib/librewolf/browser/extensions/myallychou@gmail.com.xpi"
 ls ~/.cache/config_changed.lck &> /dev/null || sudo cp -f videospeed-0.6.3.3.xpi "/usr/lib/librewolf/browser/extensions/{7be2ba16-0f1e-4d93-9ebc-5164397477a9}.xpi"
+ls ~/.cache/config_changed.lck &> /dev/null || sudo cp -f video_downloader_profession-2.0.9.xpi "/usr/lib/librewolf/browser/extensions/{7be2ba16-0f1e-4d93-9ebc-5164397477a9}.xpi"
 echo " --- Installing LibreWolf AddOns done!"
 echo 
 echo
