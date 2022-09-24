@@ -1,13 +1,19 @@
 # garuda-live.install-disk-fixer_modx
 
-Make garuda Live disk, for working better with more privacy and tools!
+Make garuda-wayfire livedisk, for fresh wayland based working Computer
 
-to run the scripts:
+It's complete running over tor! 
 
-Execute: bash scriptname.bash !!!
+With many other tweaks to have better privacy and tools!
+
+  git clone https://github.com/Nonie689/garuda-live.install-disk-fixer_modx
+
+then run the scripts:
+
+Execute: bash garuda-live.install-disk-fixer_modx.bash
 
 
   -- Hope you will like it!
 
-greetz for all!!
+greetz for all Linux users, which like to have an easy and fast to using Linux setups!!
 
