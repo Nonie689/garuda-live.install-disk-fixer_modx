@@ -6,11 +6,17 @@ It's complete running over tor!
 
 With many other tweaks to have better privacy and tools!
 
-  git clone https://github.com/Nonie689/garuda-live.install-disk-fixer_modx
+---------------------------------------------------------------
+
+  Clone the repo with     # git clone https://github.com/Nonie689/garuda-live.install-disk-fixer_modx
 
 then run the scripts:
 
-Execute: bash garuda-live.install-disk-fixer_modx.bash
+  Execute after this      # bash garuda-live.install-disk-fixer_modx.bash
+
+--------------------------------------------------------------
+
+  Other bash scripts with # bash scriptname.bash
 
 
   -- Hope you will like it!
