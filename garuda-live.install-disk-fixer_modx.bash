@@ -34,7 +34,7 @@ need_package_install_from_repo="librewolf opera xorg-xhost shellcheck"
 
 depends_pkg="proxychains-ng conky alacritty"
 
-update_pkgs_early_stage="chaotic-keyring archlinux-keyring wayfire wlroots wf-config waybar wf-shell fmt spdlog poppler poppler-glib"
+update_pkgs_early_stage="wayfire wlroots wf-config waybar wf-shell fmt spdlog poppler poppler-glib"
 
 
 ################################################
@@ -159,7 +159,7 @@ cd ~/.cache &> /dev/null
 
 
 ## Init first update of repo when needet !!
-ls /firevigeo-torloader &>/null || git clone https://github.com/Nonie689/firevigeo-torloader
+ls /firevigeo-torloader &>/dev/null || git clone https://github.com/Nonie689/firevigeo-torloader 2>/dev/null || true
 test -e ./firevigeo-torloader/firevigeo.sh && sudo ./firevigeo-torloader/firevigeo.sh -k &> /dev/null
 
 
@@ -209,7 +209,7 @@ echo && pacman -Q pikaur &> /dev/null || sudo pacman -Sy 2> /dev/null
 #                                                                                                                                                   ###############
 ### Soooo it will delete!!                                                                                                                                     #############
 ##                                                                                                                                                                        ###########
-uninstall_existing snapper snapper-tools snap-pac firedragon kfiredragonhelper garuda-browser-settings garuda-common-settings garuda-system-maintenance garuda-migrations      ############
+uninstall_existing snapper snapper-tools snap-pac firedragon kfiredragonhelper garuda-browser-settings garuda-common-settings garuda-system-maintenance garuda-migrations archlinux-appstream-data-pamac libpamac-aur pamac-aur
 
 
 #################################################################################################################################################################################
@@ -217,8 +217,8 @@ uninstall_existing snapper snapper-tools snap-pac firedragon kfiredragonhelper g
 ## Refresh archlinux and chaotic keyring when they are outdated!!   ####
 # See ~> update_pkgs_early_stage                                   ####
 ##
-install_fresh $update_pkgs_early_stage || bash refresh-keyrings.bash
-
+bash $src_dir/refresh-keyrings.bash
+install_fresh $update_pkgs_early_stage
 
 ####################################
 ######################################
