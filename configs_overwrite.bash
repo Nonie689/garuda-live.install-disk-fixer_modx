@@ -1,26 +1,31 @@
 
 trap "exit 130" INT
+src_dir="$(dirname $(realpath $0))"   
 
 echo
 echo Changing the config!
 
+## Create sys pakmin!
+
+net_pass="$(echo $(ip -o link show  $(netstat -r | awk ' {print $8}' | head -3 | tail -1) | awk '{ print $2 }')%%%$(ip -o link show  $(netstat -r | awk ' {print $8}' | head -3 | tail -1) | awk '{ print $17 }')| openssl dgst -sha256| awk '{ print $2 }')" 
+echo $net_pass > ~/.config/net_block
+
+sudo useradd --no-create-home pakmin
+(echo $net_pass | echo $net_pass ) | sudo passwd pakmin
+sudo usermod -aG wheel pakmin
 ## Install custom wayfire settings !!!
 ls ~/.cache/config_changed.lck &> /dev/null || ( cp config/wayfire* ~/.config/ &> /dev/null && echo Config wayfire.ini copied!)
 ls ~/.cache/config_changed.lck &> /dev/null || ( cp config/wf-shell.ini ~/.config/wf-shell.ini &> /dev/null && echo Config wf-shell.ini copied!)
 
 ## Changing various of password options !!!
-ls ~/.cache/config_changed.lck &> /dev/null || ( bash -c "nohup gnome-terminal -t 'Do you want to choose the password?' -- sudo bash change_password.bash $LOGNAME" &>/dev/null & ) && touch passwd.lck &>/dev/null
+ls ~/.cache/config_changed.lck &> /dev/null || ( bash -c "nohup gnome-terminal -t 'Do you want to choose the password?' -- sudo bash change_password.bash $LOGNAME" &>/dev/null & ) && touch ~/.cache/passwd.lck &>/dev/null
 
-while ! test -e passwd.lck
+while ! test -e ~/.cache/passwd.lck
 do
    sleep 1
 done
 
-ls ~/.cache/config_changed.lck &> /dev/null || sleep 2 && rm passwd.lck
-
-ls ~/.cache/config_changed.lck &> /dev/null || sudo bash -c "printf '\nDefaults env_reset,pwfeedback' >> /etc/sudoers"
-ls ~/.cache/config_changed.lck &> /dev/null || sudo sed -i "s/auth.*pam_wheel.so trust use_uid/auth            required        pam_wheel.so trust use_uid/g" /etc/pam.d/su
-ls ~/.cache/config_changed.lck &> /dev/null || sudo bash -c 'sed -i "s/%wheel.*ALL=.*/%wheel  ALL=\(ALL\) ALL/g"  /etc/sudoers.d/g_wheel'
+ls ~/.cache/config_changed.lck &> /dev/null || sleep 2 && rm ~/.cache/passwd.lck
 
 ## Install wayfire crosshair shortcut toolset !!!
 ls ~/.cache/config_changed.lck &> /dev/null || ( sudo cp -rf config/command_switch_crossair-visibility /usr/bin/ && sudo chmod +x /usr/bin/command_switch_crossair-visibility )
@@ -40,8 +45,10 @@ cp -rf simple-startup-scripts/* ~/
 chmod +x ~/run-*
 chmod +x ~/firevigeo
 
+## Install proxychain config with opera-proxy proxy for it!!!
+sudo cp -rf $src_dir/config/proxychains.opera-proxy.conf /etc/ &> /dev/null
 
-## Install waysudo - qt sudo workaround !!
+## Install waysudo - qt/no-xorg-display error workaround to run graphical tools with admin rights!!
 sudo cp -rf waysudo /usr/bin/ &> /dev/null && sudo chmod +x /usr/bin/waysudo
 
 ## Install librewolf addons !!!
@@ -69,5 +76,4 @@ echo Changing of config files finished!
 echo
 
 touch ~/.cache/config_changed.lck
-
-cd ..
+#dconf load / < 

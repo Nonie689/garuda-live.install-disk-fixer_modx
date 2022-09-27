@@ -17,7 +17,11 @@ function xhost_run {
 }
 
 function sudo-env_run {
-      OUTPUT=$(sudo -E "$@" | tee /dev/tty && succeed)
+      OUTPUT=$(sudo -E "$@" | tee /dev/tty)
+      if test $? -eq 0
+	   then
+		   succeed
+		fi
 }
 
 function sudo_xhost-env_run {
@@ -33,21 +37,22 @@ function sudo_xhost-env_run {
 }
 
 function succeed {
-     echo "Waysudo execution finished with no fails!"
      echo
-     exit 0
+     echo "[))> Waysudo execution finished with no fails!"
+     echo
+     exit
 }
 
 function qt_warn {
      echo
-     echo "No Qt platform plugin could be initialized!"
+     echo "[))> No Qt platform plugin could be initialized!"
+     echo " ~> Trying running the command via xhost fallback variant!"
      echo
-     echo "Trying running the command via xhost fallback variant!"
 }
 
 function x11_warn {
      echo
-     echo "No X11 display is set!"
+     echo "[))> No X11 display is set!"
      echo
 }
 
@@ -59,15 +64,15 @@ function ctrl_exit {
 
 function fatal {
      echo
-     echo "Waysudo execution can't fix your execution problem!"
+     echo "[))> Waysudo execution can't fix your execution problem!"
      echo
-     echo -e "Please contact the developer, of $programm_main\n Ask to fix the sudo execution in Wayland-based Desktop's!!"
+     echo -e " ~> Please contact the developer of the tool you wish to run as admin!\n  Ask to fix the sudo execution in Wayland-based Desktop's enviroments!!"
      echo
      exit 1
 }
 
 function not_found {
-   printf "\nCommand $main_programm is not found!\n\n"
+   printf "\n[))> Command $main_programm is not found!\n\n"
    exit 1
 }
 
@@ -85,7 +90,7 @@ which xhost &>/dev/null || bash -c "echo  Please intall xorg-xhost! && exit 1"
 
 if [[ -z $main_programm ]] 
 then
-   echo "No programm found to run with waysudo!"
+   echo "[))> No programm found to run with waysudo!"
    echo
    exit 1
 fi
@@ -102,7 +107,7 @@ echo
 
 if test $(which sudo &> /dev/null)
 then
-  printf  "No sudo are installed.\n\nIf you want a better runtime perfomance you should install sudo!\n\nFallback to using slower xhost localuser method!\n"
+  printf  "[))> No sudo are installed.\n\nIf you want a better runtime perfomance you should install sudo!\n\nFallback to using slower xhost localuser method!\n"
   xhost_run $@
 fi
 
