@@ -31,10 +31,10 @@ go_dispatch_cmd="go-dispatch-proxy -lport 4711 -tunnel  10.0.0.10:5090 10.0.0.10
 
 uninstall_conflicts="poppler wl-clipboard lib32-libelf libelf"
 extra_packages="systemd-ui systemdgenie yt-dlp poppler poppler-glib repose pkgfile mate-utils qjournalctl gnome-logs yelp hwinfo usbview hwdetect pacmanlogviewer k3b vlc gparted wayfire-plugins-extra ncdu vnstat gotop tor shellcheck pikaur bat devtools opensnitch axel android-sdk-platform-tools irqbalance ripgrep"
-pikaur_pkgs="go-dispatch-proxy-git redsocks hostapd-mana-git wl-clipboard-rs libelf"
+pikaur_pkgs="go-dispatch-proxy-git redsocks hostapd-mana-git wl-clipboard-rs wlroots-nvidia libelf"
 aur_packages_1="kaku-bin"
 aur_packages_2="selectdefaultapplication-git electron5-bin opera-proxy ix archtorify-git sharik-bin hotspot wvkbd"
-need_package_install_from_repo="librewolf opera xorg-xhost shellcheck openssl openssl-1.1 libdrm wayland-protocols exa starship libgit2"
+need_package_install_from_repo="librewolf opera xorg-xhost shellcheck openssl openssl-1.1 libdrm wayland-protocols"
 depends_pkg="proxychains-ng conky alacritty"
 update_pkgs_early_stage="wayfire wf-config waybar wf-shell fmt spdlog wireplumber libwireplumber"
 
@@ -116,8 +116,8 @@ function aur_install {
   echo
   sleep 0.25
 
-  # Install packages and store packages that are complete to persistent storage
-  pikaur -S ${pikaur_pkgs} --noedit --noconfirm
+  # Install packages and store packages that are complete to persistent storage 
+  pacman -Q redsocks &> /dev/null || pikaur -S ${pikaur_pkgs} --noedit --noconfirm
   
   pacman -Q hostapd &> /dev/null && sudo pacman -Rdd hostapd --noconfirm
   
@@ -344,13 +344,7 @@ echo
 
 sleep 2
 
-aur_install $aur_packages_1 $aur_packages_2 
-
-cd ~/.cache
-pikaur -Rdd wlroots --noconfirm
-pikaur -G wlroots-nvidia
-cd  wlroots-nvidia
-makepkg -si --skippgpcheck --noconfirm
+pacman -Q kaku-bin &> /dev/null || aur_install $aur_packages_1 $aur_packages_2 
 
 
 ##############################
@@ -372,7 +366,6 @@ sudo systemctl stop systemd-oomd.service &> /dev/null
 
 sudo systemctl start modprobe@drm.service &> /dev/null
 sudo systemctl enable --now vnstat 1> /dev/null
-sudo systemctl start redsocks 1> /dev/null
 sudo systemctl enable --now irqbalance 1> /dev/null
 sudo systemctl start modprobe@configfs.service 1> /dev/null
 sudo systemctl start systemd-zram-setup@zram0.service 1> /dev/null
@@ -400,8 +393,6 @@ do
   echo "Starting: $runscripts"
   bash -c "$runscripts" &> /dev/null &
 done
-
-cd ~
 
 sleep 0.750
 disown $(jobs -l | grep -E "run-*.sh" | awk '{ print $2'})  && echo
@@ -439,7 +430,7 @@ echo
 ## Tweak sudo settings to hardening the base system!!
 
 
-sleep 120
+sleep 230
 
 sudo bash -c "sudo bash $src_dir/sudo-hardening-pro_tweaks.bash && sudo killall wayfire"
 

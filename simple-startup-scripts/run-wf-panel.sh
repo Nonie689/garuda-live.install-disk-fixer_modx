@@ -6,6 +6,8 @@ then
    kill $(ps -ef | grep -E "$script_name" | grep -v grep | head --lines=-1| awk '{print 2}')
 fi
 
+sleep 2
+
 killall wf-panel
 command_val="wf-panel"
 while [ True ] ; do

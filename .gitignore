@@ -19,9 +19,6 @@ SqueakDebug.log
 # Dolphin Smalltalk error file
 *.errors
 
-# Monticello package cache
-/package-cache
-
 # playground cache
 /play-cache
 /play-stash
@@ -29,3 +26,6 @@ SqueakDebug.log
 # Metacello-github cache
 /github-cache
 github-*.zip
+
+/pacman-cache
+/my_config

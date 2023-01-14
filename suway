@@ -1,0 +1,214 @@
+#!/usr/bin/bash
+
+PID=$(ps -ef | grep -E "suway $1" | grep -v grep | head --lines=-1 | awk '{print $2}')
+parameter="$@"
+myxcookie="${HOME}/my-x-cookie"
+export DISPLAY=$DISPLAY
+cmd_let_xhost="xauth merge ${myxcookie};env DISPLAY=$DISPLAY $parameter"
+main_programm="$1"
+
+
+function xauth_create {
+        export DISPLAY=$DISPLAY
+	touch ${HOME}/.Xauthority
+
+	# Generate the magic cookie with 128 bit hex encoding
+	xauth add $(uname -n)${DISPLAY} . $(xxd -l 16 -p /dev/urandom)
+	xauth extract ${myxcookie} $(uname -n)${DISPLAY} &> /dev/null
+	setfacl -m u:${USER}:r ${myxcookie}
+	xauth merge ${myxcookie} 
+	echo $PASSWORD | su -c "${cmd_let_xhost}" && true || false
+}
+
+function xauth_create_sudo {
+        export DISPLAY=${DISPLAY}
+	touch ${HOME}/.Xauthority
+
+	# Generate the magic cookie with 128 bit hex encoding
+	xauth add $(uname -n):0 . $(xxd -l 16 -p /dev/urandom)
+	xauth extract ${myxcookie} $(uname -n)${DISPLAY} &> /dev/null
+	setfacl -m u:${USER}:r ${myxcookie}
+	xauth merge ${myxcookie} 
+	sudo -E bash -c "${cmd_let_xhost}" && true || false
+}
+
+function read_pass {
+	while true
+	do
+		bash -c "wvkbd-mobintl -L 280 2> /dev/null &" 2> /dev/null
+		
+		echo -n "[))> Enter passphrase: "
+
+		stty -echo
+		PASSWORD=""
+		PROMPT=""
+		CHARCOUNT=0
+		while IFS= read -p "$PROMPT" -r -s -n 1 CHAR
+		do
+		    # Enter - accept password
+		    if [[ $CHAR == $'\0' ]] ; then
+			break
+		    fi
+		    # Backspace
+		    if [[ $CHAR == $'\177' ]] ; then
+			if [ $CHARCOUNT -gt 0 ] ; then
+			    CHARCOUNT=$((CHARCOUNT-1))
+			    PROMPT=$'\b \b'
+			    PASSWORD="${PASSWORD%?}"
+			else
+			    PROMPT=''
+			fi
+		    else
+			CHARCOUNT=$((CHARCOUNT+1))
+			PROMPT='*'
+			PASSWORD+="$CHAR"
+		    fi
+		done
+		
+		kill $(ps -aux |grep -v grep | grep -E "wvkbd-mobintl -L 280" | awk '{print $2}')&> /dev/null
+		stty echo
+		echo $PASSWORD | su -c "sudo printf '\n\n*** Starting programm with suway!!\n' " && break
+	done
+}
+
+function xhost_run {
+      #xhost +si:localuser:root &> /dev/null 
+      
+      xauth_create && succeed || fatal
+      #then
+      #   xhost -si:localuser:root &> /dev/null 
+      #   succeed
+      #else
+      #   xhost -si:localuser:root &> /dev/null
+      #   fatal
+      #fi
+}
+
+function sudo-env_run {
+
+      OUTPUT="$(sudo -E $parameter | tee /dev/tty)"
+      if test $? -eq 0
+      then
+         succeed
+      else
+         echo $OUTPUT | grep -E 'Qt' &> /dev/null && qt_warn
+         echo $OUTPUT | grep -E 'cannot open display:' &> /dev/null && x11_warn
+      false
+      fi
+}
+
+function sudo_xhost-env_run {
+      #xhost +si:localuser:root &> /dev/null 
+      xauth_create_sudo && succeed || false
+      #then
+      #   #xhost -si:localuser:root &> /dev/null 
+      #   succeed
+      #else
+      #   #xhost -si:localuser:root &> /dev/null
+      #   false
+      #fi
+}
+
+function succeed {
+     echo
+     echo "[))> suway execution finished with no fails!"
+     echo
+     stty echo
+     exit
+}
+
+function qt_warn {
+     echo
+     echo "[))> No Qt platform plugin could be initialized!"
+     echo " ~> Trying running the command via xhost fallback variant!"
+     echo
+}
+
+function x11_warn {
+     echo
+     echo "[))> No X11 display is set!"
+     echo
+}
+
+function ctrl_exit {
+     stty echo
+     kill $(ps -aux |grep -v grep | grep -E "wvkbd-mobintl -L 280" | awk '{print $2}') &>/dev/null || false
+     echo
+     echo suway closed!!
+     stty echo
+     exit
+}
+
+function fatal {
+     echo
+     echo "[))> suway execution can't fix your execution problem!"
+     echo
+     echo -e " ~> Please contact the developer of the $main_programm programm!\n  Ask to fix the sudo execution in Wayland-based Desktop's enviroments!!"
+     echo
+     stty echo
+     exit 1
+}
+
+function not_found {
+   echo
+   echo "[))> Command $main_programm is not found!"
+   echo
+   stty echo
+   exit 1
+}
+
+function missing_dependencies {
+   which xauth  &>/dev/null
+   if test $? -ne 0
+   then
+      echo
+      echo To use suway install please xorg-xauth!
+      echo
+      stty echo
+      exit
+   fi
+}
+
+#######################################################
+#####  Source is for bash source process!!  #####
+##################################################
+
+trap ctrl_exit 1 2 3 4 5 6 9 11 15
+
+export QT_QPA_PLATFORMTHEME="qt5ct"
+export QT_QPA_PLATFORM="wayland;xcb"
+export WAYLAND_DISPLAY="$(find $XDG_RUNTIME_DIR/wayland-*|grep -v '.lock')"
+
+#which xhost &>/dev/null || bash -c "echo  Please install xorg-xhost! && exit 1"
+
+missing_dependencies
+
+if [[ -z $main_programm ]] 
+then
+   echo "[))> No programm found to run with suway!"
+   echo
+   stty echo
+   exit 1
+fi
+
+
+which $main_programm &> /dev/null || not_found
+
+
+echo
+echo suway PID: $PID 
+echo
+
+
+
+if test $(which sudo &> /dev/null)
+then
+  printf  "[))> No sudo are installed.\n\nIf you want a better runtime perfomance you should install sudo!\n\nFallback to using slower xhost localuser method!\n"
+  xhost_run
+fi
+
+
+read_pass
+
+sudo-env_run || xhost_run
+

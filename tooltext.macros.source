@@ -1,0 +1,32 @@
+
+## Loading color codes!!
+
+source colors.source
+
+## Set functions!!
+
+function step_info {
+
+}
+
+function step_info_sub {
+
+}
+
+function info {
+
+}
+
+function succeed {
+
+}
+
+
+function failure {
+
+}
+
+
+function programm_header {
+
+}

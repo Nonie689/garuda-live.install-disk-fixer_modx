@@ -20,7 +20,7 @@ function ask_u_pass_change {
               break
            fi
 
-	printf "[))> Do you want to change $u_name? (yes/no): "
+	printf "[))> Do you want to change password for $u_name? (yes/no): "
 	read yn
 	   case $yn in
 		yes|y ) echo;echo "Changing password of: $u_name";echo;
@@ -39,7 +39,7 @@ function ask_same_pass_root {
         if ! $garuda_skipped
         then
 
-	printf "[))> Do you want to change root passphrase and don't use the garuda password? (yes/no/abort): "
+	printf "[))> Do you want to change root passphrase with a different password? (yes/no/abort): "
 	read yn
 	   case $yn in
 		yes|y ) echo; echo "Modify root password with a new passphrase for root"; 
@@ -52,15 +52,14 @@ function ask_same_pass_root {
 		    echo;;
 	   esac
         else
-        printf "[))> Do you want to change root passphrase? (yes/no/abort): "
+        printf "[))> Do you want to change root passphrase? (yes/no): "
         read yn
            case $yn in
                 yes|y ) echo; echo "Modify root password with a new passphrase for root";
                         u_name=root;
                         ask_u_pass_change ;
                         exit_printf ;;
-                no|n )  exit_printf ;;
-                abort|a ) exit_printf ;;
+                no|n )  exit ;;
                 * ) echo invalid response;
                     echo;;
            esac
@@ -178,6 +177,10 @@ function exit_printf {
         exit
 }
 
+echo
+echo " -- Changing user passwords tool"
+echo
+
 
 if ! [[ -z $1 ]]
 then
@@ -198,5 +201,4 @@ then
    ask_u_pass_change
 fi
 
-exit_printf
 

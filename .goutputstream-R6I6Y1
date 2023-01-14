@@ -9,7 +9,7 @@
 trap 'exit 130' INT
 
 # Set lange for programm outputs to US/UK-English to have an unified stout/sterr experience !!
-version=0.96beta
+version=0.94beta
 LC_ALL=C
 opensnitch=true
 ################################################
@@ -29,14 +29,13 @@ go_dispatch_cmd="go-dispatch-proxy -lport 4711 -tunnel  10.0.0.10:5090 10.0.0.10
 
 ### All archlinux packages that will grouped be touched or used!!
 
-uninstall_conflicts="poppler wl-clipboard lib32-libelf libelf"
 extra_packages="systemd-ui systemdgenie yt-dlp poppler poppler-glib repose pkgfile mate-utils qjournalctl gnome-logs yelp hwinfo usbview hwdetect pacmanlogviewer k3b vlc gparted wayfire-plugins-extra ncdu vnstat gotop tor shellcheck pikaur bat devtools opensnitch axel android-sdk-platform-tools irqbalance ripgrep"
-pikaur_pkgs="go-dispatch-proxy-git redsocks hostapd-mana-git wl-clipboard-rs libelf"
-aur_packages_1="kaku-bin"
-aur_packages_2="selectdefaultapplication-git electron5-bin opera-proxy ix archtorify-git sharik-bin hotspot wvkbd"
-need_package_install_from_repo="librewolf opera xorg-xhost shellcheck openssl openssl-1.1 libdrm wayland-protocols exa starship libgit2"
+pikaur_pkgs="paru redsocks libelf lib32-libelf"
+aur_packages_1="hostapd-mana-git  wl-clipboard-rs"
+aur_packages_2="selectdefaultapplication-git kaku-bin atom-bin electron5-bin go-dispatch-proxy-git opera-proxy ix archtorify-git sharik-bin hotspot linux-wifi-hotspot wvkbd"
+need_package_install_from_repo="librewolf opera xorg-xhost shellcheck openssl openssl-1.1 wireplumber libwireplumber"
 depends_pkg="proxychains-ng conky alacritty"
-update_pkgs_early_stage="wayfire wf-config waybar wf-shell fmt spdlog wireplumber libwireplumber"
+update_pkgs_early_stage="wayfire wlroots wf-config waybar wf-shell fmt spdlog"
 
 
 ################################################
@@ -112,19 +111,11 @@ function package_old {
 }
 
 function aur_install {
-  echo "==> Building and install: ${pikaur_pkgs} $@"
+  echo "==> Building and install: $@"
   echo
-  sleep 0.25
+  sleep 0.5
 
-  # Install packages and store packages that are complete to persistent storage
-  pikaur -S ${pikaur_pkgs} --noedit --noconfirm
-  
-  pacman -Q hostapd &> /dev/null && sudo pacman -Rdd hostapd --noconfirm
-  
-  pikaur -S $@ --noedit --noconfirm
-
-  ## Done!!
-  
+  paru -Sa $@ --noconfirm --skipreview --nouseask
 #  for aur_pkg in $@
 #  do
 #     if test -d $src_dir/pacman-cache/aur/cache/$aur_pkg
@@ -204,15 +195,15 @@ bash $src_dir/configs_overwrite.bash
 ## Go to workdir cache!!
 cd ~/.cache &> /dev/null
 
+
 ####################################################
 ## Init first update of repo when needet !!  #####
 #################################################
 
-ls firevigeo-torloader &>/dev/null || git clone https://github.com/Nonie689/firevigeo-torloader 2> /dev/null || true
-ls firevigeo-torloader &> /dev/null && sudo ./firevigeo-torloader/firevigeo.sh -k &> /dev/null
-
-
 sudo pacman -Sy
+
+ls /firevigeo-torloader &>/dev/null || git clone https://github.com/Nonie689/firevigeo-torloader 2>/dev/null || true
+test -e ./firevigeo-torloader/firevigeo.sh && sudo ./firevigeo-torloader/firevigeo.sh -k &> /dev/null
 
 
 #####################################################################################   ^ ^
@@ -249,8 +240,8 @@ echo "-----------------------------------------------------------     "      #
 ##############################################################################
                                                                             #################
 sleep 2.75                                                                               ###############
-sudo pacman -Q wl-clipboard-rs &> /dev/null || uninstall_existing ${uninstall_conflicts}    #########################
-############################################################################################################
+sudo pacman -Q wl-clipboard-rs &> /dev/null || sudo pacman -Rdd poppler wl-clipboard --noconfirm                                                 #########################
+############################################################################################
 
 ## Install dependencies packages for tool to adjust garuda live disk correct!!
 
@@ -260,16 +251,12 @@ sudo pacman -Q wl-clipboard-rs &> /dev/null || uninstall_existing ${uninstall_co
 #                                                                                                                                    #############
 ### Maybe some crawler tools, deep unclear modding packages, bad garuda brand tools and stuff, maybe risky browser settings also!!            ################
 #                                                                                                                                                   ###############
-### Soooo it will delete!!
-#############
+### Soooo it will delete!!                                                                                                                                     #############
 ##                                                                                                                                                                        ###########
                                                                                                                                                                             ###########
-bash $src_dir/remove-unwanted-garuda-stuff.bash
-###############
-
-##########################
-
-#######################
+bash $src_dir/remove-unwanted-garuda-stuff.bash                                                                                                                                 ###############
+                                                                                                                                                                                    ##########################
+                                                                                                                                                                          #######################
 #######################################################################################################################################################################################
 ###################################################################################################################################################################
 ###################################################################################################################################################
@@ -315,18 +302,21 @@ install_fresh $update_pkgs_early_stage
     # See ~> need_package_install_from_repo
     ##
 #####
-pacman -Q librewolf &> /dev/null || noask $need_package_install_from_repo
+pacman -Q $need_package_install_from_repo &> /dev/null || noask $need_package_install_from_repo
 
 ## Second install all other usefull packages!!
 # See ~> extra_packages
 ##
-pacman -Q android-sdk-platform-tools &> /dev/null || noask ${extra_packages}
+pacman -Q ${extra_packages} &> /dev/null || noask ${extra_packages}
+
+pacman -Q ${pikaur_pkgs} &> /dev/null || pikaur -S ${pikaur_pkgs} --noedit --noconfirm
+
 
 ## Install dependens for use garuda as livecd!!
 # See ~> depends_pkg
 ##
 
-pacman -Q proxychains-ng &> /dev/null || noask ${depends_pkg}
+pacman -Q ${depends_pkg} &> /dev/null || noask ${depends_pkg}
 
 
 ##  Show librewolf usefull librewolf AddOns!!
@@ -336,7 +326,7 @@ pidof librewolf &> /dev/null || sleep 10 && nohup librewolf 'https://github.com/
 
 
 ## Install all Aur stored packages and requirements!
-# See list ~> aur_packages_1  aur_packages_2 pikaur_pkgs
+# See list ~> aur_packages
 ##
 
 echo
@@ -344,18 +334,10 @@ echo
 
 sleep 2
 
-aur_install $aur_packages_1 $aur_packages_2 
-
-cd ~/.cache
-pikaur -Rdd wlroots --noconfirm
-pikaur -G wlroots-nvidia
-cd  wlroots-nvidia
-makepkg -si --skippgpcheck --noconfirm
+pacman -Q ${aur_packages_1} &> /dev/null || aur_install $aur_packages_1 && aur_install $aur_packages_2
 
 
-##############################
-### Stop systemd services!! #
-############################
+### Stop systemd services!!
 
 sudo modprobe zram
 echo lz4 > sudo /sys/block/zram0/comp_algorithm
@@ -366,22 +348,18 @@ sudo systemctl stop avahi-daemon.socket &> /dev/null
 sudo systemctl stop mhwd-live.service &> /dev/null
 sudo systemctl stop systemd-oomd.service &> /dev/null
 
-############################
-## Start systemd services #
-##########################
+#
+## Start systemd services
+#
 
 sudo systemctl start modprobe@drm.service &> /dev/null
-sudo systemctl enable --now vnstat 1> /dev/null
-sudo systemctl start redsocks 1> /dev/null
-sudo systemctl enable --now irqbalance 1> /dev/null
+sudo systemctl start vnstat 1> /dev/null
+sudo systemctl start irqbalance 1> /dev/null
 sudo systemctl start modprobe@configfs.service 1> /dev/null
 sudo systemctl start systemd-zram-setup@zram0.service 1> /dev/null
 sudo systemctl start udisks2-zram-setup@zram0.service 1> /dev/null
+sudo systemctl start opensnitchd 1> /dev/null
 
-if $opensnitch
-then
-  sudo systemctl enable --now opensnitchd 1> /dev/null
-fi
 
 ## Desktop gadget and workflow control will be established !!!
 
@@ -392,23 +370,24 @@ killall wf-panel &> /dev/null
 
 sleep 0.250
 
-kill $(ps -aux | grep -E "bash $HOME/run-.*.sh" | grep -v grep | head --lines=-1 | awk '{ print $2}') &> /dev/null
-
-
+kill $(ps -ef | grep -E "bash $HOME/run-.*.sh" | grep -v grep | head --lines=-1 | awk '{ print $2}') &> /dev/null
 for runscripts in ~/run-*
 do
   echo "Starting: $runscripts"
-  bash -c "$runscripts" &> /dev/null &
+  bash -c "$runscripts" &>/dev/null &
 done
-
-cd ~
 
 sleep 0.750
 disown $(jobs -l | grep -E "run-*.sh" | awk '{ print $2'})  && echo
 
-sudo systemctl enable --now redsocks 1> /dev/null
+sudo systemctl start redsocks 1> /dev/null
 
 sudo bash $src_dir/install_unimportant.bash
+
+
+## Clean repo package cache to safe ram!
+
+pikaur -Scc --noconfirm &> /dev/null
 
 
 ##################
@@ -418,30 +397,24 @@ sudo bash $src_dir/install_unimportant.bash
 ## Start firevigeo!! ##
 #######################
 
-sudo ~/.cache/firevigeo-torloader/firevigeo -s
+~/firevigeo -s
 
 
 ## Show torprojec test site!!
 
-bash -c "sleep 8 && nohup librewolf 'https://check.torproject.org'" &> /dev/null &
+bash -c "sleep 5 && nohup librewolf 'https://check.torproject.org'" &> /dev/null &
 
 
 ## At least show just some infos for usage at the!!
 
 echo "[))> Run if you like to restart firevigeo:"
 echo
-echo "sudo ~/.cache/firevigeo-torloader/firevigeo -s"
+echo "~/firevigeo -s"
 
-echo
-echo Finish building process!!
-echo
 
 ## Tweak sudo settings to hardening the base system!!
 
-
-sleep 120
-
-sudo bash -c "sudo bash $src_dir/sudo-hardening-pro_tweaks.bash && sudo killall wayfire"
+sudo bash $src_dir/sudo-hardening-pro_tweaks.bash
 
 #### !!!! END LINE ~>> HOPE ALL DONE WITHOUT FAILURES AND HOW DO YOU LIKE IT <<~ !!!! ####
 
