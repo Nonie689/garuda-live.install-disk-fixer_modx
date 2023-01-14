@@ -11836,3 +11836,589 @@ filesystem: 750  package: 755
 [2023-01-14T02:14:12+0100] [ALPM] running 'pacnew-check.hook'...
 [2023-01-14T02:14:13+0100] [ALPM] running 'update-desktop-database.hook'...
 [2023-01-14T02:14:13+0100] [ALPM] running 'zzz_post.hook'...
+ --- Garuda CD startet on: 12:20:18 --- LiveMODX Tool started at: //=>> on Saturday ::: 2023.01.14 - 12:20 :::
+[2023-01-14T12:20:23+0100] [PACMAN] Running 'pacman -Sy'
+[2023-01-14T12:20:23+0100] [PACMAN] synchronizing package lists
+[2023-01-14T12:20:29+0100] [PACMAN] Running 'pacman -Sy'
+[2023-01-14T12:20:29+0100] [PACMAN] synchronizing package lists
+[2023-01-14T12:20:40+0100] [PACMAN] Running 'pacman -S --noconfirm wayfire waybar'
+[2023-01-14T12:20:59+0100] [PACMAN] Running 'pacman --color=always --sync --noconfirm wl-clipboard-rs libelf'
+[2023-01-14T12:21:01+0100] [ALPM] running '01-snapshot-reject.hook'...
+[2023-01-14T12:21:01+0100] [ALPM] transaction started
+[2023-01-14T12:21:01+0100] [ALPM] reinstalled wl-clipboard-rs (0.7.0-1)
+[2023-01-14T12:21:01+0100] [ALPM] reinstalled libelf (0.188-1)
+[2023-01-14T12:21:02+0100] [ALPM] transaction completed
+[2023-01-14T12:21:02+0100] [ALPM] running '30-systemd-update.hook'...
+[2023-01-14T12:21:02+0100] [ALPM] running 'foreign.hook'...
+[2023-01-14T12:21:03+0100] [ALPM-SCRIPTLET] archtorify-git v1.30.1.r0.g91aece4-1
+[2023-01-14T12:21:03+0100] [ALPM-SCRIPTLET] at-spi2-atk 2.38.0-1
+[2023-01-14T12:21:03+0100] [ALPM-SCRIPTLET] atk 2.38.0-1
+[2023-01-14T12:21:03+0100] [ALPM-SCRIPTLET] electron5-bin 5.0.13-4
+[2023-01-14T12:21:03+0100] [ALPM-SCRIPTLET] go-dispatch-proxy-git 6.0.0-1
+[2023-01-14T12:21:03+0100] [ALPM-SCRIPTLET] hostapd-mana-git 20210920.1302a72-1
+[2023-01-14T12:21:03+0100] [ALPM-SCRIPTLET] ipw2100-fw 1.3-10
+[2023-01-14T12:21:03+0100] [ALPM-SCRIPTLET] ipw2200-fw 3.1-8
+[2023-01-14T12:21:03+0100] [ALPM-SCRIPTLET] ix 1.0-1
+[2023-01-14T12:21:03+0100] [ALPM-SCRIPTLET] kaku-bin 2.0.2-1
+[2023-01-14T12:21:03+0100] [ALPM-SCRIPTLET] opera-proxy 1.2.2-1
+[2023-01-14T12:21:03+0100] [ALPM-SCRIPTLET] redsocks 0.5-3
+[2023-01-14T12:21:03+0100] [ALPM-SCRIPTLET] selectdefaultapplication-git r22.c752df6-1
+[2023-01-14T12:21:03+0100] [ALPM-SCRIPTLET] sharik-bin 3.1-4
+[2023-01-14T12:21:03+0100] [ALPM-SCRIPTLET] wlroots-nvidia 0.16.1-1
+[2023-01-14T12:21:03+0100] [ALPM-SCRIPTLET] wvkbd 0.12-1
+[2023-01-14T12:21:03+0100] [ALPM] running 'orphans.hook'...
+[2023-01-14T12:21:03+0100] [ALPM-SCRIPTLET] garuda-bash-config 1.0.1-1
+[2023-01-14T12:21:03+0100] [ALPM-SCRIPTLET] lib32-bzip2 1.0.8-2
+[2023-01-14T12:21:03+0100] [ALPM-SCRIPTLET] lib32-curl 7.84.0-1
+[2023-01-14T12:21:03+0100] [ALPM-SCRIPTLET] meson 1.0.0-2
+[2023-01-14T12:21:03+0100] [ALPM-SCRIPTLET] noto-color-emoji-fontconfig 1.0.0-1
+[2023-01-14T12:21:03+0100] [ALPM-SCRIPTLET] profile-sync-daemon 6.45-1
+[2023-01-14T12:21:03+0100] [ALPM-SCRIPTLET] systemd-oomd-defaults 249.7-1
+[2023-01-14T12:21:03+0100] [ALPM-SCRIPTLET] vulkan-headers 1:1.3.235-1
+[2023-01-14T12:21:03+0100] [ALPM-SCRIPTLET] zram-generator 1.1.2-1
+[2023-01-14T12:21:03+0100] [ALPM] running 'pacnew-check.hook'...
+[2023-01-14T12:21:05+0100] [ALPM] running 'zzz_post.hook'...
+[2023-01-14T12:21:32+0100] [PACMAN] Running 'pacman --color=always --noconfirm --sync --asdeps go'
+[2023-01-14T12:21:37+0100] [ALPM] running '01-snapshot-reject.hook'...
+[2023-01-14T12:21:37+0100] [ALPM] transaction started
+[2023-01-14T12:21:41+0100] [ALPM] installed go (2:1.19.5-1)
+[2023-01-14T12:21:41+0100] [ALPM] transaction completed
+[2023-01-14T12:21:42+0100] [ALPM] running '30-systemd-update.hook'...
+[2023-01-14T12:21:42+0100] [ALPM] running 'foreign.hook'...
+[2023-01-14T12:21:43+0100] [ALPM-SCRIPTLET] archtorify-git v1.30.1.r0.g91aece4-1
+[2023-01-14T12:21:43+0100] [ALPM-SCRIPTLET] at-spi2-atk 2.38.0-1
+[2023-01-14T12:21:43+0100] [ALPM-SCRIPTLET] atk 2.38.0-1
+[2023-01-14T12:21:43+0100] [ALPM-SCRIPTLET] electron5-bin 5.0.13-4
+[2023-01-14T12:21:43+0100] [ALPM-SCRIPTLET] go-dispatch-proxy-git 6.0.0-1
+[2023-01-14T12:21:43+0100] [ALPM-SCRIPTLET] hostapd-mana-git 20210920.1302a72-1
+[2023-01-14T12:21:43+0100] [ALPM-SCRIPTLET] ipw2100-fw 1.3-10
+[2023-01-14T12:21:43+0100] [ALPM-SCRIPTLET] ipw2200-fw 3.1-8
+[2023-01-14T12:21:43+0100] [ALPM-SCRIPTLET] ix 1.0-1
+[2023-01-14T12:21:43+0100] [ALPM-SCRIPTLET] kaku-bin 2.0.2-1
+[2023-01-14T12:21:43+0100] [ALPM-SCRIPTLET] opera-proxy 1.2.2-1
+[2023-01-14T12:21:43+0100] [ALPM-SCRIPTLET] redsocks 0.5-3
+[2023-01-14T12:21:43+0100] [ALPM-SCRIPTLET] selectdefaultapplication-git r22.c752df6-1
+[2023-01-14T12:21:43+0100] [ALPM-SCRIPTLET] sharik-bin 3.1-4
+[2023-01-14T12:21:43+0100] [ALPM-SCRIPTLET] wlroots-nvidia 0.16.1-1
+[2023-01-14T12:21:43+0100] [ALPM-SCRIPTLET] wvkbd 0.12-1
+[2023-01-14T12:21:43+0100] [ALPM] running 'orphans.hook'...
+[2023-01-14T12:21:43+0100] [ALPM-SCRIPTLET] garuda-bash-config 1.0.1-1
+[2023-01-14T12:21:43+0100] [ALPM-SCRIPTLET] go 2:1.19.5-1
+[2023-01-14T12:21:43+0100] [ALPM-SCRIPTLET] lib32-bzip2 1.0.8-2
+[2023-01-14T12:21:43+0100] [ALPM-SCRIPTLET] lib32-curl 7.84.0-1
+[2023-01-14T12:21:43+0100] [ALPM-SCRIPTLET] meson 1.0.0-2
+[2023-01-14T12:21:43+0100] [ALPM-SCRIPTLET] noto-color-emoji-fontconfig 1.0.0-1
+[2023-01-14T12:21:43+0100] [ALPM-SCRIPTLET] profile-sync-daemon 6.45-1
+[2023-01-14T12:21:43+0100] [ALPM-SCRIPTLET] systemd-oomd-defaults 249.7-1
+[2023-01-14T12:21:43+0100] [ALPM-SCRIPTLET] vulkan-headers 1:1.3.235-1
+[2023-01-14T12:21:43+0100] [ALPM-SCRIPTLET] zram-generator 1.1.2-1
+[2023-01-14T12:21:43+0100] [ALPM] running 'pacnew-check.hook'...
+[2023-01-14T12:21:43+0100] [ALPM] running 'zzz_post.hook'...
+[2023-01-14T12:21:56+0100] [PACMAN] Running 'pacman --color=always --noconfirm --remove go'
+[2023-01-14T12:21:56+0100] [ALPM] running '01-snapshot-reject.hook'...
+[2023-01-14T12:21:56+0100] [ALPM] transaction started
+[2023-01-14T12:21:58+0100] [ALPM] removed go (2:1.19.5-1)
+[2023-01-14T12:21:58+0100] [ALPM] transaction completed
+[2023-01-14T12:21:58+0100] [ALPM] running '30-systemd-update.hook'...
+[2023-01-14T12:21:58+0100] [ALPM] running 'foreign.hook'...
+[2023-01-14T12:21:59+0100] [ALPM-SCRIPTLET] archtorify-git v1.30.1.r0.g91aece4-1
+[2023-01-14T12:21:59+0100] [ALPM-SCRIPTLET] at-spi2-atk 2.38.0-1
+[2023-01-14T12:21:59+0100] [ALPM-SCRIPTLET] atk 2.38.0-1
+[2023-01-14T12:21:59+0100] [ALPM-SCRIPTLET] electron5-bin 5.0.13-4
+[2023-01-14T12:21:59+0100] [ALPM-SCRIPTLET] go-dispatch-proxy-git 6.0.0-1
+[2023-01-14T12:21:59+0100] [ALPM-SCRIPTLET] hostapd-mana-git 20210920.1302a72-1
+[2023-01-14T12:21:59+0100] [ALPM-SCRIPTLET] ipw2100-fw 1.3-10
+[2023-01-14T12:21:59+0100] [ALPM-SCRIPTLET] ipw2200-fw 3.1-8
+[2023-01-14T12:21:59+0100] [ALPM-SCRIPTLET] ix 1.0-1
+[2023-01-14T12:21:59+0100] [ALPM-SCRIPTLET] kaku-bin 2.0.2-1
+[2023-01-14T12:21:59+0100] [ALPM-SCRIPTLET] opera-proxy 1.2.2-1
+[2023-01-14T12:21:59+0100] [ALPM-SCRIPTLET] redsocks 0.5-3
+[2023-01-14T12:21:59+0100] [ALPM-SCRIPTLET] selectdefaultapplication-git r22.c752df6-1
+[2023-01-14T12:21:59+0100] [ALPM-SCRIPTLET] sharik-bin 3.1-4
+[2023-01-14T12:21:59+0100] [ALPM-SCRIPTLET] wlroots-nvidia 0.16.1-1
+[2023-01-14T12:21:59+0100] [ALPM-SCRIPTLET] wvkbd 0.12-1
+[2023-01-14T12:21:59+0100] [ALPM] running 'orphans.hook'...
+[2023-01-14T12:22:00+0100] [ALPM-SCRIPTLET] garuda-bash-config 1.0.1-1
+[2023-01-14T12:22:00+0100] [ALPM-SCRIPTLET] lib32-bzip2 1.0.8-2
+[2023-01-14T12:22:00+0100] [ALPM-SCRIPTLET] lib32-curl 7.84.0-1
+[2023-01-14T12:22:00+0100] [ALPM-SCRIPTLET] meson 1.0.0-2
+[2023-01-14T12:22:00+0100] [ALPM-SCRIPTLET] noto-color-emoji-fontconfig 1.0.0-1
+[2023-01-14T12:22:00+0100] [ALPM-SCRIPTLET] profile-sync-daemon 6.45-1
+[2023-01-14T12:22:00+0100] [ALPM-SCRIPTLET] systemd-oomd-defaults 249.7-1
+[2023-01-14T12:22:00+0100] [ALPM-SCRIPTLET] vulkan-headers 1:1.3.235-1
+[2023-01-14T12:22:00+0100] [ALPM-SCRIPTLET] zram-generator 1.1.2-1
+[2023-01-14T12:22:00+0100] [ALPM] running 'pacnew-check.hook'...
+[2023-01-14T12:22:00+0100] [ALPM] running 'zzz_post.hook'...
+[2023-01-14T12:22:12+0100] [PACMAN] Running 'pacman --color=always --upgrade --noconfirm /home/garuda/.cache/pikaur/pkg/go-dispatch-proxy-git-6.0.0-1-x86_64.pkg.tar.zst /home/garuda/.cache/pikaur/pkg/redsocks-0.5-3-x86_64.pkg.tar.zst /home/garuda/.cache/pikaur/pkg/hostapd-mana-git-20210920.1302a72-1-x86_64.pkg.tar.zst'
+[2023-01-14T12:22:12+0100] [ALPM] running '01-snapshot-reject.hook'...
+[2023-01-14T12:22:12+0100] [ALPM] transaction started
+[2023-01-14T12:22:12+0100] [ALPM] reinstalled go-dispatch-proxy-git (6.0.0-1)
+[2023-01-14T12:22:12+0100] [ALPM] reinstalled redsocks (0.5-3)
+[2023-01-14T12:22:12+0100] [ALPM] reinstalled hostapd-mana-git (20210920.1302a72-1)
+[2023-01-14T12:22:12+0100] [ALPM] transaction completed
+[2023-01-14T12:22:12+0100] [ALPM] running '20-systemd-sysusers.hook'...
+[2023-01-14T12:22:12+0100] [ALPM] running '30-systemd-daemon-reload.hook'...
+[2023-01-14T12:22:13+0100] [ALPM] running '30-systemd-tmpfiles.hook'...
+[2023-01-14T12:22:14+0100] [ALPM] running '30-systemd-update.hook'...
+[2023-01-14T12:22:14+0100] [ALPM] running 'foreign.hook'...
+[2023-01-14T12:22:15+0100] [ALPM-SCRIPTLET] archtorify-git v1.30.1.r0.g91aece4-1
+[2023-01-14T12:22:15+0100] [ALPM-SCRIPTLET] at-spi2-atk 2.38.0-1
+[2023-01-14T12:22:15+0100] [ALPM-SCRIPTLET] atk 2.38.0-1
+[2023-01-14T12:22:15+0100] [ALPM-SCRIPTLET] electron5-bin 5.0.13-4
+[2023-01-14T12:22:15+0100] [ALPM-SCRIPTLET] go-dispatch-proxy-git 6.0.0-1
+[2023-01-14T12:22:15+0100] [ALPM-SCRIPTLET] hostapd-mana-git 20210920.1302a72-1
+[2023-01-14T12:22:15+0100] [ALPM-SCRIPTLET] ipw2100-fw 1.3-10
+[2023-01-14T12:22:15+0100] [ALPM-SCRIPTLET] ipw2200-fw 3.1-8
+[2023-01-14T12:22:15+0100] [ALPM-SCRIPTLET] ix 1.0-1
+[2023-01-14T12:22:15+0100] [ALPM-SCRIPTLET] kaku-bin 2.0.2-1
+[2023-01-14T12:22:15+0100] [ALPM-SCRIPTLET] opera-proxy 1.2.2-1
+[2023-01-14T12:22:15+0100] [ALPM-SCRIPTLET] redsocks 0.5-3
+[2023-01-14T12:22:15+0100] [ALPM-SCRIPTLET] selectdefaultapplication-git r22.c752df6-1
+[2023-01-14T12:22:15+0100] [ALPM-SCRIPTLET] sharik-bin 3.1-4
+[2023-01-14T12:22:15+0100] [ALPM-SCRIPTLET] wlroots-nvidia 0.16.1-1
+[2023-01-14T12:22:15+0100] [ALPM-SCRIPTLET] wvkbd 0.12-1
+[2023-01-14T12:22:15+0100] [ALPM] running 'orphans.hook'...
+[2023-01-14T12:22:15+0100] [ALPM-SCRIPTLET] garuda-bash-config 1.0.1-1
+[2023-01-14T12:22:15+0100] [ALPM-SCRIPTLET] lib32-bzip2 1.0.8-2
+[2023-01-14T12:22:15+0100] [ALPM-SCRIPTLET] lib32-curl 7.84.0-1
+[2023-01-14T12:22:15+0100] [ALPM-SCRIPTLET] meson 1.0.0-2
+[2023-01-14T12:22:15+0100] [ALPM-SCRIPTLET] noto-color-emoji-fontconfig 1.0.0-1
+[2023-01-14T12:22:15+0100] [ALPM-SCRIPTLET] profile-sync-daemon 6.45-1
+[2023-01-14T12:22:15+0100] [ALPM-SCRIPTLET] systemd-oomd-defaults 249.7-1
+[2023-01-14T12:22:15+0100] [ALPM-SCRIPTLET] vulkan-headers 1:1.3.235-1
+[2023-01-14T12:22:15+0100] [ALPM-SCRIPTLET] zram-generator 1.1.2-1
+[2023-01-14T12:22:15+0100] [ALPM] running 'pacnew-check.hook'...
+[2023-01-14T12:22:16+0100] [ALPM] running 'zzz_post.hook'...
+[2023-01-14T12:22:16+0100] [PACMAN] Running 'pacman -Rdd --noconfirm hostapd'
+[2023-01-14T12:22:31+0100] [PACMAN] Running 'pacman --color=always --sync --noconfirm hotspot'
+[2023-01-14T12:22:32+0100] [ALPM] running '01-snapshot-reject.hook'...
+[2023-01-14T12:22:32+0100] [ALPM] transaction started
+[2023-01-14T12:22:32+0100] [ALPM] reinstalled hotspot (1.4.1-1)
+[2023-01-14T12:22:33+0100] [ALPM] transaction completed
+[2023-01-14T12:22:33+0100] [ALPM] running '30-systemd-update.hook'...
+[2023-01-14T12:22:33+0100] [ALPM] running 'dbus-reload.hook'...
+[2023-01-14T12:22:33+0100] [ALPM] running 'foreign.hook'...
+[2023-01-14T12:22:34+0100] [ALPM-SCRIPTLET] archtorify-git v1.30.1.r0.g91aece4-1
+[2023-01-14T12:22:34+0100] [ALPM-SCRIPTLET] at-spi2-atk 2.38.0-1
+[2023-01-14T12:22:34+0100] [ALPM-SCRIPTLET] atk 2.38.0-1
+[2023-01-14T12:22:34+0100] [ALPM-SCRIPTLET] electron5-bin 5.0.13-4
+[2023-01-14T12:22:34+0100] [ALPM-SCRIPTLET] go-dispatch-proxy-git 6.0.0-1
+[2023-01-14T12:22:34+0100] [ALPM-SCRIPTLET] hostapd-mana-git 20210920.1302a72-1
+[2023-01-14T12:22:34+0100] [ALPM-SCRIPTLET] ipw2100-fw 1.3-10
+[2023-01-14T12:22:34+0100] [ALPM-SCRIPTLET] ipw2200-fw 3.1-8
+[2023-01-14T12:22:34+0100] [ALPM-SCRIPTLET] ix 1.0-1
+[2023-01-14T12:22:34+0100] [ALPM-SCRIPTLET] kaku-bin 2.0.2-1
+[2023-01-14T12:22:34+0100] [ALPM-SCRIPTLET] opera-proxy 1.2.2-1
+[2023-01-14T12:22:34+0100] [ALPM-SCRIPTLET] redsocks 0.5-3
+[2023-01-14T12:22:34+0100] [ALPM-SCRIPTLET] selectdefaultapplication-git r22.c752df6-1
+[2023-01-14T12:22:34+0100] [ALPM-SCRIPTLET] sharik-bin 3.1-4
+[2023-01-14T12:22:34+0100] [ALPM-SCRIPTLET] wlroots-nvidia 0.16.1-1
+[2023-01-14T12:22:34+0100] [ALPM-SCRIPTLET] wvkbd 0.12-1
+[2023-01-14T12:22:34+0100] [ALPM] running 'gtk-update-icon-cache.hook'...
+[2023-01-14T12:22:34+0100] [ALPM] running 'orphans.hook'...
+[2023-01-14T12:22:34+0100] [ALPM-SCRIPTLET] garuda-bash-config 1.0.1-1
+[2023-01-14T12:22:34+0100] [ALPM-SCRIPTLET] lib32-bzip2 1.0.8-2
+[2023-01-14T12:22:34+0100] [ALPM-SCRIPTLET] lib32-curl 7.84.0-1
+[2023-01-14T12:22:34+0100] [ALPM-SCRIPTLET] meson 1.0.0-2
+[2023-01-14T12:22:34+0100] [ALPM-SCRIPTLET] noto-color-emoji-fontconfig 1.0.0-1
+[2023-01-14T12:22:34+0100] [ALPM-SCRIPTLET] profile-sync-daemon 6.45-1
+[2023-01-14T12:22:34+0100] [ALPM-SCRIPTLET] systemd-oomd-defaults 249.7-1
+[2023-01-14T12:22:34+0100] [ALPM-SCRIPTLET] vulkan-headers 1:1.3.235-1
+[2023-01-14T12:22:34+0100] [ALPM-SCRIPTLET] zram-generator 1.1.2-1
+[2023-01-14T12:22:34+0100] [ALPM] running 'pacnew-check.hook'...
+[2023-01-14T12:22:35+0100] [ALPM] running 'update-desktop-database.hook'...
+[2023-01-14T12:22:35+0100] [ALPM] running 'zzz_post.hook'...
+[2023-01-14T12:23:55+0100] [PACMAN] Running 'pacman --color=always --upgrade --noconfirm /home/garuda/.cache/pikaur/pkg/kaku-bin-2.0.2-1-x86_64.pkg.tar.zst /home/garuda/.cache/pikaur/pkg/selectdefaultapplication-git-r22.c752df6-1-x86_64.pkg.tar.zst /home/garuda/.cache/pikaur/pkg/electron5-bin-5.0.13-4-x86_64.pkg.tar.zst /home/garuda/.cache/pikaur/pkg/opera-proxy-1.2.2-1-x86_64.pkg.tar.zst /home/garuda/.cache/pikaur/pkg/ix-1.0-1-any.pkg.tar.zst /home/garuda/.cache/pikaur/pkg/archtorify-git-v1.30.1.r0.g91aece4-1-any.pkg.tar.zst /home/garuda/.cache/pikaur/pkg/sharik-bin-3.1-4-x86_64.pkg.tar.zst /home/garuda/.cache/pikaur/pkg/wvkbd-0.12-1-x86_64.pkg.tar.zst'
+[2023-01-14T12:23:55+0100] [ALPM] running '01-snapshot-reject.hook'...
+[2023-01-14T12:23:55+0100] [ALPM] transaction started
+[2023-01-14T12:23:56+0100] [ALPM] reinstalled kaku-bin (2.0.2-1)
+[2023-01-14T12:23:56+0100] [ALPM-SCRIPTLET] The files are installed under group "audio". Please add your user
+[2023-01-14T12:23:56+0100] [ALPM-SCRIPTLET] to this group with "usermod -a -G audio", otherwise you couldn't use
+[2023-01-14T12:23:56+0100] [ALPM-SCRIPTLET] the autoupdater.
+[2023-01-14T12:23:56+0100] [ALPM] reinstalled selectdefaultapplication-git (r22.c752df6-1)
+[2023-01-14T12:23:57+0100] [ALPM] reinstalled electron5-bin (5.0.13-4)
+[2023-01-14T12:23:57+0100] [ALPM] reinstalled opera-proxy (1.2.2-1)
+[2023-01-14T12:23:57+0100] [ALPM] reinstalled ix (1.0-1)
+[2023-01-14T12:23:57+0100] [ALPM] reinstalled archtorify-git (v1.30.1.r0.g91aece4-1)
+[2023-01-14T12:23:57+0100] [ALPM] reinstalled sharik-bin (3.1-4)
+[2023-01-14T12:23:57+0100] [ALPM] reinstalled wvkbd (0.12-1)
+[2023-01-14T12:23:58+0100] [ALPM] transaction completed
+[2023-01-14T12:23:58+0100] [ALPM] running '30-systemd-update.hook'...
+[2023-01-14T12:23:58+0100] [ALPM] running 'foreign.hook'...
+[2023-01-14T12:23:59+0100] [ALPM-SCRIPTLET] archtorify-git v1.30.1.r0.g91aece4-1
+[2023-01-14T12:23:59+0100] [ALPM-SCRIPTLET] at-spi2-atk 2.38.0-1
+[2023-01-14T12:23:59+0100] [ALPM-SCRIPTLET] atk 2.38.0-1
+[2023-01-14T12:23:59+0100] [ALPM-SCRIPTLET] electron5-bin 5.0.13-4
+[2023-01-14T12:23:59+0100] [ALPM-SCRIPTLET] go-dispatch-proxy-git 6.0.0-1
+[2023-01-14T12:23:59+0100] [ALPM-SCRIPTLET] hostapd-mana-git 20210920.1302a72-1
+[2023-01-14T12:23:59+0100] [ALPM-SCRIPTLET] ipw2100-fw 1.3-10
+[2023-01-14T12:23:59+0100] [ALPM-SCRIPTLET] ipw2200-fw 3.1-8
+[2023-01-14T12:23:59+0100] [ALPM-SCRIPTLET] ix 1.0-1
+[2023-01-14T12:23:59+0100] [ALPM-SCRIPTLET] kaku-bin 2.0.2-1
+[2023-01-14T12:23:59+0100] [ALPM-SCRIPTLET] opera-proxy 1.2.2-1
+[2023-01-14T12:23:59+0100] [ALPM-SCRIPTLET] redsocks 0.5-3
+[2023-01-14T12:23:59+0100] [ALPM-SCRIPTLET] selectdefaultapplication-git r22.c752df6-1
+[2023-01-14T12:23:59+0100] [ALPM-SCRIPTLET] sharik-bin 3.1-4
+[2023-01-14T12:23:59+0100] [ALPM-SCRIPTLET] wlroots-nvidia 0.16.1-1
+[2023-01-14T12:23:59+0100] [ALPM-SCRIPTLET] wvkbd 0.12-1
+[2023-01-14T12:23:59+0100] [ALPM] running 'gtk-update-icon-cache.hook'...
+[2023-01-14T12:23:59+0100] [ALPM] running 'orphans.hook'...
+[2023-01-14T12:23:59+0100] [ALPM-SCRIPTLET] garuda-bash-config 1.0.1-1
+[2023-01-14T12:23:59+0100] [ALPM-SCRIPTLET] lib32-bzip2 1.0.8-2
+[2023-01-14T12:23:59+0100] [ALPM-SCRIPTLET] lib32-curl 7.84.0-1
+[2023-01-14T12:23:59+0100] [ALPM-SCRIPTLET] meson 1.0.0-2
+[2023-01-14T12:23:59+0100] [ALPM-SCRIPTLET] noto-color-emoji-fontconfig 1.0.0-1
+[2023-01-14T12:23:59+0100] [ALPM-SCRIPTLET] profile-sync-daemon 6.45-1
+[2023-01-14T12:23:59+0100] [ALPM-SCRIPTLET] systemd-oomd-defaults 249.7-1
+[2023-01-14T12:23:59+0100] [ALPM-SCRIPTLET] vulkan-headers 1:1.3.235-1
+[2023-01-14T12:23:59+0100] [ALPM-SCRIPTLET] zram-generator 1.1.2-1
+[2023-01-14T12:23:59+0100] [ALPM] running 'pacnew-check.hook'...
+[2023-01-14T12:24:00+0100] [ALPM] running 'update-desktop-database.hook'...
+[2023-01-14T12:24:00+0100] [ALPM] running 'zzz_post.hook'...
+[2023-01-14T12:24:00+0100] [PACMAN] Running 'pacman -Rdd --noconfirm wlroots'
+[2023-01-14T12:24:04+0100] [PACMAN] Running '/usr/bin/pacman --noconfirm -U /home/garuda/.cache/wlroots-nvidia/wlroots-nvidia-0.16.1-1-x86_64.pkg.tar.zst'
+[2023-01-14T12:24:04+0100] [ALPM] running '01-snapshot-reject.hook'...
+[2023-01-14T12:24:04+0100] [ALPM] transaction started
+[2023-01-14T12:24:04+0100] [ALPM] reinstalled wlroots-nvidia (0.16.1-1)
+[2023-01-14T12:24:04+0100] [ALPM] transaction completed
+[2023-01-14T12:24:04+0100] [ALPM] running '30-systemd-update.hook'...
+[2023-01-14T12:24:05+0100] [ALPM] running 'foreign.hook'...
+[2023-01-14T12:24:05+0100] [ALPM-SCRIPTLET] archtorify-git v1.30.1.r0.g91aece4-1
+[2023-01-14T12:24:05+0100] [ALPM-SCRIPTLET] at-spi2-atk 2.38.0-1
+[2023-01-14T12:24:05+0100] [ALPM-SCRIPTLET] atk 2.38.0-1
+[2023-01-14T12:24:05+0100] [ALPM-SCRIPTLET] electron5-bin 5.0.13-4
+[2023-01-14T12:24:05+0100] [ALPM-SCRIPTLET] go-dispatch-proxy-git 6.0.0-1
+[2023-01-14T12:24:05+0100] [ALPM-SCRIPTLET] hostapd-mana-git 20210920.1302a72-1
+[2023-01-14T12:24:05+0100] [ALPM-SCRIPTLET] ipw2100-fw 1.3-10
+[2023-01-14T12:24:05+0100] [ALPM-SCRIPTLET] ipw2200-fw 3.1-8
+[2023-01-14T12:24:05+0100] [ALPM-SCRIPTLET] ix 1.0-1
+[2023-01-14T12:24:05+0100] [ALPM-SCRIPTLET] kaku-bin 2.0.2-1
+[2023-01-14T12:24:05+0100] [ALPM-SCRIPTLET] opera-proxy 1.2.2-1
+[2023-01-14T12:24:05+0100] [ALPM-SCRIPTLET] redsocks 0.5-3
+[2023-01-14T12:24:05+0100] [ALPM-SCRIPTLET] selectdefaultapplication-git r22.c752df6-1
+[2023-01-14T12:24:05+0100] [ALPM-SCRIPTLET] sharik-bin 3.1-4
+[2023-01-14T12:24:05+0100] [ALPM-SCRIPTLET] wlroots-nvidia 0.16.1-1
+[2023-01-14T12:24:05+0100] [ALPM-SCRIPTLET] wvkbd 0.12-1
+[2023-01-14T12:24:05+0100] [ALPM] running 'orphans.hook'...
+[2023-01-14T12:24:06+0100] [ALPM-SCRIPTLET] garuda-bash-config 1.0.1-1
+[2023-01-14T12:24:06+0100] [ALPM-SCRIPTLET] lib32-bzip2 1.0.8-2
+[2023-01-14T12:24:06+0100] [ALPM-SCRIPTLET] lib32-curl 7.84.0-1
+[2023-01-14T12:24:06+0100] [ALPM-SCRIPTLET] meson 1.0.0-2
+[2023-01-14T12:24:06+0100] [ALPM-SCRIPTLET] noto-color-emoji-fontconfig 1.0.0-1
+[2023-01-14T12:24:06+0100] [ALPM-SCRIPTLET] profile-sync-daemon 6.45-1
+[2023-01-14T12:24:06+0100] [ALPM-SCRIPTLET] systemd-oomd-defaults 249.7-1
+[2023-01-14T12:24:06+0100] [ALPM-SCRIPTLET] vulkan-headers 1:1.3.235-1
+[2023-01-14T12:24:06+0100] [ALPM-SCRIPTLET] zram-generator 1.1.2-1
+[2023-01-14T12:24:06+0100] [ALPM] running 'pacnew-check.hook'...
+[2023-01-14T12:24:06+0100] [ALPM] running 'zzz_post.hook'...
+ --- Garuda CD startet on: 12:52:14 --- LiveMODX Tool started at: //=>> on Saturday ::: 2023.01.14 - 12:52 :::
+[2023-01-14T12:52:19+0100] [PACMAN] Running 'pacman -Sy'
+[2023-01-14T12:52:19+0100] [PACMAN] synchronizing package lists
+[2023-01-14T12:52:25+0100] [PACMAN] Running 'pacman -Sy'
+[2023-01-14T12:52:25+0100] [PACMAN] synchronizing package lists
+[2023-01-14T12:52:35+0100] [PACMAN] Running 'pacman -S --noconfirm wayfire waybar'
+[2023-01-14T12:52:52+0100] [PACMAN] Running 'pacman --color=always --sync --noconfirm wl-clipboard-rs libelf'
+[2023-01-14T12:52:53+0100] [ALPM] running '01-snapshot-reject.hook'...
+[2023-01-14T12:52:53+0100] [ALPM] transaction started
+[2023-01-14T12:52:53+0100] [ALPM] reinstalled wl-clipboard-rs (0.7.0-1)
+[2023-01-14T12:52:53+0100] [ALPM] reinstalled libelf (0.188-1)
+[2023-01-14T12:52:54+0100] [ALPM] transaction completed
+[2023-01-14T12:52:54+0100] [ALPM] running '30-systemd-update.hook'...
+[2023-01-14T12:52:54+0100] [ALPM] running 'foreign.hook'...
+[2023-01-14T12:52:55+0100] [ALPM-SCRIPTLET] archtorify-git v1.30.1.r0.g91aece4-1
+[2023-01-14T12:52:55+0100] [ALPM-SCRIPTLET] at-spi2-atk 2.38.0-1
+[2023-01-14T12:52:55+0100] [ALPM-SCRIPTLET] atk 2.38.0-1
+[2023-01-14T12:52:55+0100] [ALPM-SCRIPTLET] electron5-bin 5.0.13-4
+[2023-01-14T12:52:55+0100] [ALPM-SCRIPTLET] go-dispatch-proxy-git 6.0.0-1
+[2023-01-14T12:52:55+0100] [ALPM-SCRIPTLET] hostapd-mana-git 20210920.1302a72-1
+[2023-01-14T12:52:55+0100] [ALPM-SCRIPTLET] ipw2100-fw 1.3-10
+[2023-01-14T12:52:55+0100] [ALPM-SCRIPTLET] ipw2200-fw 3.1-8
+[2023-01-14T12:52:55+0100] [ALPM-SCRIPTLET] ix 1.0-1
+[2023-01-14T12:52:55+0100] [ALPM-SCRIPTLET] kaku-bin 2.0.2-1
+[2023-01-14T12:52:55+0100] [ALPM-SCRIPTLET] opera-proxy 1.2.2-1
+[2023-01-14T12:52:55+0100] [ALPM-SCRIPTLET] redsocks 0.5-3
+[2023-01-14T12:52:55+0100] [ALPM-SCRIPTLET] selectdefaultapplication-git r22.c752df6-1
+[2023-01-14T12:52:55+0100] [ALPM-SCRIPTLET] sharik-bin 3.1-4
+[2023-01-14T12:52:55+0100] [ALPM-SCRIPTLET] wlroots-nvidia 0.16.1-1
+[2023-01-14T12:52:55+0100] [ALPM-SCRIPTLET] wvkbd 0.12-1
+[2023-01-14T12:52:55+0100] [ALPM] running 'orphans.hook'...
+[2023-01-14T12:52:56+0100] [ALPM-SCRIPTLET] garuda-bash-config 1.0.1-1
+[2023-01-14T12:52:56+0100] [ALPM-SCRIPTLET] lib32-bzip2 1.0.8-2
+[2023-01-14T12:52:56+0100] [ALPM-SCRIPTLET] lib32-curl 7.84.0-1
+[2023-01-14T12:52:56+0100] [ALPM-SCRIPTLET] meson 1.0.0-2
+[2023-01-14T12:52:56+0100] [ALPM-SCRIPTLET] noto-color-emoji-fontconfig 1.0.0-1
+[2023-01-14T12:52:56+0100] [ALPM-SCRIPTLET] profile-sync-daemon 6.45-1
+[2023-01-14T12:52:56+0100] [ALPM-SCRIPTLET] systemd-oomd-defaults 249.7-1
+[2023-01-14T12:52:56+0100] [ALPM-SCRIPTLET] vulkan-headers 1:1.3.235-1
+[2023-01-14T12:52:56+0100] [ALPM-SCRIPTLET] zram-generator 1.1.2-1
+[2023-01-14T12:52:56+0100] [ALPM] running 'pacnew-check.hook'...
+[2023-01-14T12:52:57+0100] [ALPM] running 'zzz_post.hook'...
+[2023-01-14T12:53:27+0100] [PACMAN] Running 'pacman --color=always --noconfirm --sync --asdeps go'
+[2023-01-14T12:53:31+0100] [ALPM] running '01-snapshot-reject.hook'...
+[2023-01-14T12:53:31+0100] [ALPM] transaction started
+[2023-01-14T12:53:35+0100] [ALPM] installed go (2:1.19.5-1)
+[2023-01-14T12:53:35+0100] [ALPM] transaction completed
+[2023-01-14T12:53:35+0100] [ALPM] running '30-systemd-update.hook'...
+[2023-01-14T12:53:35+0100] [ALPM] running 'foreign.hook'...
+[2023-01-14T12:53:36+0100] [ALPM-SCRIPTLET] archtorify-git v1.30.1.r0.g91aece4-1
+[2023-01-14T12:53:36+0100] [ALPM-SCRIPTLET] at-spi2-atk 2.38.0-1
+[2023-01-14T12:53:36+0100] [ALPM-SCRIPTLET] atk 2.38.0-1
+[2023-01-14T12:53:36+0100] [ALPM-SCRIPTLET] electron5-bin 5.0.13-4
+[2023-01-14T12:53:36+0100] [ALPM-SCRIPTLET] go-dispatch-proxy-git 6.0.0-1
+[2023-01-14T12:53:36+0100] [ALPM-SCRIPTLET] hostapd-mana-git 20210920.1302a72-1
+[2023-01-14T12:53:36+0100] [ALPM-SCRIPTLET] ipw2100-fw 1.3-10
+[2023-01-14T12:53:36+0100] [ALPM-SCRIPTLET] ipw2200-fw 3.1-8
+[2023-01-14T12:53:36+0100] [ALPM-SCRIPTLET] ix 1.0-1
+[2023-01-14T12:53:36+0100] [ALPM-SCRIPTLET] kaku-bin 2.0.2-1
+[2023-01-14T12:53:36+0100] [ALPM-SCRIPTLET] opera-proxy 1.2.2-1
+[2023-01-14T12:53:36+0100] [ALPM-SCRIPTLET] redsocks 0.5-3
+[2023-01-14T12:53:36+0100] [ALPM-SCRIPTLET] selectdefaultapplication-git r22.c752df6-1
+[2023-01-14T12:53:36+0100] [ALPM-SCRIPTLET] sharik-bin 3.1-4
+[2023-01-14T12:53:36+0100] [ALPM-SCRIPTLET] wlroots-nvidia 0.16.1-1
+[2023-01-14T12:53:36+0100] [ALPM-SCRIPTLET] wvkbd 0.12-1
+[2023-01-14T12:53:36+0100] [ALPM] running 'orphans.hook'...
+[2023-01-14T12:53:37+0100] [ALPM-SCRIPTLET] garuda-bash-config 1.0.1-1
+[2023-01-14T12:53:37+0100] [ALPM-SCRIPTLET] go 2:1.19.5-1
+[2023-01-14T12:53:37+0100] [ALPM-SCRIPTLET] lib32-bzip2 1.0.8-2
+[2023-01-14T12:53:37+0100] [ALPM-SCRIPTLET] lib32-curl 7.84.0-1
+[2023-01-14T12:53:37+0100] [ALPM-SCRIPTLET] meson 1.0.0-2
+[2023-01-14T12:53:37+0100] [ALPM-SCRIPTLET] noto-color-emoji-fontconfig 1.0.0-1
+[2023-01-14T12:53:37+0100] [ALPM-SCRIPTLET] profile-sync-daemon 6.45-1
+[2023-01-14T12:53:37+0100] [ALPM-SCRIPTLET] systemd-oomd-defaults 249.7-1
+[2023-01-14T12:53:37+0100] [ALPM-SCRIPTLET] vulkan-headers 1:1.3.235-1
+[2023-01-14T12:53:37+0100] [ALPM-SCRIPTLET] zram-generator 1.1.2-1
+[2023-01-14T12:53:37+0100] [ALPM] running 'pacnew-check.hook'...
+[2023-01-14T12:53:37+0100] [ALPM] running 'zzz_post.hook'...
+[2023-01-14T12:53:48+0100] [PACMAN] Running 'pacman --color=always --noconfirm --remove go'
+[2023-01-14T12:53:49+0100] [ALPM] running '01-snapshot-reject.hook'...
+[2023-01-14T12:53:49+0100] [ALPM] transaction started
+[2023-01-14T12:53:50+0100] [ALPM] removed go (2:1.19.5-1)
+[2023-01-14T12:53:51+0100] [ALPM] transaction completed
+[2023-01-14T12:53:51+0100] [ALPM] running '30-systemd-update.hook'...
+[2023-01-14T12:53:51+0100] [ALPM] running 'foreign.hook'...
+[2023-01-14T12:53:52+0100] [ALPM-SCRIPTLET] archtorify-git v1.30.1.r0.g91aece4-1
+[2023-01-14T12:53:52+0100] [ALPM-SCRIPTLET] at-spi2-atk 2.38.0-1
+[2023-01-14T12:53:52+0100] [ALPM-SCRIPTLET] atk 2.38.0-1
+[2023-01-14T12:53:52+0100] [ALPM-SCRIPTLET] electron5-bin 5.0.13-4
+[2023-01-14T12:53:52+0100] [ALPM-SCRIPTLET] go-dispatch-proxy-git 6.0.0-1
+[2023-01-14T12:53:52+0100] [ALPM-SCRIPTLET] hostapd-mana-git 20210920.1302a72-1
+[2023-01-14T12:53:52+0100] [ALPM-SCRIPTLET] ipw2100-fw 1.3-10
+[2023-01-14T12:53:52+0100] [ALPM-SCRIPTLET] ipw2200-fw 3.1-8
+[2023-01-14T12:53:52+0100] [ALPM-SCRIPTLET] ix 1.0-1
+[2023-01-14T12:53:52+0100] [ALPM-SCRIPTLET] kaku-bin 2.0.2-1
+[2023-01-14T12:53:52+0100] [ALPM-SCRIPTLET] opera-proxy 1.2.2-1
+[2023-01-14T12:53:52+0100] [ALPM-SCRIPTLET] redsocks 0.5-3
+[2023-01-14T12:53:52+0100] [ALPM-SCRIPTLET] selectdefaultapplication-git r22.c752df6-1
+[2023-01-14T12:53:52+0100] [ALPM-SCRIPTLET] sharik-bin 3.1-4
+[2023-01-14T12:53:52+0100] [ALPM-SCRIPTLET] wlroots-nvidia 0.16.1-1
+[2023-01-14T12:53:52+0100] [ALPM-SCRIPTLET] wvkbd 0.12-1
+[2023-01-14T12:53:52+0100] [ALPM] running 'orphans.hook'...
+[2023-01-14T12:53:52+0100] [ALPM-SCRIPTLET] garuda-bash-config 1.0.1-1
+[2023-01-14T12:53:52+0100] [ALPM-SCRIPTLET] lib32-bzip2 1.0.8-2
+[2023-01-14T12:53:52+0100] [ALPM-SCRIPTLET] lib32-curl 7.84.0-1
+[2023-01-14T12:53:52+0100] [ALPM-SCRIPTLET] meson 1.0.0-2
+[2023-01-14T12:53:52+0100] [ALPM-SCRIPTLET] noto-color-emoji-fontconfig 1.0.0-1
+[2023-01-14T12:53:52+0100] [ALPM-SCRIPTLET] profile-sync-daemon 6.45-1
+[2023-01-14T12:53:52+0100] [ALPM-SCRIPTLET] systemd-oomd-defaults 249.7-1
+[2023-01-14T12:53:52+0100] [ALPM-SCRIPTLET] vulkan-headers 1:1.3.235-1
+[2023-01-14T12:53:52+0100] [ALPM-SCRIPTLET] zram-generator 1.1.2-1
+[2023-01-14T12:53:52+0100] [ALPM] running 'pacnew-check.hook'...
+[2023-01-14T12:53:53+0100] [ALPM] running 'zzz_post.hook'...
+[2023-01-14T12:53:56+0100] [PACMAN] Running 'pacman --color=always --upgrade --noconfirm /home/garuda/.cache/pikaur/pkg/go-dispatch-proxy-git-6.0.0-1-x86_64.pkg.tar.zst /home/garuda/.cache/pikaur/pkg/redsocks-0.5-3-x86_64.pkg.tar.zst /home/garuda/.cache/pikaur/pkg/hostapd-mana-git-20210920.1302a72-1-x86_64.pkg.tar.zst'
+[2023-01-14T12:53:57+0100] [ALPM] running '01-snapshot-reject.hook'...
+[2023-01-14T12:53:57+0100] [ALPM] transaction started
+[2023-01-14T12:53:57+0100] [ALPM] reinstalled go-dispatch-proxy-git (6.0.0-1)
+[2023-01-14T12:53:57+0100] [ALPM] reinstalled redsocks (0.5-3)
+[2023-01-14T12:53:57+0100] [ALPM] reinstalled hostapd-mana-git (20210920.1302a72-1)
+[2023-01-14T12:53:57+0100] [ALPM] transaction completed
+[2023-01-14T12:53:57+0100] [ALPM] running '20-systemd-sysusers.hook'...
+[2023-01-14T12:53:57+0100] [ALPM] running '30-systemd-daemon-reload.hook'...
+[2023-01-14T12:53:58+0100] [ALPM] running '30-systemd-tmpfiles.hook'...
+[2023-01-14T12:53:58+0100] [ALPM] running '30-systemd-update.hook'...
+[2023-01-14T12:53:58+0100] [ALPM] running 'foreign.hook'...
+[2023-01-14T12:53:59+0100] [ALPM-SCRIPTLET] archtorify-git v1.30.1.r0.g91aece4-1
+[2023-01-14T12:53:59+0100] [ALPM-SCRIPTLET] at-spi2-atk 2.38.0-1
+[2023-01-14T12:53:59+0100] [ALPM-SCRIPTLET] atk 2.38.0-1
+[2023-01-14T12:53:59+0100] [ALPM-SCRIPTLET] electron5-bin 5.0.13-4
+[2023-01-14T12:53:59+0100] [ALPM-SCRIPTLET] go-dispatch-proxy-git 6.0.0-1
+[2023-01-14T12:53:59+0100] [ALPM-SCRIPTLET] hostapd-mana-git 20210920.1302a72-1
+[2023-01-14T12:53:59+0100] [ALPM-SCRIPTLET] ipw2100-fw 1.3-10
+[2023-01-14T12:53:59+0100] [ALPM-SCRIPTLET] ipw2200-fw 3.1-8
+[2023-01-14T12:53:59+0100] [ALPM-SCRIPTLET] ix 1.0-1
+[2023-01-14T12:53:59+0100] [ALPM-SCRIPTLET] kaku-bin 2.0.2-1
+[2023-01-14T12:53:59+0100] [ALPM-SCRIPTLET] opera-proxy 1.2.2-1
+[2023-01-14T12:53:59+0100] [ALPM-SCRIPTLET] redsocks 0.5-3
+[2023-01-14T12:53:59+0100] [ALPM-SCRIPTLET] selectdefaultapplication-git r22.c752df6-1
+[2023-01-14T12:53:59+0100] [ALPM-SCRIPTLET] sharik-bin 3.1-4
+[2023-01-14T12:53:59+0100] [ALPM-SCRIPTLET] wlroots-nvidia 0.16.1-1
+[2023-01-14T12:53:59+0100] [ALPM-SCRIPTLET] wvkbd 0.12-1
+[2023-01-14T12:53:59+0100] [ALPM] running 'orphans.hook'...
+[2023-01-14T12:54:00+0100] [ALPM-SCRIPTLET] garuda-bash-config 1.0.1-1
+[2023-01-14T12:54:00+0100] [ALPM-SCRIPTLET] lib32-bzip2 1.0.8-2
+[2023-01-14T12:54:00+0100] [ALPM-SCRIPTLET] lib32-curl 7.84.0-1
+[2023-01-14T12:54:00+0100] [ALPM-SCRIPTLET] meson 1.0.0-2
+[2023-01-14T12:54:00+0100] [ALPM-SCRIPTLET] noto-color-emoji-fontconfig 1.0.0-1
+[2023-01-14T12:54:00+0100] [ALPM-SCRIPTLET] profile-sync-daemon 6.45-1
+[2023-01-14T12:54:00+0100] [ALPM-SCRIPTLET] systemd-oomd-defaults 249.7-1
+[2023-01-14T12:54:00+0100] [ALPM-SCRIPTLET] vulkan-headers 1:1.3.235-1
+[2023-01-14T12:54:00+0100] [ALPM-SCRIPTLET] zram-generator 1.1.2-1
+[2023-01-14T12:54:00+0100] [ALPM] running 'pacnew-check.hook'...
+[2023-01-14T12:54:00+0100] [ALPM] running 'zzz_post.hook'...
+[2023-01-14T12:54:01+0100] [PACMAN] Running 'pacman -Rdd --noconfirm hostapd'
+[2023-01-14T12:54:16+0100] [PACMAN] Running 'pacman --color=always --sync --noconfirm hotspot'
+[2023-01-14T12:54:17+0100] [ALPM] running '01-snapshot-reject.hook'...
+[2023-01-14T12:54:17+0100] [ALPM] transaction started
+[2023-01-14T12:54:18+0100] [ALPM] reinstalled hotspot (1.4.1-1)
+[2023-01-14T12:54:18+0100] [ALPM] transaction completed
+[2023-01-14T12:54:18+0100] [ALPM] running '30-systemd-update.hook'...
+[2023-01-14T12:54:18+0100] [ALPM] running 'dbus-reload.hook'...
+[2023-01-14T12:54:18+0100] [ALPM] running 'foreign.hook'...
+[2023-01-14T12:54:19+0100] [ALPM-SCRIPTLET] archtorify-git v1.30.1.r0.g91aece4-1
+[2023-01-14T12:54:19+0100] [ALPM-SCRIPTLET] at-spi2-atk 2.38.0-1
+[2023-01-14T12:54:19+0100] [ALPM-SCRIPTLET] atk 2.38.0-1
+[2023-01-14T12:54:19+0100] [ALPM-SCRIPTLET] electron5-bin 5.0.13-4
+[2023-01-14T12:54:19+0100] [ALPM-SCRIPTLET] go-dispatch-proxy-git 6.0.0-1
+[2023-01-14T12:54:19+0100] [ALPM-SCRIPTLET] hostapd-mana-git 20210920.1302a72-1
+[2023-01-14T12:54:19+0100] [ALPM-SCRIPTLET] ipw2100-fw 1.3-10
+[2023-01-14T12:54:19+0100] [ALPM-SCRIPTLET] ipw2200-fw 3.1-8
+[2023-01-14T12:54:19+0100] [ALPM-SCRIPTLET] ix 1.0-1
+[2023-01-14T12:54:19+0100] [ALPM-SCRIPTLET] kaku-bin 2.0.2-1
+[2023-01-14T12:54:19+0100] [ALPM-SCRIPTLET] opera-proxy 1.2.2-1
+[2023-01-14T12:54:19+0100] [ALPM-SCRIPTLET] redsocks 0.5-3
+[2023-01-14T12:54:19+0100] [ALPM-SCRIPTLET] selectdefaultapplication-git r22.c752df6-1
+[2023-01-14T12:54:19+0100] [ALPM-SCRIPTLET] sharik-bin 3.1-4
+[2023-01-14T12:54:19+0100] [ALPM-SCRIPTLET] wlroots-nvidia 0.16.1-1
+[2023-01-14T12:54:19+0100] [ALPM-SCRIPTLET] wvkbd 0.12-1
+[2023-01-14T12:54:19+0100] [ALPM] running 'gtk-update-icon-cache.hook'...
+[2023-01-14T12:54:19+0100] [ALPM] running 'orphans.hook'...
+[2023-01-14T12:54:20+0100] [ALPM-SCRIPTLET] garuda-bash-config 1.0.1-1
+[2023-01-14T12:54:20+0100] [ALPM-SCRIPTLET] lib32-bzip2 1.0.8-2
+[2023-01-14T12:54:20+0100] [ALPM-SCRIPTLET] lib32-curl 7.84.0-1
+[2023-01-14T12:54:20+0100] [ALPM-SCRIPTLET] meson 1.0.0-2
+[2023-01-14T12:54:20+0100] [ALPM-SCRIPTLET] noto-color-emoji-fontconfig 1.0.0-1
+[2023-01-14T12:54:20+0100] [ALPM-SCRIPTLET] profile-sync-daemon 6.45-1
+[2023-01-14T12:54:20+0100] [ALPM-SCRIPTLET] systemd-oomd-defaults 249.7-1
+[2023-01-14T12:54:20+0100] [ALPM-SCRIPTLET] vulkan-headers 1:1.3.235-1
+[2023-01-14T12:54:20+0100] [ALPM-SCRIPTLET] zram-generator 1.1.2-1
+[2023-01-14T12:54:20+0100] [ALPM] running 'pacnew-check.hook'...
+[2023-01-14T12:54:20+0100] [ALPM] running 'update-desktop-database.hook'...
+[2023-01-14T12:54:20+0100] [ALPM] running 'zzz_post.hook'...
+[2023-01-14T12:55:29+0100] [PACMAN] Running 'pacman --color=always --upgrade --noconfirm /home/garuda/.cache/pikaur/pkg/kaku-bin-2.0.2-1-x86_64.pkg.tar.zst /home/garuda/.cache/pikaur/pkg/selectdefaultapplication-git-r22.c752df6-1-x86_64.pkg.tar.zst /home/garuda/.cache/pikaur/pkg/electron5-bin-5.0.13-4-x86_64.pkg.tar.zst /home/garuda/.cache/pikaur/pkg/opera-proxy-1.2.2-1-x86_64.pkg.tar.zst /home/garuda/.cache/pikaur/pkg/ix-1.0-1-any.pkg.tar.zst /home/garuda/.cache/pikaur/pkg/archtorify-git-v1.30.1.r0.g91aece4-1-any.pkg.tar.zst /home/garuda/.cache/pikaur/pkg/sharik-bin-3.1-4-x86_64.pkg.tar.zst /home/garuda/.cache/pikaur/pkg/wvkbd-0.12-1-x86_64.pkg.tar.zst'
+[2023-01-14T12:55:29+0100] [ALPM] running '01-snapshot-reject.hook'...
+[2023-01-14T12:55:29+0100] [ALPM] transaction started
+[2023-01-14T12:55:30+0100] [ALPM] reinstalled kaku-bin (2.0.2-1)
+[2023-01-14T12:55:30+0100] [ALPM-SCRIPTLET] The files are installed under group "audio". Please add your user
+[2023-01-14T12:55:30+0100] [ALPM-SCRIPTLET] to this group with "usermod -a -G audio", otherwise you couldn't use
+[2023-01-14T12:55:30+0100] [ALPM-SCRIPTLET] the autoupdater.
+[2023-01-14T12:55:30+0100] [ALPM] reinstalled selectdefaultapplication-git (r22.c752df6-1)
+[2023-01-14T12:55:31+0100] [ALPM] reinstalled electron5-bin (5.0.13-4)
+[2023-01-14T12:55:31+0100] [ALPM] reinstalled opera-proxy (1.2.2-1)
+[2023-01-14T12:55:31+0100] [ALPM] reinstalled ix (1.0-1)
+[2023-01-14T12:55:31+0100] [ALPM] reinstalled archtorify-git (v1.30.1.r0.g91aece4-1)
+[2023-01-14T12:55:31+0100] [ALPM] reinstalled sharik-bin (3.1-4)
+[2023-01-14T12:55:31+0100] [ALPM] reinstalled wvkbd (0.12-1)
+[2023-01-14T12:55:32+0100] [ALPM] transaction completed
+[2023-01-14T12:55:32+0100] [ALPM] running '30-systemd-update.hook'...
+[2023-01-14T12:55:32+0100] [ALPM] running 'foreign.hook'...
+[2023-01-14T12:55:33+0100] [ALPM-SCRIPTLET] archtorify-git v1.30.1.r0.g91aece4-1
+[2023-01-14T12:55:33+0100] [ALPM-SCRIPTLET] at-spi2-atk 2.38.0-1
+[2023-01-14T12:55:33+0100] [ALPM-SCRIPTLET] atk 2.38.0-1
+[2023-01-14T12:55:33+0100] [ALPM-SCRIPTLET] electron5-bin 5.0.13-4
+[2023-01-14T12:55:33+0100] [ALPM-SCRIPTLET] go-dispatch-proxy-git 6.0.0-1
+[2023-01-14T12:55:33+0100] [ALPM-SCRIPTLET] hostapd-mana-git 20210920.1302a72-1
+[2023-01-14T12:55:33+0100] [ALPM-SCRIPTLET] ipw2100-fw 1.3-10
+[2023-01-14T12:55:33+0100] [ALPM-SCRIPTLET] ipw2200-fw 3.1-8
+[2023-01-14T12:55:33+0100] [ALPM-SCRIPTLET] ix 1.0-1
+[2023-01-14T12:55:33+0100] [ALPM-SCRIPTLET] kaku-bin 2.0.2-1
+[2023-01-14T12:55:33+0100] [ALPM-SCRIPTLET] opera-proxy 1.2.2-1
+[2023-01-14T12:55:33+0100] [ALPM-SCRIPTLET] redsocks 0.5-3
+[2023-01-14T12:55:33+0100] [ALPM-SCRIPTLET] selectdefaultapplication-git r22.c752df6-1
+[2023-01-14T12:55:33+0100] [ALPM-SCRIPTLET] sharik-bin 3.1-4
+[2023-01-14T12:55:33+0100] [ALPM-SCRIPTLET] wlroots-nvidia 0.16.1-1
+[2023-01-14T12:55:33+0100] [ALPM-SCRIPTLET] wvkbd 0.12-1
+[2023-01-14T12:55:33+0100] [ALPM] running 'gtk-update-icon-cache.hook'...
+[2023-01-14T12:55:33+0100] [ALPM] running 'orphans.hook'...
+[2023-01-14T12:55:33+0100] [ALPM-SCRIPTLET] garuda-bash-config 1.0.1-1
+[2023-01-14T12:55:33+0100] [ALPM-SCRIPTLET] lib32-bzip2 1.0.8-2
+[2023-01-14T12:55:33+0100] [ALPM-SCRIPTLET] lib32-curl 7.84.0-1
+[2023-01-14T12:55:33+0100] [ALPM-SCRIPTLET] meson 1.0.0-2
+[2023-01-14T12:55:33+0100] [ALPM-SCRIPTLET] noto-color-emoji-fontconfig 1.0.0-1
+[2023-01-14T12:55:33+0100] [ALPM-SCRIPTLET] profile-sync-daemon 6.45-1
+[2023-01-14T12:55:33+0100] [ALPM-SCRIPTLET] systemd-oomd-defaults 249.7-1
+[2023-01-14T12:55:33+0100] [ALPM-SCRIPTLET] vulkan-headers 1:1.3.235-1
+[2023-01-14T12:55:33+0100] [ALPM-SCRIPTLET] zram-generator 1.1.2-1
+[2023-01-14T12:55:33+0100] [ALPM] running 'pacnew-check.hook'...
+[2023-01-14T12:55:33+0100] [ALPM] running 'update-desktop-database.hook'...
+[2023-01-14T12:55:33+0100] [ALPM] running 'zzz_post.hook'...
+[2023-01-14T12:55:34+0100] [PACMAN] Running 'pacman -Rdd --noconfirm wlroots'
+[2023-01-14T12:55:37+0100] [PACMAN] Running '/usr/bin/pacman --noconfirm -U /home/garuda/.cache/wlroots-nvidia/wlroots-nvidia-0.16.1-1-x86_64.pkg.tar.zst'
+[2023-01-14T12:55:37+0100] [ALPM] running '01-snapshot-reject.hook'...
+[2023-01-14T12:55:37+0100] [ALPM] transaction started
+[2023-01-14T12:55:37+0100] [ALPM] reinstalled wlroots-nvidia (0.16.1-1)
+[2023-01-14T12:55:38+0100] [ALPM] transaction completed
+[2023-01-14T12:55:38+0100] [ALPM] running '30-systemd-update.hook'...
+[2023-01-14T12:55:38+0100] [ALPM] running 'foreign.hook'...
+[2023-01-14T12:55:38+0100] [ALPM-SCRIPTLET] archtorify-git v1.30.1.r0.g91aece4-1
+[2023-01-14T12:55:38+0100] [ALPM-SCRIPTLET] at-spi2-atk 2.38.0-1
+[2023-01-14T12:55:38+0100] [ALPM-SCRIPTLET] atk 2.38.0-1
+[2023-01-14T12:55:38+0100] [ALPM-SCRIPTLET] electron5-bin 5.0.13-4
+[2023-01-14T12:55:38+0100] [ALPM-SCRIPTLET] go-dispatch-proxy-git 6.0.0-1
+[2023-01-14T12:55:38+0100] [ALPM-SCRIPTLET] hostapd-mana-git 20210920.1302a72-1
+[2023-01-14T12:55:38+0100] [ALPM-SCRIPTLET] ipw2100-fw 1.3-10
+[2023-01-14T12:55:38+0100] [ALPM-SCRIPTLET] ipw2200-fw 3.1-8
+[2023-01-14T12:55:38+0100] [ALPM-SCRIPTLET] ix 1.0-1
+[2023-01-14T12:55:38+0100] [ALPM-SCRIPTLET] kaku-bin 2.0.2-1
+[2023-01-14T12:55:38+0100] [ALPM-SCRIPTLET] opera-proxy 1.2.2-1
+[2023-01-14T12:55:38+0100] [ALPM-SCRIPTLET] redsocks 0.5-3
+[2023-01-14T12:55:38+0100] [ALPM-SCRIPTLET] selectdefaultapplication-git r22.c752df6-1
+[2023-01-14T12:55:38+0100] [ALPM-SCRIPTLET] sharik-bin 3.1-4
+[2023-01-14T12:55:38+0100] [ALPM-SCRIPTLET] wlroots-nvidia 0.16.1-1
+[2023-01-14T12:55:38+0100] [ALPM-SCRIPTLET] wvkbd 0.12-1
+[2023-01-14T12:55:38+0100] [ALPM] running 'orphans.hook'...
+[2023-01-14T12:55:39+0100] [ALPM-SCRIPTLET] garuda-bash-config 1.0.1-1
+[2023-01-14T12:55:39+0100] [ALPM-SCRIPTLET] lib32-bzip2 1.0.8-2
+[2023-01-14T12:55:39+0100] [ALPM-SCRIPTLET] lib32-curl 7.84.0-1
+[2023-01-14T12:55:39+0100] [ALPM-SCRIPTLET] meson 1.0.0-2
+[2023-01-14T12:55:39+0100] [ALPM-SCRIPTLET] noto-color-emoji-fontconfig 1.0.0-1
+[2023-01-14T12:55:39+0100] [ALPM-SCRIPTLET] profile-sync-daemon 6.45-1
+[2023-01-14T12:55:39+0100] [ALPM-SCRIPTLET] systemd-oomd-defaults 249.7-1
+[2023-01-14T12:55:39+0100] [ALPM-SCRIPTLET] vulkan-headers 1:1.3.235-1
+[2023-01-14T12:55:39+0100] [ALPM-SCRIPTLET] zram-generator 1.1.2-1
+[2023-01-14T12:55:39+0100] [ALPM] running 'pacnew-check.hook'...
+[2023-01-14T12:55:39+0100] [ALPM] running 'zzz_post.hook'...
+[2023-01-14T13:03:20+0100] [PACMAN] Running 'pacman -S python-stem'
+[2023-01-14T13:03:22+0100] [ALPM] running '01-snapshot-reject.hook'...
+[2023-01-14T13:03:22+0100] [ALPM] transaction started
+[2023-01-14T13:03:22+0100] [ALPM] installed python-pynacl (1.4.0-5)
+[2023-01-14T13:03:22+0100] [ALPM] installed python-stem (1.8.0-6)
+[2023-01-14T13:03:22+0100] [ALPM] transaction completed
+[2023-01-14T13:03:22+0100] [ALPM] running '30-systemd-update.hook'...
+[2023-01-14T13:03:22+0100] [ALPM] running 'foreign.hook'...
+[2023-01-14T13:03:23+0100] [ALPM-SCRIPTLET] archtorify-git v1.30.1.r0.g91aece4-1
+[2023-01-14T13:03:23+0100] [ALPM-SCRIPTLET] at-spi2-atk 2.38.0-1
+[2023-01-14T13:03:23+0100] [ALPM-SCRIPTLET] atk 2.38.0-1
+[2023-01-14T13:03:23+0100] [ALPM-SCRIPTLET] electron5-bin 5.0.13-4
+[2023-01-14T13:03:23+0100] [ALPM-SCRIPTLET] go-dispatch-proxy-git 6.0.0-1
+[2023-01-14T13:03:23+0100] [ALPM-SCRIPTLET] hostapd-mana-git 20210920.1302a72-1
+[2023-01-14T13:03:23+0100] [ALPM-SCRIPTLET] ipw2100-fw 1.3-10
+[2023-01-14T13:03:23+0100] [ALPM-SCRIPTLET] ipw2200-fw 3.1-8
+[2023-01-14T13:03:23+0100] [ALPM-SCRIPTLET] ix 1.0-1
+[2023-01-14T13:03:23+0100] [ALPM-SCRIPTLET] kaku-bin 2.0.2-1
+[2023-01-14T13:03:23+0100] [ALPM-SCRIPTLET] opera-proxy 1.2.2-1
+[2023-01-14T13:03:23+0100] [ALPM-SCRIPTLET] redsocks 0.5-3
+[2023-01-14T13:03:23+0100] [ALPM-SCRIPTLET] selectdefaultapplication-git r22.c752df6-1
+[2023-01-14T13:03:23+0100] [ALPM-SCRIPTLET] sharik-bin 3.1-4
+[2023-01-14T13:03:23+0100] [ALPM-SCRIPTLET] wlroots-nvidia 0.16.1-1
+[2023-01-14T13:03:23+0100] [ALPM-SCRIPTLET] wvkbd 0.12-1
+[2023-01-14T13:03:23+0100] [ALPM] running 'orphans.hook'...
+[2023-01-14T13:03:24+0100] [ALPM-SCRIPTLET] garuda-bash-config 1.0.1-1
+[2023-01-14T13:03:24+0100] [ALPM-SCRIPTLET] lib32-bzip2 1.0.8-2
+[2023-01-14T13:03:24+0100] [ALPM-SCRIPTLET] lib32-curl 7.84.0-1
+[2023-01-14T13:03:24+0100] [ALPM-SCRIPTLET] meson 1.0.0-2
+[2023-01-14T13:03:24+0100] [ALPM-SCRIPTLET] noto-color-emoji-fontconfig 1.0.0-1
+[2023-01-14T13:03:24+0100] [ALPM-SCRIPTLET] profile-sync-daemon 6.45-1
+[2023-01-14T13:03:24+0100] [ALPM-SCRIPTLET] systemd-oomd-defaults 249.7-1
+[2023-01-14T13:03:24+0100] [ALPM-SCRIPTLET] vulkan-headers 1:1.3.235-1
+[2023-01-14T13:03:24+0100] [ALPM-SCRIPTLET] zram-generator 1.1.2-1
+[2023-01-14T13:03:24+0100] [ALPM] running 'pacnew-check.hook'...
+[2023-01-14T13:03:24+0100] [ALPM] running 'zzz_post.hook'...

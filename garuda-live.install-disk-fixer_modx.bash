@@ -35,7 +35,7 @@ pikaur_pkgs="go-dispatch-proxy-git redsocks hostapd-mana-git wl-clipboard-rs lib
 aur_packages_1="kaku-bin"
 aur_packages_2="selectdefaultapplication-git electron5-bin opera-proxy ix archtorify-git sharik-bin hotspot wvkbd"
 need_package_install_from_repo="librewolf opera xorg-xhost shellcheck openssl openssl-1.1 libdrm wayland-protocols exa starship libgit2"
-depends_pkg="proxychains-ng conky alacritty"
+depends_pkg="proxychains-ng conky alacritty python-stem"
 update_pkgs_early_stage="wayfire wf-config waybar wf-shell fmt spdlog wireplumber libwireplumber"
 
 
