@@ -1,1 +1,1 @@
-32G /sys/block/zram0/disksize
+1 /proc/sys/net/ipv4/ip_forward

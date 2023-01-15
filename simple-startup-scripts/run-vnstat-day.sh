@@ -1,18 +1,22 @@
 #!/usr/bin/env bash
 
 script_name=$(basename "$0")
-if test $(ps -ef | grep -E "$script_name" | grep -v grep | head --lines=-1 | awk '{print $2}'| wc -l) -gt 1
-then
-  kill $(ps -ef | grep -E "$script_name" | grep -v grep | head --lines=-1| awk '{print 2}')
-fi
+command=vnstat
+command_val="watch -n 20 ${command} -i $(netstat -r | awk ' {print $8}' | head -3 | tail -1)"
 
-command_val="watch -n 20 vnstat -i $(netstat -r | awk ' {print $8}' | head -3 | tail -1)"
+
+#if test $(ps -ef | grep -E "$script_name" | grep -v grep | head --lines=-1 | awk '{print $2}'| wc -l) -gt 1
+#then
+#  kill $(ps -ef | grep -E "$script_name" | grep -v grep | head --lines=-1| awk '{print $2}')
+#fi
+
+kill $(ps -aux | grep $command_val | grep -v grep | awk '{print $2}')
 while [ True ] ; do
-  if test $(ps -aux | grep -E "watch .*vnstat -i" | grep -v grep | wc -l) -lt 1 ; then
-    which vnstat &> /dev/null && gnome-terminal -t"[NETTRAFFIC-TOTAL-STAT]" -- $command_val
-    wf-ctrl -i $(wf-info -l | grep  -E "NETTRAFFIC-TOTAL-STAT" -B 4 | grep View|awk '{print $3}') --move 250,250 --switch-ws 1,3
+  if test $(ps -aux | grep -E "$command_val" | grep -v grep | wc -l) -lt 1 ; then
+    which vnstat &> /dev/null && gnome-terminal -t"[NETTRAFFIC-TOTAL-STAT]" -- $command_val || exit 1
   else
+    sleep 1.0
     continue
   fi
-  sleep 0.5
+  sleep 1.0
 done &

@@ -1,17 +1,20 @@
 #!/usr/bin/env bash
 
-script_name=$(basename "$0")
-if test $(ps -ef | grep -E "$script_name" | grep -v grep | head --lines=-1 | awk '{print $2}'| wc -l) -gt 1
-then
-   kill $(ps -ef | grep -E "$script_name" | grep -v grep | head --lines=-1| awk '{print 2}')
-fi
 
-command_val="mako --width 380  --icons 1"
+command="mako"
+command_val="$command --width 380  --icons 1"
+script_name=$(basename "$0")
+#if test $(ps -ef | grep -E "$script_name" | grep -v grep | head --lines=-1 | awk '{print $2}'| wc -l) -gt 1
+#then
+#   kill $(ps -ef | grep -E "$script_name" | grep -v grep | head --lines=-1| awk '{print $2}')
+#fi
+
 while [ True ] ; do
-  if ! pidof mako ; then
-    $command_val
+  if ! pidof $command &> /dev/null ; then
+    which $command && $command_val || exit 1
   else
+    sleep 1.0
     continue
   fi
-  sleep 0.5
+  sleep 1.0
 done &

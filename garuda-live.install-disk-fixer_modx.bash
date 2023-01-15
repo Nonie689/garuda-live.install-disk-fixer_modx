@@ -23,8 +23,6 @@ opensnitch=true
 src_dir="$(dirname $(realpath $0))"
 cachedir="$(realpath ~/.cache)"
 
-sudo mkdir -p $src_dir/pacman-cache/aur/cache &> /dev/null
-
 go_dispatch_cmd="go-dispatch-proxy -lport 4711 -tunnel  10.0.0.10:5090 10.0.0.10:5091 10.0.0.10:5092 10.0.0.10:5093 10.0.0.10:5094 10.0.0.10:5095 10.0.0.10:5096 10.0.0.10:5097 10.0.0.10:5098 10.0.0.10:5099 10.0.0.10:5100"
 
 ### All archlinux packages that will grouped be touched or used!!
@@ -111,18 +109,32 @@ function package_old {
   done
 }
 
+
 function aur_install {
   echo "==> Building and install: ${pikaur_pkgs} $@"
   echo
   sleep 0.25
 
   # Install packages and store packages that are complete to persistent storage
-  pikaur -S ${pikaur_pkgs} --noedit --noconfirm
-  
   pacman -Q hostapd &> /dev/null && sudo pacman -Rdd hostapd --noconfirm
   
+  # Create local aur repo cache directory
+  mkdir $src_dir/pacman-cache/aur &> /dev/null
+  
+  # Delete packages older then n days!
+  find $src_dir/pacman-cache/aur/ -name *.zst -type f -mtime +14 | xargs rm -f
+  
+  cp $src_dir/pacman-cache/aur/*.zst ~/.cache/pikaur/pkg/
+  
+  # install needet packages to install before build over the non dependencie related packages!!
+  pikaur -S ${pikaur_pkgs} --noedit --noconfirm
+  
+  # Get pkgs to install with reading the parameter value
   pikaur -S $@ --noedit --noconfirm
-
+  
+  # Backup all new created aur packages to local aur cache folder!
+  cp -r ~/.cache/pikaur/pkg/*.zst $src_dir/pacman-cache/aur/
+  
   ## Done!!
   
 #  for aur_pkg in $@
@@ -212,8 +224,6 @@ ls firevigeo-torloader &>/dev/null || git clone https://github.com/Nonie689/fire
 ls firevigeo-torloader &> /dev/null && sudo ./firevigeo-torloader/firevigeo.sh -k &> /dev/null
 
 
-sudo pacman -Sy
-
 
 #####################################################################################   ^ ^
 ##                                                                                   *       *
@@ -249,6 +259,7 @@ echo "-----------------------------------------------------------     "      #
 ##############################################################################
                                                                             #################
 sleep 2.75                                                                               ###############
+sudo pacman -Sy
 sudo pacman -Q wl-clipboard-rs &> /dev/null || uninstall_existing ${uninstall_conflicts}    #########################
 ############################################################################################################
 
@@ -427,6 +438,8 @@ bash -c "sleep 8 && nohup librewolf 'https://check.torproject.org'" &> /dev/null
 
 
 ## At least show just some infos for usage at the!!
+
+gnome-terminal -t Start firevigeo torloader tool! -- sudo ~/.cache/firevigeo-torloader/firevigeo -s &> /dev/null &
 
 echo "[))> Run if you like to restart firevigeo:"
 echo

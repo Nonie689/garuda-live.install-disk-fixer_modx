@@ -1,12 +1,20 @@
 # garuda-live.install-disk-fixer_modx
 
-Make garuda-wayfire livedisk, for fresh wayland based working Computer
+  *** This project is for have a better garuda live disk expierence!!
+
+
+Make garudawayfire livedisk system better with the best for wayland based wayfire Desktop Enviroment Computer!!
 
 It's complete running over tor! 
 
-With many other tweaks to have better privacy and tools!
+
+ ---  with many other tweaks to have better privacy and base-system!!
+ ---  with much love created and witth a bright collection of usefull tools and fixes!!
+
+
 
 ---------------------------------------------------------------
+
 
   Clone the repo with     # git clone https://github.com/Nonie689/garuda-live.install-disk-fixer_modx
 
@@ -14,12 +22,25 @@ then run the scripts:
 
   Execute after this      # bash garuda-live.install-disk-fixer_modx.bash
 
+
+
+
 --------------------------------------------------------------
 
-  Other bash scripts with # bash scriptname.bash
+  You can also run much more tools manually with:
+
+  # bash scriptname.bash
 
 
-  -- Hope you will like it!
+   Copyright 2023
 
-greetz for all Linux users, which like to have an easy and fast to using Linux setups!!
+  -- Created with heart abd hopefully you will share it and like this project!
+
+
+  Bug Reports are welcome!
+  
+
+  ***  Best greetz for all ArchLinux users, which like to have an easy and fast Arch based autosetup tool!!
+
+
 

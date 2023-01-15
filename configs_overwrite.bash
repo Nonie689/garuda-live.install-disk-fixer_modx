@@ -55,8 +55,6 @@ done
 ## Create garuda live-cd modx folders
 
 mkdir $src_dir/pacman-cache &>/dev/null
-mkdir $src_dir/pacman-cache/paru &> /dev/null
-mkdir $src_dir/pacman-cache/pikaur &> /dev/null
 mkdir $src_dir/log &>/dev/null
 mkdir $src_dir/my_config &>/dev/null
 

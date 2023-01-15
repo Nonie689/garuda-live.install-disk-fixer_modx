@@ -1,17 +1,20 @@
 #!/usr/bin/env bash
 
+command="opensnitch-ui"
+command_val="$command"
 script_name=$(basename "$0")
-if test $(ps -ef | grep -E "opensnitch-ui" | grep -v grep | head --lines=-1 | awk '{print $2}'| wc -l) -gt 1
-then
-  kill $(ps -ef | grep -E "opensnitch-ui" | grep -v grep | head --lines=-1| awk '{print $2}')
-fi
 
-command_val=opensnitch-ui
+#if test $(ps -ef | grep -E "opensnitch-ui" | grep -v grep | head --lines=-1 | awk '{print $2}'| wc -l) -gt 1
+#then
+#  kill $(ps -ef | grep -E "opensnitch-ui" | grep -v grep | head --lines=-1| awk '{print $2}')
+#fi
+
 while [ True ] ; do
-  if test $(ps aux | grep -E "/usr/sbin/python.*opensnitch-ui" | wc -l ) -lt 2 ; then
-     which opensnitch-ui &> /dev/null && $command_val
+  if test $(ps aux | grep -E "python $command" | wc -l ) -lt 2 ; then
+     pacman -Q opensnitch &> /dev/null && $command_val || exit 1
   else
-     continue
+    sleep 1.0
+    continue
   fi
-  sleep 0.5
+  sleep 1.0
 done &
