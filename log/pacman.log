@@ -614,3 +614,81 @@
 [2023-01-16T07:16:07+0100] [ALPM] running 'pacnew-check.hook'...
 [2023-01-16T07:16:07+0100] [ALPM] running 'zzz_post.hook'...
 [2023-01-16T07:16:11+0100] [PACMAN] Running 'pacman -S strace'
+[2023-01-16T20:54:04+0100] [PACMAN] Running 'pacman --color=always --sync --noconfirm rtl88x2bu-dkms-git dnsmasq'
+[2023-01-16T20:54:06+0100] [ALPM] running '01-snapshot-reject.hook'...
+[2023-01-16T20:54:06+0100] [ALPM] transaction started
+[2023-01-16T20:54:06+0100] [ALPM] installed dkms (3.0.9-1)
+[2023-01-16T20:54:06+0100] [ALPM] installed rtl88x2bu-dkms-git (5.13.1.r179.a2ac3b2-1)
+[2023-01-16T20:54:06+0100] [ALPM] upgraded dnsmasq (2.86-2 -> 2.88-1)
+[2023-01-16T20:54:07+0100] [ALPM] transaction completed
+[2023-01-16T20:54:07+0100] [ALPM] running '20-systemd-sysusers.hook'...
+[2023-01-16T20:54:08+0100] [ALPM] running '30-systemd-daemon-reload.hook'...
+[2023-01-16T20:54:09+0100] [ALPM] running '30-systemd-update.hook'...
+[2023-01-16T20:54:09+0100] [ALPM] running '70-dkms-install.hook'...
+[2023-01-16T20:54:09+0100] [ALPM-SCRIPTLET] ==> dkms install --no-depmod rtl88x2bu/5.13.1.r179.a2ac3b2 -k 5.19.2-zen1-2-zen
+[2023-01-16T20:57:39+0100] [ALPM-SCRIPTLET] ==> depmod 5.19.2-zen1-2-zen
+[2023-01-16T20:57:48+0100] [ALPM] running '90-mkinitcpio-install.hook'...
+[2023-01-16T20:57:48+0100] [ALPM-SCRIPTLET] ==> Building image from preset: /etc/mkinitcpio.d/linux-zen.preset: 'default'
+[2023-01-16T20:57:48+0100] [ALPM-SCRIPTLET]   -> -k /boot/vmlinuz-linux-zen -c /etc/mkinitcpio.conf -g /boot/initramfs-linux-zen.img
+[2023-01-16T20:57:48+0100] [ALPM-SCRIPTLET] ==> Starting build: 5.19.2-zen1-2-zen
+[2023-01-16T20:57:49+0100] [ALPM-SCRIPTLET]   -> Running build hook: [base]
+[2023-01-16T20:57:49+0100] [ALPM-SCRIPTLET]   -> Running build hook: [udev]
+[2023-01-16T20:57:50+0100] [ALPM-SCRIPTLET]   -> Running build hook: [autodetect]
+[2023-01-16T20:57:51+0100] [ALPM-SCRIPTLET]   -> Running build hook: [modconf]
+[2023-01-16T20:57:51+0100] [ALPM-SCRIPTLET]   -> Running build hook: [block]
+[2023-01-16T20:57:52+0100] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: xhci_pci
+[2023-01-16T20:57:53+0100] [ALPM-SCRIPTLET]   -> Running build hook: [filesystems]
+[2023-01-16T20:57:53+0100] [ALPM-SCRIPTLET]   -> Running build hook: [keyboard]
+[2023-01-16T20:57:53+0100] [ALPM-SCRIPTLET]   -> Running build hook: [fsck]
+[2023-01-16T20:57:53+0100] [ALPM-SCRIPTLET] ==> ERROR: file not found: `fsck.overlay'
+[2023-01-16T20:57:53+0100] [ALPM-SCRIPTLET] ==> WARNING: No fsck helpers found. fsck will not be run on boot.
+[2023-01-16T20:57:53+0100] [ALPM-SCRIPTLET]   -> Running build hook: [grub-btrfs-overlayfs]
+[2023-01-16T20:57:54+0100] [ALPM-SCRIPTLET] ==> Generating module dependencies
+[2023-01-16T20:57:54+0100] [ALPM-SCRIPTLET] ==> Creating zstd-compressed initcpio image: /boot/initramfs-linux-zen.img
+[2023-01-16T20:57:54+0100] [ALPM-SCRIPTLET] ==> WARNING: errors were encountered during the build. The image may not be complete.
+[2023-01-16T20:57:54+0100] [ALPM-SCRIPTLET] ==> Building image from preset: /etc/mkinitcpio.d/linux-zen.preset: 'fallback'
+[2023-01-16T20:57:54+0100] [ALPM-SCRIPTLET]   -> -k /boot/vmlinuz-linux-zen -c /etc/mkinitcpio.conf -g /boot/initramfs-linux-zen-fallback.img -S autodetect
+[2023-01-16T20:57:55+0100] [ALPM-SCRIPTLET] ==> Starting build: 5.19.2-zen1-2-zen
+[2023-01-16T20:57:55+0100] [ALPM-SCRIPTLET]   -> Running build hook: [base]
+[2023-01-16T20:57:55+0100] [ALPM-SCRIPTLET]   -> Running build hook: [udev]
+[2023-01-16T20:57:56+0100] [ALPM-SCRIPTLET]   -> Running build hook: [modconf]
+[2023-01-16T20:57:56+0100] [ALPM-SCRIPTLET]   -> Running build hook: [block]
+[2023-01-16T20:57:57+0100] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: aic94xx
+[2023-01-16T20:57:57+0100] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: bfa
+[2023-01-16T20:57:58+0100] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: qed
+[2023-01-16T20:57:58+0100] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: qla1280
+[2023-01-16T20:57:58+0100] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: qla2xxx
+[2023-01-16T20:57:59+0100] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: wd719x
+[2023-01-16T20:58:00+0100] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: xhci_pci
+[2023-01-16T20:58:02+0100] [ALPM-SCRIPTLET]   -> Running build hook: [filesystems]
+[2023-01-16T20:58:04+0100] [ALPM-SCRIPTLET]   -> Running build hook: [keyboard]
+[2023-01-16T20:58:06+0100] [ALPM-SCRIPTLET]   -> Running build hook: [fsck]
+[2023-01-16T20:58:07+0100] [ALPM-SCRIPTLET]   -> Running build hook: [grub-btrfs-overlayfs]
+[2023-01-16T20:58:08+0100] [ALPM-SCRIPTLET] ==> Generating module dependencies
+[2023-01-16T20:58:08+0100] [ALPM-SCRIPTLET] ==> Creating zstd-compressed initcpio image: /boot/initramfs-linux-zen-fallback.img
+[2023-01-16T20:58:10+0100] [ALPM-SCRIPTLET] ==> Image generation successful
+[2023-01-16T20:58:10+0100] [ALPM] running 'dbus-reload.hook'...
+[2023-01-16T20:58:10+0100] [ALPM] running 'pacnew-check.hook'...
+[2023-01-16T20:58:12+0100] [ALPM] running 'zzz_post.hook'...
+[2023-01-16T20:58:31+0100] [PACMAN] Running 'pacman --color=always --sync --noconfirm linux-wifi-hotspot'
+[2023-01-16T20:58:32+0100] [ALPM] running '01-snapshot-reject.hook'...
+[2023-01-16T20:58:32+0100] [ALPM] transaction started
+[2023-01-16T20:58:32+0100] [ALPM] warning: directory permissions differ on /usr/share/polkit-1/rules.d/
+filesystem: 750  package: 755
+[2023-01-16T20:58:32+0100] [ALPM] upgraded linux-wifi-hotspot (4.4.0-1 -> 4.4.0-1.1)
+[2023-01-16T20:58:33+0100] [ALPM] transaction completed
+[2023-01-16T20:58:33+0100] [ALPM] running '30-systemd-daemon-reload.hook'...
+[2023-01-16T20:58:34+0100] [ALPM] running '30-systemd-update.hook'...
+[2023-01-16T20:58:34+0100] [ALPM] running 'gtk-update-icon-cache.hook'...
+[2023-01-16T20:58:34+0100] [ALPM] running 'pacnew-check.hook'...
+[2023-01-16T20:58:34+0100] [ALPM] running 'update-desktop-database.hook'...
+[2023-01-16T20:58:34+0100] [ALPM] running 'zzz_post.hook'...
+[2023-01-16T20:59:05+0100] [PACMAN] Running 'pacman --color=always --upgrade --noconfirm /home/garuda/.cache/pikaur/pkg/hostapd-mana-git-20210920.1302a72-1-x86_64.pkg.tar.zst'
+[2023-01-16T20:59:05+0100] [ALPM] running '01-snapshot-reject.hook'...
+[2023-01-16T20:59:05+0100] [ALPM] transaction started
+[2023-01-16T20:59:05+0100] [ALPM] reinstalled hostapd-mana-git (20210920.1302a72-1)
+[2023-01-16T20:59:05+0100] [ALPM] transaction completed
+[2023-01-16T20:59:05+0100] [ALPM] running '30-systemd-daemon-reload.hook'...
+[2023-01-16T20:59:06+0100] [ALPM] running '30-systemd-update.hook'...
+[2023-01-16T20:59:06+0100] [ALPM] running 'pacnew-check.hook'...
+[2023-01-16T20:59:07+0100] [ALPM] running 'zzz_post.hook'...
