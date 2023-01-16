@@ -13,7 +13,7 @@ command_val="watch -n 20 ${command} -i $(netstat -r | awk ' {print $8}' | head -
 kill $(ps -aux | grep $command_val | grep -v grep | awk '{print $2}')
 while [ True ] ; do
   if test $(ps -aux | grep -E "$command_val" | grep -v grep | wc -l) -lt 1 ; then
-    which vnstat &> /dev/null && gnome-terminal -t"[NETTRAFFIC-TOTAL-STAT]" -- $command_val || exit 1
+    gnome-terminal -t"[NETTRAFFIC-TOTAL-STAT]" -- $command_val
   else
     sleep 1.0
     continue

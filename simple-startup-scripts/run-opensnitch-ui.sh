@@ -11,7 +11,7 @@ script_name=$(basename "$0")
 
 while [ True ] ; do
   if test $(ps aux | grep -E "python $command" | wc -l ) -lt 2 ; then
-     pacman -Q opensnitch &> /dev/null && $command_val || exit 1
+     $command_val
   else
     sleep 1.0
     continue

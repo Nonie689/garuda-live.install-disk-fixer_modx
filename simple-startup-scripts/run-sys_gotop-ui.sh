@@ -10,7 +10,7 @@ command=gotop
 command_val="$command  -l kitchensink -i $(netstat -r | awk ' {print $8}' | head -3 | tail -1)"
 while [ True ] ; do
   if ! pidof $command &> /dev/null; then
-     which $command &> /dev/null && gnome-terminal -t "[Monitor - System Stats]" -- $command_val || exit 1
+     gnome-terminal -t "[Monitor - System Stats]" -- $command_val
   else
     sleep 1.0
     continue

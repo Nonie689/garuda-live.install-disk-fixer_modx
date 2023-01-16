@@ -1,0 +1,1389 @@
+II 15-01-23 00:09:46.740 - [wayfire-0.7.5/src/main.cpp:249] Starting wayfire version 0.7.5
+II 15-01-23 00:09:46.740 - [libseat] [libseat/backend/seatd.c:64] Could not connect to socket /run/seatd.sock: No such file or directory
+II 15-01-23 00:09:46.740 - [libseat] [libseat/libseat.c:76] Backend 'seatd' failed to open seat, skipping
+II 15-01-23 00:09:46.753 - [libseat] [libseat/libseat.c:73] Seat opened with backend 'logind'
+II 15-01-23 00:09:46.753 - [backend/session/session.c:109] Successfully loaded libseat session
+II 15-01-23 00:09:46.756 - [backend/backend.c:220] Found 1 GPUs
+II 15-01-23 00:09:46.756 - [backend/drm/backend.c:185] Initializing DRM backend for /dev/dri/card0 (nouveau)
+II 15-01-23 00:09:46.757 - [backend/drm/drm.c:253] Found 2 DRM CRTCs
+II 15-01-23 00:09:46.757 - [backend/drm/drm.c:180] Found 6 DRM planes
+II 15-01-23 00:09:46.758 - [render/egl.c:201] Supported EGL client extensions: EGL_EXT_device_base EGL_EXT_device_enumeration EGL_EXT_device_query EGL_EXT_platform_base EGL_KHR_client_get_all_proc_addresses EGL_EXT_client_extensions EGL_KHR_debug EGL_EXT_platform_device EGL_EXT_platform_wayland EGL_KHR_platform_wayland EGL_EXT_platform_x11 EGL_KHR_platform_x11 EGL_MESA_platform_xcb EGL_MESA_platform_gbm EGL_KHR_platform_gbm EGL_MESA_platform_surfaceless
+II 15-01-23 00:09:46.804 - [render/egl.c:347] Using EGL 1.5
+II 15-01-23 00:09:46.804 - [render/egl.c:348] Supported EGL display extensions: EGL_ANDROID_blob_cache EGL_EXT_create_context_robustness EGL_EXT_image_dma_buf_import EGL_EXT_image_dma_buf_import_modifiers EGL_KHR_cl_event2 EGL_KHR_config_attribs EGL_KHR_create_context EGL_KHR_create_context_no_error EGL_KHR_fence_sync EGL_KHR_get_all_proc_addresses EGL_KHR_gl_colorspace EGL_KHR_gl_renderbuffer_image EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_3D_image EGL_KHR_gl_texture_cubemap_image EGL_KHR_image_base EGL_KHR_no_config_context EGL_KHR_reusable_sync EGL_KHR_surfaceless_context EGL_EXT_pixel_format_float EGL_KHR_wait_sync EGL_MESA_configless_context EGL_MESA_drm_image EGL_MESA_image_dma_buf_export EGL_MESA_query_driver EGL_WL_bind_wayland_display 
+II 15-01-23 00:09:46.804 - [render/egl.c:350] Supported EGL device extensions: EGL_EXT_device_drm EGL_EXT_device_drm_render_node
+II 15-01-23 00:09:46.804 - [render/egl.c:352] EGL vendor: Mesa Project
+II 15-01-23 00:09:46.811 - [render/gles2/renderer.c:718] Creating GLES2 renderer
+II 15-01-23 00:09:46.811 - [render/gles2/renderer.c:719] Using OpenGL ES 3.2 Mesa 22.1.6
+II 15-01-23 00:09:46.811 - [render/gles2/renderer.c:720] GL vendor: nouveau
+II 15-01-23 00:09:46.811 - [render/gles2/renderer.c:721] GL renderer: NV138
+II 15-01-23 00:09:46.811 - [render/gles2/renderer.c:722] Supported GLES2 extensions: GL_EXT_blend_minmax GL_EXT_multi_draw_arrays GL_EXT_texture_filter_anisotropic GL_EXT_texture_compression_s3tc GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_format_BGRA8888 GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth24 GL_OES_element_index_uint GL_OES_fbo_render_mipmap GL_OES_mapbuffer GL_OES_rgb8_rgba8 GL_OES_standard_derivatives GL_OES_stencil8 GL_OES_texture_3D GL_OES_texture_float GL_OES_texture_float_linear GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_texture_npot GL_OES_vertex_half_float GL_EXT_draw_instanced GL_EXT_texture_sRGB_decode GL_OES_EGL_image GL_OES_depth_texture GL_OES_packed_depth_stencil GL_EXT_texture_type_2_10_10_10_REV GL_NV_conditional_render GL_OES_get_program_binary GL_APPLE_texture_max_level GL_EXT_discard_framebuffer GL_EXT_read_format_bgra GL_NV_pack_subimage GL_EXT_frag_depth GL_NV_fbo_color_attachments GL_OES_EGL_image_external GL_OES_EGL_sync GL_OES_vertex_array_object GL_OES_viewport_array GL_ANGLE_pack_reverse_row_order GL_ANGLE_texture_compression_dxt3 GL_ANGLE_texture_compression_dxt5 GL_EXT_occlusion_query_boolean GL_EXT_robustness GL_EXT_texture_rg GL_EXT_unpack_subimage GL_NV_draw_buffers GL_NV_read_buffer GL_NV_read_depth GL_NV_read_depth_stencil GL_NV_read_stencil GL_EXT_draw_buffers GL_EXT_map_buffer_range GL_KHR_debug GL_KHR_robustness GL_KHR_texture_compression_astc_ldr GL_NV_pixel_buffer_object GL_OES_depth_texture_cube_map GL_OES_required_internalformat GL_OES_surfaceless_context GL_EXT_color_buffer_float GL_EXT_sRGB_write_control GL_EXT_separate_shader_objects GL_EXT_shader_group_vote GL_EXT_shader_implicit_conversions GL_EXT_shader_integer_mix GL_EXT_tessellation_point_size GL_EXT_tessellation_shader GL_ANDROID_extension_pack_es31a GL_EXT_base_instance GL_EXT_compressed_ETC1_RGB8_sub_texture GL_EXT_copy_image GL_EXT_draw_buffers_indexed GL_EXT_draw_elements_base_vertex GL_EXT_gpu_shader5 GL_EXT_polygon_offset_clamp GL_EXT_primitive_bounding_box GL_EXT_render_snorm GL_EXT_shader_io_blocks GL_EXT_texture_border_clamp GL_EXT_texture_buffer GL_EXT_texture_cube_map_array GL_EXT_texture_norm16 GL_EXT_texture_view GL_KHR_blend_equation_advanced GL_KHR_context_flush_control GL_KHR_robust_buffer_access_behavior GL_NV_image_formats GL_OES_copy_image GL_OES_draw_buffers_indexed GL_OES_draw_elements_base_vertex GL_OES_gpu_shader5 GL_OES_primitive_bounding_box GL_OES_sample_shading GL_OES_sample_variables GL_OES_shader_io_blocks GL_OES_shader_multisample_interpolation GL_OES_tessellation_point_size GL_OES_tessellation_shader GL_OES_texture_border_clamp GL_OES_texture_buffer GL_OES_texture_cube_map_array GL_OES_texture_stencil8 GL_OES_texture_storage_multisample_2d_array GL_OES_texture_view GL_EXT_blend_func_extended GL_EXT_buffer_storage GL_EXT_float_blend GL_EXT_geometry_point_size GL_EXT_geometry_shader GL_EXT_texture_filter_minmax GL_EXT_texture_sRGB_R8 GL_KHR_no_error GL_KHR_texture_compression_astc_sliced_3d GL_NV_conservative_raster GL_NV_conservative_raster_dilate GL_NV_conservative_raster_pre_snap_triangles GL_NV_sample_locations GL_NV_viewport_array2 GL_NV_viewport_swizzle GL_OES_EGL_image_external_essl3 GL_OES_geometry_point_size GL_OES_geometry_shader GL_OES_shader_image_atomic GL_EXT_clear_texture GL_EXT_clip_cull_distance GL_EXT_disjoint_timer_query GL_EXT_texture_compression_s3tc_srgb GL_EXT_window_rectangles GL_MESA_shader_integer_functions GL_EXT_clip_control GL_EXT_color_buffer_half_float GL_EXT_texture_compression_bptc GL_EXT_texture_mirror_clamp_to_edge GL_KHR_parallel_shader_compile GL_EXT_EGL_image_storage GL_EXT_texture_shadow_lod GL_MESA_framebuffer_flip_y GL_EXT_demote_to_helper_invocation GL_EXT_depth_clamp GL_EXT_texture_query_lod GL_MESA_bgra 
+II 15-01-23 00:09:46.830 - [wayfire-0.7.5/src/default-config-backend.cpp:97] Using config file: /home/garuda/.config/wayfire.ini
+II 15-01-23 00:09:46.830 - [wf-config-0.7.1/src/file.cpp:576] Reading XML configuration options from directory /usr/share/wayfire/metadata
+II 15-01-23 00:09:46.831 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/alpha.xml
+II 15-01-23 00:09:46.831 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/animate.xml
+II 15-01-23 00:09:46.832 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/autostart.xml
+II 15-01-23 00:09:46.832 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/blur.xml
+II 15-01-23 00:09:46.832 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/command.xml
+II 15-01-23 00:09:46.832 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/core.xml
+II 15-01-23 00:09:46.832 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/cube.xml
+II 15-01-23 00:09:46.833 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/decoration.xml
+II 15-01-23 00:09:46.833 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/expo.xml
+II 15-01-23 00:09:46.833 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/extra-gestures.xml
+II 15-01-23 00:09:46.833 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/fast-switcher.xml
+II 15-01-23 00:09:46.833 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/fisheye.xml
+II 15-01-23 00:09:46.833 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/grid.xml
+II 15-01-23 00:09:46.834 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/idle.xml
+II 15-01-23 00:09:46.834 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/input-device.xml
+II 15-01-23 00:09:46.834 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/input.xml
+II 15-01-23 00:09:46.834 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/invert.xml
+II 15-01-23 00:09:46.835 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/move.xml
+II 15-01-23 00:09:46.835 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/oswitch.xml
+II 15-01-23 00:09:46.835 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/output.xml
+II 15-01-23 00:09:46.835 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/place.xml
+II 15-01-23 00:09:46.835 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/preserve-output.xml
+II 15-01-23 00:09:46.835 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/resize.xml
+II 15-01-23 00:09:46.835 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/scale-title-filter.xml
+II 15-01-23 00:09:46.835 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/scale.xml
+II 15-01-23 00:09:46.836 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/simple-tile.xml
+II 15-01-23 00:09:46.836 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/switcher.xml
+II 15-01-23 00:09:46.836 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/vswipe.xml
+II 15-01-23 00:09:46.836 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/vswitch.xml
+II 15-01-23 00:09:46.836 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/window-rules.xml
+II 15-01-23 00:09:46.836 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/wm-actions.xml
+II 15-01-23 00:09:46.837 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/wobbly.xml
+II 15-01-23 00:09:46.837 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/workarounds.xml
+II 15-01-23 00:09:46.837 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/wrot.xml
+II 15-01-23 00:09:46.837 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/zoom.xml
+II 15-01-23 00:09:46.837 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/workspace-names.xml
+II 15-01-23 00:09:46.837 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/window-zoom.xml
+II 15-01-23 00:09:46.838 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/water.xml
+II 15-01-23 00:09:46.838 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/showrepaint.xml
+II 15-01-23 00:09:46.838 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/mag.xml
+II 15-01-23 00:09:46.838 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/keycolor.xml
+II 15-01-23 00:09:46.838 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/join-views.xml
+II 15-01-23 00:09:46.838 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/force-fullscreen.xml
+II 15-01-23 00:09:46.838 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/follow-focus.xml
+II 15-01-23 00:09:46.838 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/crosshair.xml
+II 15-01-23 00:09:46.838 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/bench.xml
+II 15-01-23 00:09:46.839 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/background-view.xml
+II 15-01-23 00:09:46.839 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/autorotate-iio.xml
+II 15-01-23 00:09:46.839 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/annotate.xml
+II 15-01-23 00:09:46.844 - [backend/headless/backend.c:68] Creating headless backend
+II 15-01-23 00:09:46.844 - [backend/headless/backend.c:16] Starting headless backend
+II 15-01-23 00:09:46.849 - [xwayland/server.c:108] Starting Xwayland on :0
+II 15-01-23 00:09:46.920 - [wayfire-0.7.5/src/main.cpp:311] Using socket name wayland-1
+II 15-01-23 00:09:47.203 - [wayfire-0.7.5/src/core/seat/input-manager.cpp:46] handle new input: Power Button
+II 15-01-23 00:09:47.220 - [wayfire-0.7.5/src/core/seat/input-manager.cpp:46] handle new input: Power Button
+II 15-01-23 00:09:47.229 - [wayfire-0.7.5/src/core/seat/input-manager.cpp:46] handle new input: SONiX USB DEVICE
+II 15-01-23 00:09:47.237 - [wayfire-0.7.5/src/core/seat/input-manager.cpp:46] handle new input: SONiX USB DEVICE Keyboard
+II 15-01-23 00:09:47.246 - [wayfire-0.7.5/src/core/seat/input-manager.cpp:46] handle new input: SONiX USB DEVICE Keyboard
+II 15-01-23 00:09:47.246 - [wayfire-0.7.5/src/core/seat/input-manager.cpp:46] handle new input: Weida Hi-Tech                CoolTouchR System           
+II 15-01-23 00:09:47.246 - [wayfire-0.7.5/src/core/seat/input-manager.cpp:46] handle new input: Weida Hi-Tech                CoolTouchR System            Mouse
+II 15-01-23 00:09:47.246 - [wayfire-0.7.5/src/core/seat/input-manager.cpp:46] handle new input: USB Optical Mouse
+II 15-01-23 00:09:47.246 - [wayfire-0.7.5/src/core/seat/input-manager.cpp:46] handle new input: Full-Speed Mouse Full-Speed Mouse
+II 15-01-23 00:09:47.246 - [backend/drm/drm.c:1338] Scanning DRM connectors on /dev/dri/card0
+II 15-01-23 00:09:47.247 - [backend/drm/drm.c:1389] Found connector 'DVI-D-1'
+II 15-01-23 00:09:47.318 - [backend/drm/drm.c:1389] Found connector 'HDMI-A-1'
+II 15-01-23 00:09:47.318 - [backend/drm/drm.c:1414] 'HDMI-A-1' connected
+II 15-01-23 00:09:47.318 - [util/env.c:9] Loading WLR_NO_HARDWARE_CURSORS option: 1
+II 15-01-23 00:09:47.318 - [backend/drm/drm.c:1230] Physical size: 480x270
+II 15-01-23 00:09:47.318 - [backend/drm/drm.c:1287] Detected modes:
+II 15-01-23 00:09:47.318 - [backend/drm/drm.c:1315]   1920x1080 @ 60.000 Hz (preferred)
+II 15-01-23 00:09:47.318 - [backend/drm/drm.c:1315]   1920x1080 @ 59.940 Hz 
+II 15-01-23 00:09:47.318 - [backend/drm/drm.c:1315]   1920x1080 @ 50.000 Hz 
+II 15-01-23 00:09:47.318 - [backend/drm/drm.c:1315]   1600x1200 @ 60.000 Hz 
+II 15-01-23 00:09:47.318 - [backend/drm/drm.c:1315]   1680x1050 @ 59.883 Hz 
+II 15-01-23 00:09:47.318 - [backend/drm/drm.c:1315]   1280x1024 @ 75.025 Hz 
+II 15-01-23 00:09:47.318 - [backend/drm/drm.c:1315]   1280x1024 @ 60.020 Hz 
+II 15-01-23 00:09:47.318 - [backend/drm/drm.c:1315]   1440x900 @ 74.984 Hz 
+II 15-01-23 00:09:47.318 - [backend/drm/drm.c:1315]   1440x900 @ 59.901 Hz 
+II 15-01-23 00:09:47.318 - [backend/drm/drm.c:1315]   1280x960 @ 60.000 Hz 
+II 15-01-23 00:09:47.318 - [backend/drm/drm.c:1315]   1152x864 @ 75.000 Hz 
+II 15-01-23 00:09:47.318 - [backend/drm/drm.c:1315]   1280x720 @ 60.000 Hz 
+II 15-01-23 00:09:47.318 - [backend/drm/drm.c:1315]   1280x720 @ 59.940 Hz 
+II 15-01-23 00:09:47.318 - [backend/drm/drm.c:1315]   1280x720 @ 50.000 Hz 
+II 15-01-23 00:09:47.318 - [backend/drm/drm.c:1315]   1024x768 @ 75.029 Hz 
+II 15-01-23 00:09:47.318 - [backend/drm/drm.c:1315]   1024x768 @ 70.069 Hz 
+II 15-01-23 00:09:47.318 - [backend/drm/drm.c:1315]   1024x768 @ 60.004 Hz 
+II 15-01-23 00:09:47.318 - [backend/drm/drm.c:1315]   832x624 @ 74.551 Hz 
+II 15-01-23 00:09:47.318 - [backend/drm/drm.c:1315]   800x600 @ 75.000 Hz 
+II 15-01-23 00:09:47.318 - [backend/drm/drm.c:1315]   800x600 @ 72.188 Hz 
+II 15-01-23 00:09:47.318 - [backend/drm/drm.c:1315]   800x600 @ 60.317 Hz 
+II 15-01-23 00:09:47.318 - [backend/drm/drm.c:1315]   800x600 @ 56.250 Hz 
+II 15-01-23 00:09:47.318 - [backend/drm/drm.c:1315]   720x576 @ 50.000 Hz 
+II 15-01-23 00:09:47.318 - [backend/drm/drm.c:1315]   720x480 @ 60.000 Hz 
+II 15-01-23 00:09:47.318 - [backend/drm/drm.c:1315]   720x480 @ 59.940 Hz 
+II 15-01-23 00:09:47.319 - [backend/drm/drm.c:1315]   640x480 @ 75.000 Hz 
+II 15-01-23 00:09:47.319 - [backend/drm/drm.c:1315]   640x480 @ 72.809 Hz 
+II 15-01-23 00:09:47.319 - [backend/drm/drm.c:1315]   640x480 @ 66.667 Hz 
+II 15-01-23 00:09:47.319 - [backend/drm/drm.c:1315]   640x480 @ 60.000 Hz 
+II 15-01-23 00:09:47.319 - [backend/drm/drm.c:1315]   640x480 @ 59.940 Hz 
+II 15-01-23 00:09:47.319 - [backend/drm/drm.c:1315]   720x400 @ 70.082 Hz 
+II 15-01-23 00:09:47.319 - [backend/drm/drm.c:1447] connector HDMI-A-1: Requesting modeset
+II 15-01-23 00:09:47.319 - [wayfire-0.7.5/src/core/output-layout.cpp:1044] new output: HDMI-A-1
+II 15-01-23 00:09:47.319 - [wayfire-0.7.5/src/core/output-layout.cpp:486] loaded mode auto
+II 15-01-23 00:09:47.323 - [backend/drm/drm.c:586] connector HDMI-A-1: Modesetting with 1920x1080 @ 60.000 Hz
+EE 15-01-23 00:09:47.327 - [wayfire-0.7.5/src/output/plugin-loader.cpp:210] Failed to load plugin "view-shot". Make sure it is installed in /usr/lib/wayfire or in $WAYFIRE_PLUGIN_PATH.
+EE 15-01-23 00:09:47.327 - [wayfire-0.7.5/src/output/plugin-loader.cpp:210] Failed to load plugin "wf-ctrl". Make sure it is installed in /usr/lib/wayfire or in $WAYFIRE_PLUGIN_PATH.
+EE 15-01-23 00:09:47.327 - [wayfire-0.7.5/src/output/plugin-loader.cpp:210] Failed to load plugin "wf-info". Make sure it is installed in /usr/lib/wayfire or in $WAYFIRE_PLUGIN_PATH.
+EE 15-01-23 00:09:47.327 - [wayfire-0.7.5/src/output/plugin-loader.cpp:210] Failed to load plugin "firedecor". Make sure it is installed in /usr/lib/wayfire or in $WAYFIRE_PLUGIN_PATH.
+(type equals variant: [type: string, value: toplevel] | (type equals variant: [type: string, value: x-or] & focusable equals variant: [type: bool, value: 1]))
+type equals variant: [type: string, value: overlay]
+false
+type equals variant: [type: string, value: toplevel]
+false
+type equals variant: [type: string, value: toplevel]
+EE 15-01-23 00:09:47.669 - [types/wlr_cursor.c:875] Cannot map device "Power Button" to output (not found in this cursor)
+EE 15-01-23 00:09:47.669 - [types/wlr_cursor.c:875] Cannot map device "Power Button" to output (not found in this cursor)
+EE 15-01-23 00:09:47.669 - [types/wlr_cursor.c:875] Cannot map device "SONiX USB DEVICE" to output (not found in this cursor)
+EE 15-01-23 00:09:47.669 - [types/wlr_cursor.c:875] Cannot map device "SONiX USB DEVICE Keyboard" to output (not found in this cursor)
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Unsupported maximum keycode 708, clipping.
+>                   X11 cannot support keycodes above 255.
+Errors from xkbcomp are not fatal to the X server
+EE 15-01-23 00:09:48.478 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 00:09:48.484 - [wayfire-0.7.5/src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+II 15-01-23 00:09:48.561 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Terminal app-id: gnome-terminal-server
+II 15-01-23 00:09:48.561 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Terminal app-id: gnome-terminal-server
+EE 15-01-23 00:09:48.592 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 00:09:48.593 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 00:09:48.602 - [wayfire-0.7.5/src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+II 15-01-23 00:09:48.671 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Terminal app-id: gnome-terminal-server
+II 15-01-23 00:09:48.672 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Terminal app-id: gnome-terminal-server
+II 15-01-23 00:09:48.672 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Terminal app-id: gnome-terminal-server
+II 15-01-23 00:09:48.672 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Terminal app-id: gnome-terminal-server
+II 15-01-23 00:09:48.874 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Terminal app-id: gnome-terminal-server
+EE 15-01-23 00:09:48.922 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+II 15-01-23 00:09:50.196 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Terminal app-id: gnome-terminal-server
+II 15-01-23 00:09:57.048 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: LibreWolf app-id: LibreWolf
+EE 15-01-23 00:09:57.452 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 37ms, your system is too slow
+
+EE 15-01-23 00:09:57.976 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 26ms, your system is too slow
+
+II 15-01-23 00:09:58.606 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: OpenSnitch v1.5.2 app-id: opensnitch_ui
+EE 15-01-23 00:09:58.903 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 40ms, your system is too slow
+
+EE 15-01-23 00:09:59.395 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 29ms, your system is too slow
+
+EE 15-01-23 00:09:59.595 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 28ms, your system is too slow
+
+EE 15-01-23 00:09:59.595 - [libinput] event8  - USB Optical Mouse: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+
+EE 15-01-23 00:10:03.909 - [wayfire-0.7.5/src/view/view-impl.cpp:62] Setting minimize hint to unknown surface. Wayfire currentlysupports only setting hints relative to views.
+EE 15-01-23 00:10:03.909 - [wayfire-0.7.5/src/view/view-impl.cpp:62] Setting minimize hint to unknown surface. Wayfire currentlysupports only setting hints relative to views.
+EE 15-01-23 00:10:03.909 - [wayfire-0.7.5/src/view/view-impl.cpp:62] Setting minimize hint to unknown surface. Wayfire currentlysupports only setting hints relative to views.
+EE 15-01-23 00:10:03.909 - [wayfire-0.7.5/src/view/view-impl.cpp:62] Setting minimize hint to unknown surface. Wayfire currentlysupports only setting hints relative to views.
+EE 15-01-23 00:10:03.909 - [wayfire-0.7.5/src/view/view-impl.cpp:62] Setting minimize hint to unknown surface. Wayfire currentlysupports only setting hints relative to views.
+EE 15-01-23 00:10:03.909 - [wayfire-0.7.5/src/view/view-impl.cpp:62] Setting minimize hint to unknown surface. Wayfire currentlysupports only setting hints relative to views.
+EE 15-01-23 00:10:03.909 - [wayfire-0.7.5/src/view/view-impl.cpp:62] Setting minimize hint to unknown surface. Wayfire currentlysupports only setting hints relative to views.
+II 15-01-23 00:10:20.833 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Open File app-id: LibreWolf
+EE 15-01-23 00:10:22.149 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 22ms, your system is too slow
+
+II 15-01-23 00:10:22.911 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface:  app-id: LibreWolf
+II 15-01-23 00:10:29.968 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:10:36.760 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:10:38.925 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface:  app-id: LibreWolf
+II 15-01-23 00:10:39.053 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 15-01-23 00:10:45.767 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 25ms, your system is too slow
+
+II 15-01-23 00:10:59.200 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: LibreWolf app-id: LibreWolf
+EE 15-01-23 00:11:00.008 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 22ms, your system is too slow
+
+II 15-01-23 00:11:09.222 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:11:14.557 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: LibreWolf app-id: LibreWolf
+EE 15-01-23 00:11:15.325 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 23ms, your system is too slow
+
+II 15-01-23 00:11:37.217 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:12:41.204 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: LibreWolf app-id: LibreWolf
+EE 15-01-23 00:12:42.541 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 23ms, your system is too slow
+
+EE 15-01-23 00:12:42.541 - [libinput] event2  - SONiX USB DEVICE: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+
+EE 15-01-23 00:14:49.112 - [libinput] event7  - Weida Hi-Tech                CoolTouchR System           : client bug: event processing lagging behind by 23ms, your system is too slow
+
+EE 15-01-23 00:15:51.453 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 00:15:51.453 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 00:15:51.453 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 00:15:51.453 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 00:15:51.650 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+II 15-01-23 00:16:22.609 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Loading… app-id: org.gnome.Nautilus
+II 15-01-23 00:16:32.136 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Terminal app-id: gnome-terminal-server
+EE 15-01-23 00:16:32.355 - [libinput] client bug: timer event8 debounce short: scheduled expiry is in the past (-24ms), your system is too slow
+
+EE 15-01-23 00:18:17.789 - [libinput] client bug: timer event8 debounce short: scheduled expiry is in the past (-21ms), your system is too slow
+
+II 15-01-23 00:18:20.102 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:18:20.386 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:18:20.778 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:18:21.595 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Terminal app-id: gnome-terminal-server
+II 15-01-23 00:18:38.063 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: LibreWolf app-id: LibreWolf
+II 15-01-23 00:18:46.775 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: LibreWolf app-id: LibreWolf
+II 15-01-23 00:18:55.958 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:19:30.352 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:19:46.440 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: LibreWolf app-id: LibreWolf
+II 15-01-23 00:19:51.933 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:19:52.624 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Terminal app-id: gnome-terminal-server
+EE 15-01-23 00:20:04.811 - [libinput] client bug: timer event8 debounce: scheduled expiry is in the past (-73ms), your system is too slow
+
+EE 15-01-23 00:20:04.811 - [libinput] client bug: timer event8 debounce short: scheduled expiry is in the past (-86ms), your system is too slow
+
+II 15-01-23 00:20:06.060 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: LibreWolf app-id: LibreWolf
+II 15-01-23 00:20:11.964 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:20:15.274 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 15-01-23 00:20:20.875 - [libinput] client bug: timer event8 debounce: scheduled expiry is in the past (-23ms), your system is too slow
+
+EE 15-01-23 00:20:20.875 - [libinput] WARNING: log rate limit exceeded (5 msgs per 3600000ms). Discarding future messages.
+
+II 15-01-23 00:20:33.591 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:20:40.539 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:21:05.198 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: File Upload app-id: LibreWolf
+II 15-01-23 00:21:15.996 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:21:26.489 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:21:29.284 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:21:33.492 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:22:00.633 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:22:04.261 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:22:49.297 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:22:58.398 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:23:02.101 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:23:08.464 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:27:28.610 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: OpenSnitch v1.5.2 app-id: opensnitch_ui
+II 15-01-23 00:27:51.341 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:33:41.254 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:34:03.123 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:35:26.669 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: LibreWolf app-id: LibreWolf
+II 15-01-23 00:36:10.012 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:37:07.660 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:37:33.255 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:37:37.489 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:37:38.323 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:37:39.140 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:37:41.441 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:38:47.233 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:38:50.954 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:39:46.700 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 15-01-23 00:40:17.437 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 00:40:17.437 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 00:40:17.438 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 00:40:17.438 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 00:40:17.679 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+II 15-01-23 00:46:46.527 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:46:49.430 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:46:51.108 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:46:52.552 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Terminal app-id: gnome-terminal-server
+EE 15-01-23 00:47:24.544 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 00:48:25.090 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+II 15-01-23 00:48:49.968 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: OpenSnitch v1.5.2 app-id: opensnitch_ui
+II 15-01-23 00:48:56.417 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:50:15.049 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 15-01-23 00:51:25.430 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 00:51:25.431 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 00:51:25.431 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 00:51:25.432 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 00:51:25.990 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+II 15-01-23 00:51:46.246 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:52:35.756 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:52:36.772 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Terminal app-id: gnome-terminal-server
+II 15-01-23 00:52:39.471 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:52:39.782 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:52:40.236 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:52:41.038 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Terminal app-id: gnome-terminal-server
+EE 15-01-23 00:53:03.583 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+II 15-01-23 00:56:42.027 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 15-01-23 00:58:04.823 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 00:58:04.823 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 00:58:04.824 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 00:58:04.824 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 00:58:05.143 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+II 15-01-23 00:58:22.319 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 00:58:23.886 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+EE 15-01-23 01:00:34.504 - [xwayland/xwm.c:1518] xcb error: op ChangeProperty (no minor), code Window (no extension), sequence 1151, value 25165826
+EE 15-01-23 01:00:34.505 - [xwayland/xwm.c:1518] xcb error: op ChangeProperty (no minor), code Window (no extension), sequence 1156, value 25165826
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+EE 15-01-23 01:05:15.227 - [libinput] event7  - Weida Hi-Tech                CoolTouchR System           : client bug: event processing lagging behind by 22ms, your system is too slow
+
+II 15-01-23 01:05:54.689 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 01:05:55.562 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 01:05:55.909 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 01:05:56.180 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 01:05:56.439 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 01:07:23.162 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 01:07:23.834 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Terminal app-id: gnome-terminal-server
+EE 15-01-23 01:07:35.017 - [libinput] event7  - Weida Hi-Tech                CoolTouchR System           : client bug: event processing lagging behind by 22ms, your system is too slow
+
+EE 15-01-23 01:08:46.888 - [libinput] event7  - Weida Hi-Tech                CoolTouchR System           : client bug: event processing lagging behind by 21ms, your system is too slow
+
+EE 15-01-23 01:08:54.662 - [libinput] event7  - Weida Hi-Tech                CoolTouchR System           : client bug: event processing lagging behind by 25ms, your system is too slow
+
+EE 15-01-23 01:08:54.662 - [libinput] event7  - Weida Hi-Tech                CoolTouchR System           : WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+
+II 15-01-23 01:11:02.866 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 15-01-23 01:12:11.635 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 21ms, your system is too slow
+
+EE 15-01-23 01:12:24.017 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 76ms, your system is too slow
+
+II 15-01-23 01:12:25.135 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 01:12:26.912 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 01:12:28.435 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 01:12:28.711 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 15-01-23 01:12:29.115 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 21ms, your system is too slow
+
+II 15-01-23 01:12:29.415 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 01:12:30.709 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 01:13:31.468 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: OpenSnitch v1.5.2 app-id: opensnitch_ui
+EE 15-01-23 01:13:39.515 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 21ms, your system is too slow
+
+EE 15-01-23 01:15:00.531 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 99ms, your system is too slow
+
+II 15-01-23 01:15:00.878 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Terminal app-id: gnome-terminal-server
+EE 15-01-23 01:15:03.054 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 29ms, your system is too slow
+
+EE 15-01-23 01:15:03.055 - [libinput] event8  - USB Optical Mouse: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+EE 15-01-23 01:21:00.282 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 28ms, your system is too slow
+
+EE 15-01-23 01:22:16.318 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 01:23:52.860 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 29ms, your system is too slow
+
+EE 15-01-23 01:24:23.117 - [xwayland/xwm.c:1518] xcb error: op ChangeProperty (no minor), code Window (no extension), sequence 2573, value 35651586
+EE 15-01-23 01:24:23.117 - [xwayland/xwm.c:1518] xcb error: op ChangeProperty (no minor), code Window (no extension), sequence 2575, value 35651586
+EE 15-01-23 01:25:24.260 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 01:30:48.476 - [libinput] client bug: timer event8 debounce: scheduled expiry is in the past (-21ms), your system is too slow
+
+EE 15-01-23 01:30:48.476 - [libinput] client bug: timer event8 debounce short: scheduled expiry is in the past (-34ms), your system is too slow
+
+EE 15-01-23 01:30:54.536 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 26ms, your system is too slow
+
+EE 15-01-23 01:31:03.616 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 32ms, your system is too slow
+
+EE 15-01-23 01:31:03.616 - [libinput] event2  - SONiX USB DEVICE: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+
+EE 15-01-23 01:51:14.061 - [libinput] event7  - Weida Hi-Tech                CoolTouchR System           : client bug: event processing lagging behind by 31ms, your system is too slow
+
+EE 15-01-23 01:51:28.983 - [libinput] client bug: timer event8 debounce: scheduled expiry is in the past (-31ms), your system is too slow
+
+EE 15-01-23 01:51:28.983 - [libinput] client bug: timer event8 debounce short: scheduled expiry is in the past (-44ms), your system is too slow
+
+II 15-01-23 01:53:21.976 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 01:55:11.344 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 01:56:39.325 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 15-01-23 01:57:21.746 - [xwayland/xwm.c:1518] xcb error: op ChangeProperty (no minor), code Window (no extension), sequence 2730, value 14680066
+EE 15-01-23 01:57:21.746 - [xwayland/xwm.c:1518] xcb error: op ChangeProperty (no minor), code Window (no extension), sequence 2732, value 14680066
+EE 15-01-23 01:57:24.321 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 01:57:24.322 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 01:57:24.322 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 01:57:24.323 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 01:57:24.571 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 01:57:33.086 - [libinput] client bug: timer event8 debounce: scheduled expiry is in the past (-50ms), your system is too slow
+
+EE 15-01-23 01:57:33.087 - [libinput] WARNING: log rate limit exceeded (5 msgs per 3600000ms). Discarding future messages.
+
+II 15-01-23 02:06:55.591 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: OpenSnitch v1.5.2 app-id: opensnitch_ui
+EE 15-01-23 02:07:44.489 - [xwayland/xwm.c:1518] xcb error: op ChangeProperty (no minor), code Window (no extension), sequence 2834, value 14680066
+EE 15-01-23 02:07:44.489 - [xwayland/xwm.c:1518] xcb error: op ChangeProperty (no minor), code Window (no extension), sequence 2836, value 14680066
+II 15-01-23 02:08:05.835 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:10:20.745 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:10:21.411 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:10:21.417 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Wayfire Config Manager app-id: wcm
+II 15-01-23 02:10:26.382 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Edit Binding app-id: wcm
+II 15-01-23 02:11:19.803 - [wayfire-0.7.5/src/core/output-layout.cpp:486] loaded mode auto
+II 15-01-23 02:11:20.412 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:11:22.653 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Edit Binding app-id: wcm
+II 15-01-23 02:11:28.032 - [wayfire-0.7.5/src/core/output-layout.cpp:486] loaded mode auto
+II 15-01-23 02:11:28.142 - [wayfire-0.7.5/src/core/output-layout.cpp:486] loaded mode auto
+II 15-01-23 02:11:29.929 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Edit Binding app-id: wcm
+II 15-01-23 02:11:34.660 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:11:43.090 - [wayfire-0.7.5/src/core/output-layout.cpp:486] loaded mode auto
+II 15-01-23 02:11:43.169 - [wayfire-0.7.5/src/core/output-layout.cpp:486] loaded mode auto
+II 15-01-23 02:11:53.785 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Edit Binding app-id: wcm
+II 15-01-23 02:11:56.246 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:12:00.005 - [wayfire-0.7.5/src/core/output-layout.cpp:486] loaded mode auto
+II 15-01-23 02:12:00.074 - [wayfire-0.7.5/src/core/output-layout.cpp:486] loaded mode auto
+II 15-01-23 02:12:03.703 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Edit Binding app-id: wcm
+II 15-01-23 02:12:12.059 - [wayfire-0.7.5/src/core/output-layout.cpp:486] loaded mode auto
+II 15-01-23 02:12:12.157 - [wayfire-0.7.5/src/core/output-layout.cpp:486] loaded mode auto
+EE 15-01-23 02:12:27.053 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 43ms, your system is too slow
+
+EE 15-01-23 02:12:27.564 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 33ms, your system is too slow
+
+EE 15-01-23 02:12:41.276 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 56ms, your system is too slow
+
+EE 15-01-23 02:12:41.666 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 21ms, your system is too slow
+
+II 15-01-23 02:12:43.497 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Edit Binding app-id: wcm
+II 15-01-23 02:12:52.732 - [wayfire-0.7.5/src/core/output-layout.cpp:486] loaded mode auto
+II 15-01-23 02:12:52.816 - [wayfire-0.7.5/src/core/output-layout.cpp:486] loaded mode auto
+II 15-01-23 02:12:55.372 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:12:58.698 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:12:58.833 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Edit Binding app-id: wcm
+II 15-01-23 02:12:59.021 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:13:09.822 - [wayfire-0.7.5/src/core/output-layout.cpp:486] loaded mode auto
+II 15-01-23 02:13:09.903 - [wayfire-0.7.5/src/core/output-layout.cpp:486] loaded mode auto
+EE 15-01-23 02:13:12.091 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 27ms, your system is too slow
+
+EE 15-01-23 02:13:12.091 - [libinput] event8  - USB Optical Mouse: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+
+II 15-01-23 02:13:26.634 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 15-01-23 02:14:10.201 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 23ms, your system is too slow
+
+EE 15-01-23 02:14:41.249 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 27ms, your system is too slow
+
+EE 15-01-23 02:16:20.477 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 33ms, your system is too slow
+
+EE 15-01-23 02:16:23.286 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 25ms, your system is too slow
+
+II 15-01-23 02:18:17.708 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 15-01-23 02:20:51.338 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 33ms, your system is too slow
+
+EE 15-01-23 02:20:51.338 - [libinput] event2  - SONiX USB DEVICE: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+
+II 15-01-23 02:22:13.979 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:23:01.387 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:23:23.718 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:23:24.646 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:24:18.694 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:26:35.092 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:27:11.955 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:27:19.264 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:27:26.053 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:27:41.519 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:27:46.241 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:28:08.493 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:28:11.044 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:28:23.306 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:28:23.928 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:28:29.378 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:28:33.221 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:28:44.152 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:28:44.811 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:28:45.482 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:28:48.654 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:28:51.923 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:28:53.021 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:28:57.996 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:29:00.307 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:29:07.737 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:29:29.505 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:29:32.988 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:29:48.044 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:29:52.979 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:29:57.893 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:30:00.845 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:30:12.666 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:30:20.842 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:30:22.483 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:30:30.226 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:30:51.426 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:30:52.994 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:30:56.223 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:31:08.014 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:31:13.494 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:31:17.285 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:31:28.165 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:31:31.011 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:31:31.968 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:31:33.794 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:31:37.663 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:31:44.437 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:31:47.338 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:31:50.857 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:31:54.919 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:32:02.726 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:32:04.679 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:32:09.785 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:32:11.618 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:32:12.626 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:32:14.372 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:32:17.288 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:32:22.240 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:32:24.404 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:32:28.333 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:32:30.561 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:32:32.171 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:32:36.226 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:32:37.047 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:32:38.980 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:32:40.390 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:33:43.046 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:34:22.441 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:34:22.481 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:34:27.513 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:34:56.817 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:35:17.234 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:36:06.350 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:36:09.186 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:36:10.147 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Library app-id: LibreWolf
+II 15-01-23 02:36:18.674 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:36:20.744 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Add bookmark folder app-id: LibreWolf
+II 15-01-23 02:36:40.184 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:36:40.908 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:36:51.574 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:36:53.840 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Export Bookmarks File app-id: LibreWolf
+EE 15-01-23 02:37:53.911 - [libinput] client bug: timer event8 debounce short: scheduled expiry is in the past (-20ms), your system is too slow
+
+II 15-01-23 02:39:02.751 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:39:04.157 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:39:05.573 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:39:08.252 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:39:15.012 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Save As app-id: LibreWolf
+II 15-01-23 02:39:48.375 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Save As app-id: LibreWolf
+II 15-01-23 02:41:26.887 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:41:33.240 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:42:48.513 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:42:59.132 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:43:28.202 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:43:49.485 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:46:02.631 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:46:04.700 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:46:08.319 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:46:53.031 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:49:04.469 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:50:17.652 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:50:41.061 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:50:59.309 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:51:05.501 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Enter name of file to save to… app-id: LibreWolf
+II 15-01-23 02:51:13.819 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:51:51.530 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:51:54.003 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Enter name of file to save to… app-id: LibreWolf
+II 15-01-23 02:52:37.523 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:52:38.825 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:55:26.957 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface:  app-id: LibreWolf
+II 15-01-23 02:55:48.095 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:55:48.219 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 15-01-23 02:58:37.400 - [libinput] client bug: timer event8 debounce: scheduled expiry is in the past (-70ms), your system is too slow
+
+EE 15-01-23 02:58:37.400 - [libinput] client bug: timer event8 middlebutton: scheduled expiry is in the past (-45ms), your system is too slow
+
+EE 15-01-23 02:58:37.400 - [libinput] client bug: timer event8 debounce short: scheduled expiry is in the past (-27ms), your system is too slow
+
+II 15-01-23 02:59:10.066 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:59:11.035 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 02:59:15.171 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:00:41.313 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:01:14.459 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:01:30.902 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:01:50.342 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:02:13.319 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:02:36.476 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:02:56.803 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:02:59.040 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:03:02.871 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:03:04.642 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:03:06.202 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:03:13.486 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:03:14.508 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:04:01.303 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:08:14.989 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:11:46.393 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 15-01-23 03:11:57.446 - [libinput] client bug: timer event8 debounce short: scheduled expiry is in the past (-23ms), your system is too slow
+
+EE 15-01-23 03:11:57.446 - [libinput] WARNING: log rate limit exceeded (5 msgs per 3600000ms). Discarding future messages.
+
+II 15-01-23 03:12:44.020 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:12:46.073 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:12:48.645 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:12:53.890 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Enter name of file to save to… app-id: LibreWolf
+II 15-01-23 03:12:54.196 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:13:08.113 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:13:16.241 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:13:18.478 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:13:40.079 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:13:42.930 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 15-01-23 03:13:46.772 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 27ms, your system is too slow
+
+EE 15-01-23 03:14:36.988 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 21ms, your system is too slow
+
+EE 15-01-23 03:14:55.629 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 27ms, your system is too slow
+
+II 15-01-23 03:15:39.241 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:16:51.060 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:17:05.732 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:17:09.976 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:18:40.204 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:18:43.485 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:18:45.707 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Enter name of file to save to… app-id: LibreWolf
+II 15-01-23 03:18:47.561 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: wlogout app-id: wlogout
+EE 15-01-23 03:18:47.880 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 41ms, your system is too slow
+
+EE 15-01-23 03:18:48.432 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 42ms, your system is too slow
+
+EE 15-01-23 03:18:48.432 - [libinput] event8  - USB Optical Mouse: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+
+II 15-01-23 03:18:49.035 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Save Video app-id: LibreWolf
+II 15-01-23 03:19:01.844 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface:  app-id: LibreWolf
+II 15-01-23 03:19:32.364 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:19:34.670 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:19:40.542 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:19:57.866 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:22:16.205 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:22:20.157 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:22:22.141 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Enter name of file to save to… app-id: LibreWolf
+II 15-01-23 03:24:08.328 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface:  app-id: LibreWolf
+II 15-01-23 03:24:53.672 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:24:59.072 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Save Video app-id: LibreWolf
+II 15-01-23 03:25:14.574 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:25:14.672 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:25:15.302 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:26:55.532 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface:  app-id: LibreWolf
+II 15-01-23 03:27:33.631 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:29:52.527 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:29:59.967 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:30:39.846 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:31:26.178 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:31:35.773 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:31:42.651 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:31:48.627 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:32:04.165 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:32:09.990 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:32:12.126 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:32:20.625 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:32:25.334 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:32:41.793 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:32:59.955 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:33:02.586 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:33:13.350 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:33:14.865 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:33:18.880 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:33:20.921 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:33:31.245 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:33:42.913 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Open File app-id: LibreWolf
+II 15-01-23 03:33:48.045 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:33:48.367 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface:  app-id: LibreWolf
+II 15-01-23 03:33:52.451 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Removing Cookies and Site Data app-id: LibreWolf
+II 15-01-23 03:35:21.133 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:35:24.105 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:35:32.685 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:35:37.183 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:35:40.086 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface:  app-id: LibreWolf
+II 15-01-23 03:35:49.732 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface:  app-id: LibreWolf
+II 15-01-23 03:35:51.801 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface:  app-id: LibreWolf
+II 15-01-23 03:36:00.444 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface:  app-id: LibreWolf
+II 15-01-23 03:36:02.535 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface:  app-id: LibreWolf
+II 15-01-23 03:36:10.595 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface:  app-id: LibreWolf
+II 15-01-23 03:36:17.424 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface:  app-id: LibreWolf
+II 15-01-23 03:36:28.095 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:36:29.303 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:36:35.554 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface:  app-id: LibreWolf
+II 15-01-23 03:36:38.285 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface:  app-id: LibreWolf
+II 15-01-23 03:37:09.863 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:37:26.353 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:37:31.347 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Enter name of file to save to… app-id: LibreWolf
+II 15-01-23 03:37:32.203 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface:  app-id: LibreWolf
+II 15-01-23 03:37:43.430 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Enter name of file to save to… app-id: LibreWolf
+II 15-01-23 03:38:27.690 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Enter name of file to save to… app-id: LibreWolf
+II 15-01-23 03:38:35.442 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:39:46.633 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:40:25.097 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:40:26.826 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface:  app-id: LibreWolf
+II 15-01-23 03:43:13.538 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface:  app-id: LibreWolf
+II 15-01-23 03:43:16.379 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:43:31.838 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:43:36.981 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:43:44.150 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:43:49.296 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:45:31.123 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:45:36.723 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:46:32.535 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:46:43.789 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:46:53.392 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:48:40.163 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:48:42.547 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Enter name of file to save to… app-id: LibreWolf
+II 15-01-23 03:49:07.236 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:49:26.980 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:49:31.720 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Enter name of file to save to… app-id: LibreWolf
+II 15-01-23 03:49:48.366 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:49:49.417 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Enter name of file to save to… app-id: LibreWolf
+II 15-01-23 03:50:07.710 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:51:23.897 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:51:28.684 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:51:53.968 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface:  app-id: LibreWolf
+II 15-01-23 03:52:18.024 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface:  app-id: LibreWolf
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Unsupported maximum keycode 708, clipping.
+>                   X11 cannot support keycodes above 255.
+Errors from xkbcomp are not fatal to the X server
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Unsupported maximum keycode 708, clipping.
+>                   X11 cannot support keycodes above 255.
+Errors from xkbcomp are not fatal to the X server
+II 15-01-23 03:54:38.966 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: OpenSnitch v1.5.2 app-id: opensnitch_ui
+II 15-01-23 03:56:48.840 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface:  app-id: LibreWolf
+II 15-01-23 03:57:08.818 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:57:17.359 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:57:19.442 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:57:26.910 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 03:59:15.796 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 15-01-23 04:00:03.847 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 31ms, your system is too slow
+
+II 15-01-23 04:03:48.703 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 04:03:53.306 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 04:04:01.972 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 04:04:07.301 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 04:04:18.673 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 04:04:27.664 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 04:04:31.775 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 04:04:42.753 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 04:05:08.573 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface:  app-id: LibreWolf
+II 15-01-23 04:07:39.926 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 04:07:45.994 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 04:07:53.116 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 04:08:10.067 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface:  app-id: LibreWolf
+II 15-01-23 04:08:11.983 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface:  app-id: LibreWolf
+II 15-01-23 04:10:02.951 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: OpenSnitch v1.5.2 app-id: opensnitch_ui
+II 15-01-23 04:10:03.591 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 04:12:33.498 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface:  app-id: LibreWolf
+II 15-01-23 04:13:07.054 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 04:13:23.149 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Picture-in-Picture app-id: LibreWolf
+II 15-01-23 04:13:35.617 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Enter name of file to save to… app-id: LibreWolf
+II 15-01-23 04:13:37.764 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface:  app-id: LibreWolf
+II 15-01-23 04:13:54.516 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 04:14:14.932 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 04:14:16.399 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 04:14:18.019 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Enter name of file to save to… app-id: LibreWolf
+EE 15-01-23 04:14:19.366 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 23ms, your system is too slow
+
+EE 15-01-23 04:14:20.783 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 23ms, your system is too slow
+
+II 15-01-23 04:14:39.533 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 04:14:42.257 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Enter name of file to save to… app-id: LibreWolf
+EE 15-01-23 04:14:42.730 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 24ms, your system is too slow
+
+EE 15-01-23 04:14:44.838 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 27ms, your system is too slow
+
+EE 15-01-23 04:14:45.266 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 23ms, your system is too slow
+
+II 15-01-23 04:15:02.649 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 04:15:03.970 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 04:15:08.005 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 04:15:28.832 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 04:15:39.034 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 04:15:41.210 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Enter name of file to save to… app-id: LibreWolf
+EE 15-01-23 04:15:41.503 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 31ms, your system is too slow
+
+EE 15-01-23 04:15:41.503 - [libinput] event8  - USB Optical Mouse: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+
+II 15-01-23 04:17:24.507 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 04:22:51.471 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 04:22:52.872 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 04:24:43.560 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 04:34:37.559 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: LibreWolf app-id: LibreWolf
+II 15-01-23 04:34:42.040 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 04:35:03.457 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 04:35:19.020 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Enter name of file to save to… app-id: LibreWolf
+II 15-01-23 04:35:31.660 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Loading… app-id: org.gnome.Nautilus
+II 15-01-23 04:40:13.454 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: OpenSnitch v1.5.2 app-id: opensnitch_ui
+II 15-01-23 04:41:49.446 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 15-01-23 04:41:49.734 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 38ms, your system is too slow
+
+II 15-01-23 04:41:53.459 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Picture-in-Picture app-id: LibreWolf
+EE 15-01-23 04:56:00.097 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 34ms, your system is too slow
+
+II 15-01-23 04:56:03.740 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: LibreWolf app-id: LibreWolf
+II 15-01-23 04:56:46.245 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 04:56:46.829 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 04:56:47.909 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 04:56:59.571 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 15-01-23 04:57:21.468 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 25ms, your system is too slow
+
+EE 15-01-23 04:57:21.469 - [libinput] event2  - SONiX USB DEVICE: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+
+II 15-01-23 04:57:41.990 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 04:57:53.980 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 04:58:14.647 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 05:00:45.458 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 05:01:22.892 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 05:05:49.131 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 05:12:07.920 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 15-01-23 05:29:09.534 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 30ms, your system is too slow
+
+II 15-01-23 05:29:23.351 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Enter name of file to save to… app-id: LibreWolf
+EE 15-01-23 05:29:23.542 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 43ms, your system is too slow
+
+EE 15-01-23 05:29:23.844 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 33ms, your system is too slow
+
+EE 15-01-23 05:29:28.176 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 21ms, your system is too slow
+
+II 15-01-23 05:30:28.978 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 05:30:32.312 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 05:30:38.904 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 05:30:40.278 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 05:31:39.198 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 05:31:44.297 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 05:31:50.194 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 05:32:51.570 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 05:33:03.209 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 05:33:14.615 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 15-01-23 05:34:39.319 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 24ms, your system is too slow
+
+EE 15-01-23 05:34:39.319 - [libinput] event8  - USB Optical Mouse: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+
+II 15-01-23 05:47:36.397 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 05:47:40.532 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 05:48:58.392 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 15-01-23 05:51:53.362 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 30ms, your system is too slow
+
+II 15-01-23 06:12:54.656 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 15-01-23 06:13:06.956 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 25ms, your system is too slow
+
+II 15-01-23 06:14:19.363 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 06:14:44.452 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Library app-id: LibreWolf
+II 15-01-23 06:15:18.121 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 06:15:47.592 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 06:15:48.447 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 06:16:10.821 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 15-01-23 06:17:21.737 - [libinput] client bug: timer event8 debounce short: scheduled expiry is in the past (-23ms), your system is too slow
+
+II 15-01-23 06:17:39.630 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 06:17:55.923 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 06:17:56.544 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 06:18:00.046 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 06:18:02.579 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 06:19:10.436 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 06:20:06.623 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 06:20:13.855 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 15-01-23 06:20:27.084 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 06:20:27.084 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 06:20:27.096 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 06:20:27.096 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 06:20:30.781 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+II 15-01-23 06:22:08.425 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 06:22:57.068 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 06:24:53.551 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 15-01-23 06:26:20.872 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 28ms, your system is too slow
+
+II 15-01-23 06:26:22.704 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 06:28:46.449 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 06:30:04.827 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 06:49:12.256 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 15-01-23 06:49:52.446 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 23ms, your system is too slow
+
+EE 15-01-23 06:50:08.398 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 21ms, your system is too slow
+
+II 15-01-23 06:50:18.439 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 15-01-23 06:50:50.990 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 24ms, your system is too slow
+
+EE 15-01-23 06:53:05.919 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 06:53:05.925 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 06:53:05.925 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 06:53:05.925 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 06:53:06.073 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 06:55:07.090 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 06:55:07.446 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 06:55:07.620 - [wayfire-0.7.5/src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 06:55:10.766 - [xwayland/xwm.c:1518] xcb error: op ChangeProperty (no minor), code Window (no extension), sequence 4238, value 35651587
+EE 15-01-23 06:55:44.088 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 06:55:44.089 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 06:55:44.089 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 06:55:44.089 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 06:55:44.229 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 06:55:45.275 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 40ms, your system is too slow
+
+EE 15-01-23 06:55:45.578 - [libinput] client bug: timer event8 debounce: scheduled expiry is in the past (-70ms), your system is too slow
+
+EE 15-01-23 06:55:45.578 - [libinput] client bug: timer event8 debounce short: scheduled expiry is in the past (-83ms), your system is too slow
+
+EE 15-01-23 06:55:46.495 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 60ms, your system is too slow
+
+EE 15-01-23 06:55:46.495 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 31ms, your system is too slow
+
+EE 15-01-23 06:56:09.261 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 22ms, your system is too slow
+
+EE 15-01-23 06:56:25.291 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 37ms, your system is too slow
+
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+EE 15-01-23 06:59:29.496 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 07:01:12.213 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+II 15-01-23 07:01:16.491 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+EE 15-01-23 07:02:52.815 - [libinput] event7  - Weida Hi-Tech                CoolTouchR System           : client bug: event processing lagging behind by 23ms, your system is too slow
+
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+EE 15-01-23 07:03:46.117 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 23ms, your system is too slow
+
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+EE 15-01-23 07:03:50.267 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 26ms, your system is too slow
+
+EE 15-01-23 07:03:50.267 - [libinput] event2  - SONiX USB DEVICE: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+EE 15-01-23 07:04:42.466 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 22ms, your system is too slow
+
+EE 15-01-23 07:04:42.467 - [libinput] event8  - USB Optical Mouse: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+
+II 15-01-23 07:04:48.261 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 07:05:16.114 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 07:05:17.261 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Terminal app-id: gnome-terminal-server
+EE 15-01-23 07:06:05.227 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 07:06:13.197 - [libinput] event7  - Weida Hi-Tech                CoolTouchR System           : client bug: event processing lagging behind by 31ms, your system is too slow
+
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+EE 15-01-23 07:08:11.282 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 07:08:11.282 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 07:08:11.282 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 07:08:11.282 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 07:08:11.947 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 07:08:21.796 - [xwayland/xwm.c:1518] xcb error: op ChangeProperty (no minor), code Window (no extension), sequence 5120, value 46137346
+EE 15-01-23 07:08:21.796 - [xwayland/xwm.c:1518] xcb error: op ChangeProperty (no minor), code Window (no extension), sequence 5125, value 46137346
+EE 15-01-23 07:08:33.211 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 07:08:33.212 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 07:08:33.212 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 07:08:33.213 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 07:08:33.416 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 07:09:20.889 - [xwayland/xwm.c:1518] xcb error: op ChangeProperty (no minor), code Window (no extension), sequence 5279, value 46137346
+EE 15-01-23 07:09:20.890 - [xwayland/xwm.c:1518] xcb error: op ChangeProperty (no minor), code Window (no extension), sequence 5284, value 46137346
+II 15-01-23 07:09:35.685 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Enter name of file to save to… app-id: LibreWolf
+II 15-01-23 07:09:36.262 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 07:09:37.923 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface:  app-id: LibreWolf
+II 15-01-23 07:10:07.979 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: OpenSnitch v1.5.2 app-id: opensnitch_ui
+EE 15-01-23 07:14:03.495 - [libinput] event7  - Weida Hi-Tech                CoolTouchR System           : client bug: event processing lagging behind by 85ms, your system is too slow
+
+II 15-01-23 07:14:41.449 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 07:15:52.242 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 07:15:53.175 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 07:18:00.503 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 07:18:27.009 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 07:20:01.362 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 07:20:07.999 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 07:21:23.749 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 07:22:08.584 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 07:22:20.822 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 07:22:23.945 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 07:23:31.582 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 07:24:54.028 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 07:25:59.320 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 07:28:51.123 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 07:29:08.797 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 07:31:28.198 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 07:31:32.540 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 15-01-23 07:31:59.973 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 07:31:59.974 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 07:31:59.974 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 07:31:59.974 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 07:32:03.451 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 07:32:37.057 - [xwayland/xwm.c:1518] xcb error: op ChangeProperty (no minor), code Window (no extension), sequence 5781, value 46137346
+EE 15-01-23 07:32:37.057 - [xwayland/xwm.c:1518] xcb error: op ChangeProperty (no minor), code Window (no extension), sequence 5786, value 46137346
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+II 15-01-23 07:37:16.631 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 15-01-23 07:38:02.185 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 07:38:02.185 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 07:38:02.186 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 07:38:02.186 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 07:38:02.346 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+II 15-01-23 07:48:45.126 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: LibreWolf app-id: LibreWolf
+II 15-01-23 07:49:48.638 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 07:50:00.544 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Enter name of file to save to… app-id: LibreWolf
+EE 15-01-23 07:50:01.502 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 28ms, your system is too slow
+
+EE 15-01-23 07:50:09.708 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 34ms, your system is too slow
+
+II 15-01-23 08:29:51.426 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 08:29:59.997 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 15-01-23 08:42:38.679 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 27ms, your system is too slow
+
+EE 15-01-23 08:42:41.257 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 24ms, your system is too slow
+
+EE 15-01-23 08:42:45.241 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 28ms, your system is too slow
+
+EE 15-01-23 08:45:26.647 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 30ms, your system is too slow
+
+EE 15-01-23 08:45:26.647 - [libinput] event8  - USB Optical Mouse: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+
+EE 15-01-23 09:05:55.240 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 09:05:55.241 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 09:05:55.241 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 09:05:55.241 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 09:05:55.546 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 09:06:40.080 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 28ms, your system is too slow
+
+EE 15-01-23 09:06:42.279 - [libinput] client bug: timer event8 debounce short: scheduled expiry is in the past (-22ms), your system is too slow
+
+EE 15-01-23 09:07:18.872 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 30ms, your system is too slow
+
+EE 15-01-23 09:08:14.369 - [libinput] event7  - Weida Hi-Tech                CoolTouchR System           : client bug: event processing lagging behind by 62ms, your system is too slow
+
+II 15-01-23 09:08:30.369 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 09:08:31.303 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 09:08:34.671 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 15-01-23 09:08:35.656 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 21ms, your system is too slow
+
+II 15-01-23 09:08:35.923 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 09:08:38.690 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 15-01-23 09:08:38.742 - [libinput] client bug: timer event8 debounce short: scheduled expiry is in the past (-23ms), your system is too slow
+
+EE 15-01-23 09:08:39.051 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 24ms, your system is too slow
+
+II 15-01-23 09:08:42.472 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 09:08:43.439 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 09:08:44.748 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 09:08:45.769 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 09:08:48.979 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 09:08:58.410 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 09:08:59.656 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 15-01-23 09:09:53.191 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 34ms, your system is too slow
+
+II 15-01-23 09:10:10.701 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 09:10:11.622 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 09:10:13.058 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 09:10:15.168 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 09:10:16.083 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 09:10:19.506 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 09:10:22.507 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 09:10:25.279 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 09:10:27.619 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 15-01-23 09:10:31.229 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 60ms, your system is too slow
+
+EE 15-01-23 09:10:31.229 - [libinput] event8  - USB Optical Mouse: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+
+EE 15-01-23 09:10:47.919 - [xwayland/xwm.c:1518] xcb error: op ChangeProperty (no minor), code Window (no extension), sequence 6729, value 14680066
+EE 15-01-23 09:10:47.920 - [xwayland/xwm.c:1518] xcb error: op ChangeProperty (no minor), code Window (no extension), sequence 6734, value 14680066
+II 15-01-23 09:12:53.736 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 09:12:54.546 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 09:12:56.524 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 09:15:57.123 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 15-01-23 09:17:41.500 - [libinput] client bug: timer event8 debounce short: scheduled expiry is in the past (-26ms), your system is too slow
+
+EE 15-01-23 09:17:46.094 - [libinput] client bug: timer event8 debounce short: scheduled expiry is in the past (-20ms), your system is too slow
+
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+EE 15-01-23 09:18:14.188 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 25ms, your system is too slow
+
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+EE 15-01-23 09:19:01.816 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 23ms, your system is too slow
+
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+EE 15-01-23 09:19:10.258 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 22ms, your system is too slow
+
+EE 15-01-23 09:19:10.258 - [libinput] event2  - SONiX USB DEVICE: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+EE 15-01-23 09:25:36.202 - [libinput] event7  - Weida Hi-Tech                CoolTouchR System           : client bug: event processing lagging behind by 30ms, your system is too slow
+
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+EE 15-01-23 09:27:23.719 - [libinput] event7  - Weida Hi-Tech                CoolTouchR System           : client bug: event processing lagging behind by 23ms, your system is too slow
+
+EE 15-01-23 09:30:22.904 - [xwayland/xwm.c:1518] xcb error: op ChangeProperty (no minor), code Window (no extension), sequence 7852, value 56623106
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+II 15-01-23 09:37:09.958 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 09:37:58.604 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 09:41:41.035 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+EE 15-01-23 09:43:31.056 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 26ms, your system is too slow
+
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+EE 15-01-23 09:43:46.066 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 28ms, your system is too slow
+
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+EE 15-01-23 09:44:35.291 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 21ms, your system is too slow
+
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+EE 15-01-23 09:55:05.451 - [libinput] client bug: timer event8 debounce short: scheduled expiry is in the past (-23ms), your system is too slow
+
+EE 15-01-23 09:55:05.451 - [libinput] WARNING: log rate limit exceeded (5 msgs per 3600000ms). Discarding future messages.
+
+EE 15-01-23 10:00:45.204 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 21ms, your system is too slow
+
+II 15-01-23 10:02:05.701 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: LibreWolf app-id: LibreWolf
+II 15-01-23 10:02:12.263 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: LibreWolf app-id: LibreWolf
+II 15-01-23 10:02:34.332 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 10:02:35.212 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 10:02:35.699 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 10:02:36.151 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 10:02:48.402 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 10:02:49.243 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 10:07:20.919 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: OpenSnitch v1.5.2 app-id: opensnitch_ui
+EE 15-01-23 10:08:57.805 - [libinput] event7  - Weida Hi-Tech                CoolTouchR System           : client bug: event processing lagging behind by 23ms, your system is too slow
+
+EE 15-01-23 10:10:30.016 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 39ms, your system is too slow
+
+EE 15-01-23 10:10:30.296 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 39ms, your system is too slow
+
+EE 15-01-23 10:10:45.771 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 31ms, your system is too slow
+
+EE 15-01-23 10:10:54.098 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 21ms, your system is too slow
+
+EE 15-01-23 10:11:02.134 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 31ms, your system is too slow
+
+EE 15-01-23 10:11:02.135 - [libinput] event2  - SONiX USB DEVICE: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+
+EE 15-01-23 10:11:36.377 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 24ms, your system is too slow
+
+EE 15-01-23 10:11:36.378 - [libinput] event8  - USB Optical Mouse: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+
+II 15-01-23 10:18:35.625 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 10:19:56.566 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 10:23:29.415 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 10:24:36.319 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 10:24:45.046 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 15-01-23 10:25:25.901 - [libinput] client bug: timer event8 debounce short: scheduled expiry is in the past (-26ms), your system is too slow
+
+II 15-01-23 10:26:11.373 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 15-01-23 10:26:32.246 - [libinput] event7  - Weida Hi-Tech                CoolTouchR System           : client bug: event processing lagging behind by 21ms, your system is too slow
+
+II 15-01-23 10:36:16.372 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 10:37:10.883 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+II 15-01-23 10:43:28.378 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: LibreWolf app-id: LibreWolf
+EE 15-01-23 10:43:31.493 - [libinput] client bug: timer event8 debounce short: scheduled expiry is in the past (-21ms), your system is too slow
+
+II 15-01-23 10:43:32.082 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: LibreWolf app-id: LibreWolf
+EE 15-01-23 10:43:34.597 - [libinput] client bug: timer event8 debounce: scheduled expiry is in the past (-40ms), your system is too slow
+
+II 15-01-23 10:43:46.251 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 10:43:51.835 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 10:44:01.191 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 10:47:16.088 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: OpenSnitch v1.5.2 app-id: opensnitch_ui
+II 15-01-23 10:48:59.833 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 15-01-23 10:49:05.529 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 15-01-23 10:50:38.341 - [libinput] client bug: timer event8 debounce: scheduled expiry is in the past (-20ms), your system is too slow
+
+EE 15-01-23 10:50:38.341 - [libinput] client bug: timer event8 debounce short: scheduled expiry is in the past (-33ms), your system is too slow
+
+EE 15-01-23 10:50:38.341 - [libinput] WARNING: log rate limit exceeded (5 msgs per 3600000ms). Discarding future messages.
+
+EE 15-01-23 10:53:41.808 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 21ms, your system is too slow
+
+EE 15-01-23 10:53:44.680 - [wayfire-0.7.5/src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 10:53:44.688 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+II 15-01-23 10:53:44.730 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: OpenSnitch v1.5.2 app-id: opensnitch_ui
+EE 15-01-23 10:53:44.947 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 10:53:45.075 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 15-01-23 10:53:45.112 - [wayfire-0.7.5/src/view/xwayland.cpp:818] new unmanaged xwayland surface (null) class: (null) instance: (null)
+II 15-01-23 10:53:50.740 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: OpenSnitch v1.5.2 app-id: opensnitch_ui
+II 15-01-23 10:54:10.265 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: OpenSnitch v1.5.2 app-id: opensnitch_ui
+Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+EE 15-01-23 10:54:55.096 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 40ms, your system is too slow
+
+II 15-01-23 10:55:39.109 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 15-01-23 10:55:47.233 - [libinput] event7  - Weida Hi-Tech                CoolTouchR System           : client bug: event processing lagging behind by 34ms, your system is too slow
+

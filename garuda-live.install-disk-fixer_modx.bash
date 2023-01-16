@@ -1,4 +1,3 @@
-
 ## Just the init Area!
 
 ####################################################################################################
@@ -9,10 +8,12 @@
 trap 'exit 130' INT
 
 # Set lange for programm outputs to US/UK-English to have an unified stout/sterr experience !!
-version=0.96beta
+version=0.97beta
 LC_ALL=C
 opensnitch=true
 ################################################
+
+### expac "%n %m" -l'\n' -Q $(pacman -Qq) | sort -rhk 2 | head -40 | less   ## Shows the 40 biggest packages!
 
 ##########################
 ## Set init variables!! ##
@@ -28,12 +29,13 @@ go_dispatch_cmd="go-dispatch-proxy -lport 4711 -tunnel  10.0.0.10:5090 10.0.0.10
 ### All archlinux packages that will grouped be touched or used!!
 
 uninstall_conflicts="poppler wl-clipboard lib32-libelf libelf"
+uninstall_oversized_pkgs="noto-fonts ttf-iosevka-nerd garuda-wallpapers libstaroffice ttf-fira-sans mesa-demos lib32-mesa-demos fwupd gnome-firmware"
 extra_packages="systemd-ui systemdgenie yt-dlp poppler poppler-glib repose pkgfile mate-utils qjournalctl gnome-logs yelp hwinfo usbview hwdetect pacmanlogviewer k3b vlc gparted wayfire-plugins-extra ncdu vnstat gotop tor shellcheck pikaur bat devtools opensnitch axel android-sdk-platform-tools irqbalance ripgrep"
 pikaur_pkgs="go-dispatch-proxy-git redsocks hostapd-mana-git wl-clipboard-rs libelf"
-aur_packages_1="kaku-bin"
-aur_packages_2="selectdefaultapplication-git electron5-bin opera-proxy ix archtorify-git sharik-bin hotspot wvkbd"
+aur_packages_1="libva-vdpau-driver-wayland" # libva-vdpau-driver-wayland -- set vlc to use xvideo output on native xwayland mode!
+aur_packages_2="opera-proxy ix archtorify-git hotspot wvkbd"
 need_package_install_from_repo="librewolf opera xorg-xhost shellcheck openssl openssl-1.1 libdrm wayland-protocols exa starship libgit2"
-depends_pkg="proxychains-ng conky alacritty python-stem"
+depends_pkg="proxychains-ng conky alacritty python-stem flatpak"
 update_pkgs_early_stage="wayfire wf-config waybar wf-shell fmt spdlog wireplumber libwireplumber"
 
 
@@ -124,7 +126,7 @@ function aur_install {
   # Delete packages older then n days!
   find $src_dir/pacman-cache/aur/ -name *.zst -type f -mtime +14 | xargs rm -f
   
-  cp $src_dir/pacman-cache/aur/*.zst ~/.cache/pikaur/pkg/
+  cp $src_dir/pacman-cache/aur/* ~/.cache/pikaur/pkg/
   
   # install needet packages to install before build over the non dependencie related packages!!
   pikaur -S ${pikaur_pkgs} --noedit --noconfirm
@@ -133,7 +135,7 @@ function aur_install {
   pikaur -S $@ --noedit --noconfirm
   
   # Backup all new created aur packages to local aur cache folder!
-  cp -r ~/.cache/pikaur/pkg/*.zst $src_dir/pacman-cache/aur/
+  cp -r ~/.cache/pikaur/pkg/* $src_dir/pacman-cache/aur/
   
   ## Done!!
   
@@ -259,9 +261,12 @@ echo "-----------------------------------------------------------     "      #
 ##############################################################################
                                                                             #################
 sleep 2.75                                                                               ###############
-sudo pacman -Sy
-sudo pacman -Q wl-clipboard-rs &> /dev/null || uninstall_existing ${uninstall_conflicts}    #########################
-############################################################################################################
+sudo pacman -Sy                                                                                ##################################
+sudo pacman -Q wl-clipboard-rs &> /dev/null || uninstall_existing $uninstall_conflicts $uninstall_oversized_pkgs  #######################
+                                                                                                                       #################
+############################################################################################################################
+
+sudo mkdir -p  /usr/share/wallpapers/garuda-wallpapers/ &> /dev/null && sudo cp $src_dir/Ghosts.jpg /usr/share/wallpapers/garuda-wallpapers/Ghosts.jpg
 
 ## Install dependencies packages for tool to adjust garuda live disk correct!!
 
@@ -357,11 +362,14 @@ sleep 2
 
 aur_install $aur_packages_1 $aur_packages_2 
 
+# install wlroots-nvidia
 cd ~/.cache
 pikaur -Rdd wlroots --noconfirm
 pikaur -G wlroots-nvidia
 cd  wlroots-nvidia
+cp $srcdir/pikaur-cache/wlroots-nvidia*zst ./ &> /dev/null
 makepkg -si --skippgpcheck --noconfirm
+cp .zst $srcdir/pikaur-cache/
 
 
 ##############################
@@ -425,37 +433,30 @@ sudo bash $src_dir/install_unimportant.bash
 ##################
 #### Just go into the global ghostchip mode via tor that are loadbalanced!!
 #######
-#######################
-## Start firevigeo!! ##
-#######################
-
-sudo ~/.cache/firevigeo-torloader/firevigeo -s
-
-
 ## Show torprojec test site!!
 
 bash -c "sleep 8 && nohup librewolf 'https://check.torproject.org'" &> /dev/null &
 
-
 ## At least show just some infos for usage at the!!
 
-gnome-terminal -t Start firevigeo torloader tool! -- sudo ~/.cache/firevigeo-torloader/firevigeo -s &> /dev/null &
+sudo gnome-terminal -t Start firevigeo torloader tool! -- sudo ~/.cache/firevigeo-torloader/firevigeo.sh -s &> /dev/null &
 
 echo "[))> Run if you like to restart firevigeo:"
 echo
-echo "sudo ~/.cache/firevigeo-torloader/firevigeo -s"
+echo "sudo ~/firevigeo -s"
 
 echo
 echo Finish building process!!
 echo
 
+
 ## Tweak sudo settings to hardening the base system!!
 
+sudo bash -c "sudo bash $src_dir/sudo-hardening-pro_tweaks.bash && echo 'Restart wayfire desktop in 90 seconds... press ctrl+c to abort the restarting of the Desktop!!' && echo && echo && sleep 90 && sudo killall wayfire"
 
-sleep 120
-
-sudo bash -c "sudo bash $src_dir/sudo-hardening-pro_tweaks.bash && sudo killall wayfire"
 
 #### !!!! END LINE ~>> HOPE ALL DONE WITHOUT FAILURES AND HOW DO YOU LIKE IT <<~ !!!! ####
+
+
 
 

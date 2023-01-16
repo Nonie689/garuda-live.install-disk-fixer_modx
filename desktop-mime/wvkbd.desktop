@@ -1,0 +1,31 @@
+[Desktop Entry]
+
+# The type as listed above
+Type=Application
+
+# The version of the desktop entry specification to which this file complies
+Version=1.0
+
+# The name of the application
+Name=xvkbdb
+
+# Generic name of the application
+GenericName=On-screen wlroots keyboard
+
+# A comment which can/will be used as a tooltip
+Comment=Wayland on-screen keyboard
+
+# The path to the folder in which the executable is run
+Path=/usr/bin
+
+# The executable of the application, possibly with arguments.
+Exec=bash -c "kill $(ps -aux | grep -E 'wvkbd-mobintl -L 180' | grep -v grep | awk '{print $2}') &> /dev/null || wvkbd-mobintl -L 180"
+
+# The name of the icon that will be used to display this entry
+Icon=wvkbd-icon
+
+# Describes whether this application needs to be run in a terminal or not
+Terminal=false
+
+# Describes the categories in which this entry should be shown
+Categories=Application;Qt;GNOME;

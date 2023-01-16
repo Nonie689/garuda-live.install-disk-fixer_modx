@@ -6,6 +6,10 @@ export WAYLAND_DISPLAY="wayland-1"
 
 sudo cp $srcdir/config/wayfire.desktop /usr/share/wayland-sessions/wayfire.desktop
 
+# Disable garuda pacman foreign.hook programm!
+sudo mv /usr/share/libalpm/hooks/foreign.hook /usr/share/libalpm/hooks/foreign.hook.bac &> /dev/null
+sudo mv /usr/share/libalpm/hooks/orphans.hook /usr/share/libalpm/hooks/orphans.hook.bac &> /dev/null
+
 echo
 echo " --- Garuda LiveCD ModX config changer tool!!"
 echo
@@ -21,6 +25,7 @@ echo "[))> Changing config starting!!"
 ##echo $net_pass | echo $net_pass)| sudo passwd pakmin
 ##sudo usermod -aG wheel pakmin
 
+./desktop-mime/install.sh
 
 ## Install custom wayfire settings !!!
 ls ~/.cache/config_changed.lck &> /dev/null || ( cp config/wayfire* ~/.config/ &> /dev/null && echo Config wayfire.ini copied!)
@@ -52,40 +57,59 @@ do
    sleep 1
 done
 
-## Create garuda live-cd modx folders
+## Create garuda live-cd modx folders for correct usage!!
 
 mkdir $src_dir/pacman-cache &>/dev/null
+mkdir $src_dir/pikaur-cache &>/dev/null
 mkdir $src_dir/log &>/dev/null
 mkdir $src_dir/my_config &>/dev/null
 
 
-touch ${src_dir}/log/pacman.log
+# Creates persistent pacman log files!
 sudo touch /var/log/pacman.log
-
-## Change pacman some configs
-
-cp -rf  $src_dir/config/pacman.conf $src_dir/my_config
-
-sudo sed -i "s/ParallelDownloads.*/ParallelDownloads = 16/g" $src_dir/my_config/pacman.conf
-sed -i "s|#LogFile.*|LogFile = ${src_dir}/log/pacman.log|g" $src_dir/my_config/pacman.conf
-sed -i "s|LogFile.*|LogFile = ${src_dir}/log/pacman.log|g" $src_dir/my_config/pacman.conf
-sed -i "s|CacheDir.*|CacheDir = ${src_dir}/pacman-cache/|g" $src_dir/my_config/pacman.conf
-
-# Add local pacman repo-fs
-#cat $src_dir/my_config/pacman.conf || pacman-cache &> /dev/null || echo -e "[LocalCache]\nSigLevel = Never\nServer = file:///${src_dir}/pacman-cache" $src_dir/my_config/pacman.conf
+sudo mount -o bind /var/log/pacman.log ${src_dir}/log/pacman.log
+echo ${src_dir}/log/pacman.log >> ${src_dir}/log/pacman_persistent.log
 
 
+# Create local pikaur cache folder to store packages in it!
+mkdir ~/.cache/pikaur/ &>/dev/null
 
-sudo cp $src_dir/my_config/pacman.conf /etc/pacman.conf
+# Mount the persitent pikaur folder to the user folder!
+mount | grep ~/.cache/pikaur/pkg/ &> /dev/null || sudo mount --rbind $src_dir/pikaur-cache ~/.cache/pikaur/
+
+
+###################################################
+
+##
+## Customize the pacman some configs
+##
+
 
 ## Install custom bashrc settings !!!
 cp -rf $src_dir/config/bashrc_* ~/ 
+
 cat ~/.config/fish/config.fish | grep -E "source ~/bashrc_my_settings.conf"  &> /dev/null || ( bash -c "echo 'source ~/bashrc_my_settings.conf' >> ~/.config/fish/config.fish && echo 'source ~/bashrc_functions.fish' >> ~/.config/fish/config.fish && echo 'source ~/bashrc_my_settings.conf' >> ~/.bashrc && echo 'source ~/bashrc_functions.source' >> ~/.bashrc" )
+
 
 ## Install htop config file and simple startup scripts !!!
 cp -rf $src_dir/config/htop/ ~/config/
 sudo cp -rf $src_dir/config/nanorc  /etc/nanorc
-cp -rf $src_dir/config/opensnitch/ ~/.config/
+
+sudo mkdir /etc/opensnitchd/rules/ -p &> /dev/null
+sudo mount --rbind $src_dir/config/opensnitch/ ~/.config/opensnitch/
+sudo mount --rbind $src_dir/config/opensnitch/rules /etc/opensnitchd/rules/
+
+# Copy pacman.conf to my local config folder!
+cp -rf  $src_dir/config/pacman.conf $src_dir/my_config
+
+# Modify my new pacman.conf!
+sed -i "s/ParallelDownloads.*/ParallelDownloads = 16/g" $src_dir/my_config/pacman.conf
+sed -i "s|LogFile.*|LogFile = /var/log/pacman.log|g" $src_dir/my_config/pacman.conf
+sed -i "s|CacheDir.*|CacheDir = ${src_dir}/pacman-cache/|g" $src_dir/my_config/pacman.conf
+
+# Save the new modified pacman.conf to system configs to use them!
+sudo cp $src_dir/my_config/pacman.conf /etc/pacman.conf
+
 
 cp -rf $src_dir/simple-startup-scripts/* ~/
 chmod +x ~/run-*
@@ -95,13 +119,16 @@ chmod +x ~/firevigeo
 ## Install proxychain config with opera-proxy proxy for it!!!
 sudo cp -rf $src_dir/config/proxychains.opera-proxy.conf /etc/ &> /dev/null
 
+
 ## Install waysudo - qt/no-xorg-display error workaround to run graphical tools with admin rights!!
 sudo cp -rf $src_dir/waysudo /usr/bin/ &> /dev/null && sudo chmod +x /usr/bin/waysudo
+
 
 ## Install wayfire crosshair shortcut toolset !!!
 ls ~/.cache/config_changed.lck &> /dev/null || ( sudo cp -rf $src_dir/config/command_switch_crossair-visibility /usr/bin/ && sudo chmod +x /usr/bin/command_switch_crossair-visibility )
 ls ~/.cache/config_changed.lck &> /dev/null || ( sudo cp -rf $src_dir/config/command_switch_crossair-set_randomcolor /usr/bin/ && sudo chmod +x /usr/bin/command_switch_crossair-set_randomcolor )
 ls ~/.cache/config_changed.lck &> /dev/null || ( sudo cp -rf $src_dir/config/command_switch_crossair-auto /usr/bin/ && sudo chmod +x /usr/bin/command_switch_crossair-auto )
+
 
 ## Install librewolf addons !!!
 echo "[))> Installing LibreWolf AddOns!!"
@@ -120,6 +147,8 @@ ls ~/.cache/config_changed.lck &> /dev/null || sudo cp -f tranquility_1-3.0.24.x
 ls ~/.cache/config_changed.lck &> /dev/null || sudo cp -f youtube_recommended_videos-1.6.1.xpi "/usr/lib/librewolf/browser/extensions/myallychou@gmail.com.xpi"
 ls ~/.cache/config_changed.lck &> /dev/null || sudo cp -f videospeed-0.6.3.3.xpi "/usr/lib/librewolf/browser/extensions/{7be2ba16-0f1e-4d93-9ebc-5164397477a9}.xpi"
 ls ~/.cache/config_changed.lck &> /dev/null || sudo cp -f video_downloader_profession-2.0.9.xpi "/usr/lib/librewolf/browser/extensions/{7be2ba16-0f1e-4d93-9ebc-5164397477a9}.xpi"
+
+
 echo "[))> Installing LibreWolf AddOns done!!"
 echo
 echo "[))> All done!!"

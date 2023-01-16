@@ -36,6 +36,7 @@ echo
 
 sudo pacman -Sy
 echo
-install_fresh archlinux-keyring chaotic-keyring 2>/dev/null || forced-refresh
+
+install_fresh archlinux-keyring chaotic-keyring 2> /dev/null || forced-refresh
 
 echo

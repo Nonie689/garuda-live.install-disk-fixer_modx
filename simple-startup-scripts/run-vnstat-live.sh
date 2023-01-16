@@ -11,7 +11,7 @@ script_name=$(basename "$0")
 kill $(ps -aux | grep ${command} | grep -v grep | awk 'print $2')
 while [ True ] ; do
   if test $(ps -aux | grep -E "$command_val" | grep -v grep | wc -l) -lt 2; then
-    which vnstat &> /dev/null && gnome-terminal -t "[NETTRAFFIC-LIVESTAT]" -- $command_val || exit 1
+    gnome-terminal -t "[NETTRAFFIC-LIVESTAT]" -- $command_val
   else
     sleep 1.0
     continue

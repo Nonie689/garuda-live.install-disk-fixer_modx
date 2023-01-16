@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-
 command="mako"
 command_val="$command --width 380  --icons 1"
 script_name=$(basename "$0")
@@ -11,7 +10,7 @@ script_name=$(basename "$0")
 
 while [ True ] ; do
   if ! pidof $command &> /dev/null ; then
-    which $command && $command_val || exit 1
+    $command_val
   else
     sleep 1.0
     continue

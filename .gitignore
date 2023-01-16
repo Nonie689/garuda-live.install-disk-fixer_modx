@@ -28,4 +28,6 @@ SqueakDebug.log
 github-*.zip
 
 /pacman-cache
+/pikaur-cache
 /my_config
+/log

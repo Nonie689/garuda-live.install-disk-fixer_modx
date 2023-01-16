@@ -13,7 +13,7 @@ killall $command
 
 while [ True ] ; do
   if ! pidof $command &> /dev/null; then
-    which $command && $command_val || exit 1
+    $command_val
   else
     sleep 1.0
     continue

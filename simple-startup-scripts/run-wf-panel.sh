@@ -2,7 +2,7 @@
 
 
 command=wf-panel
-command_val="$command"
+command_val=$command
 #script_name=$()
 
 #if test $(ps -ef | grep -E "$script_name" | grep -v grep | head --lines=-1 | awk '{print $2}'| wc -l) -gt 1
@@ -10,12 +10,12 @@ command_val="$command"
 #   kill $(ps -ef | grep -E "$script_name" | grep -v grep | head --lines=-1| awk '{print $2}')
 #fi
 
-sleep 16
+sleep 8
 
-killall $command_val
+killall wf-panel
 while [ True ] ; do
   if ! test pidof $command_val &> /dev/null; then
-    which $command && $command_val || exit 1
+    $command_val
   else
     sleep 1.0
     continue

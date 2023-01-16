@@ -11,7 +11,7 @@ script_name=$(basename "$0")
 
 while [ True ] ; do
   if ! pidof $command &> /dev/null ; then
-     which $command &> /dev/null &&  gnome-terminal -t "[Opera Proxy]" -- $command_val || exit	1
+     gnome-terminal -t "[Opera Proxy]" -- $command_val
   else
     sleep 1.0
     continue

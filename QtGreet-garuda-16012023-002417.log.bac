@@ -1,0 +1,356 @@
+II 16-01-23 00:24:17.553 - [wayfire-0.7.5/src/main.cpp:249] Starting wayfire version 0.7.5
+II 16-01-23 00:24:17.553 - [libseat] [libseat/backend/seatd.c:64] Could not connect to socket /run/seatd.sock: No such file or directory
+II 16-01-23 00:24:17.553 - [libseat] [libseat/libseat.c:76] Backend 'seatd' failed to open seat, skipping
+II 16-01-23 00:24:17.567 - [libseat] [libseat/libseat.c:73] Seat opened with backend 'logind'
+II 16-01-23 00:24:17.568 - [backend/session/session.c:109] Successfully loaded libseat session
+II 16-01-23 00:24:17.570 - [backend/backend.c:220] Found 1 GPUs
+II 16-01-23 00:24:17.570 - [backend/drm/backend.c:185] Initializing DRM backend for /dev/dri/card0 (nouveau)
+II 16-01-23 00:24:17.570 - [backend/drm/drm.c:253] Found 2 DRM CRTCs
+II 16-01-23 00:24:17.570 - [backend/drm/drm.c:180] Found 6 DRM planes
+II 16-01-23 00:24:17.572 - [render/egl.c:201] Supported EGL client extensions: EGL_EXT_device_base EGL_EXT_device_enumeration EGL_EXT_device_query EGL_EXT_platform_base EGL_KHR_client_get_all_proc_addresses EGL_EXT_client_extensions EGL_KHR_debug EGL_EXT_platform_device EGL_EXT_platform_wayland EGL_KHR_platform_wayland EGL_EXT_platform_x11 EGL_KHR_platform_x11 EGL_MESA_platform_xcb EGL_MESA_platform_gbm EGL_KHR_platform_gbm EGL_MESA_platform_surfaceless
+II 16-01-23 00:24:17.617 - [render/egl.c:347] Using EGL 1.5
+II 16-01-23 00:24:17.617 - [render/egl.c:348] Supported EGL display extensions: EGL_ANDROID_blob_cache EGL_EXT_create_context_robustness EGL_EXT_image_dma_buf_import EGL_EXT_image_dma_buf_import_modifiers EGL_KHR_cl_event2 EGL_KHR_config_attribs EGL_KHR_create_context EGL_KHR_create_context_no_error EGL_KHR_fence_sync EGL_KHR_get_all_proc_addresses EGL_KHR_gl_colorspace EGL_KHR_gl_renderbuffer_image EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_3D_image EGL_KHR_gl_texture_cubemap_image EGL_KHR_image_base EGL_KHR_no_config_context EGL_KHR_reusable_sync EGL_KHR_surfaceless_context EGL_EXT_pixel_format_float EGL_KHR_wait_sync EGL_MESA_configless_context EGL_MESA_drm_image EGL_MESA_image_dma_buf_export EGL_MESA_query_driver EGL_WL_bind_wayland_display 
+II 16-01-23 00:24:17.617 - [render/egl.c:350] Supported EGL device extensions: EGL_EXT_device_drm EGL_EXT_device_drm_render_node
+II 16-01-23 00:24:17.617 - [render/egl.c:352] EGL vendor: Mesa Project
+II 16-01-23 00:24:17.623 - [render/gles2/renderer.c:718] Creating GLES2 renderer
+II 16-01-23 00:24:17.623 - [render/gles2/renderer.c:719] Using OpenGL ES 3.2 Mesa 22.1.6
+II 16-01-23 00:24:17.623 - [render/gles2/renderer.c:720] GL vendor: nouveau
+II 16-01-23 00:24:17.623 - [render/gles2/renderer.c:721] GL renderer: NV138
+II 16-01-23 00:24:17.624 - [render/gles2/renderer.c:722] Supported GLES2 extensions: GL_EXT_blend_minmax GL_EXT_multi_draw_arrays GL_EXT_texture_filter_anisotropic GL_EXT_texture_compression_s3tc GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_format_BGRA8888 GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth24 GL_OES_element_index_uint GL_OES_fbo_render_mipmap GL_OES_mapbuffer GL_OES_rgb8_rgba8 GL_OES_standard_derivatives GL_OES_stencil8 GL_OES_texture_3D GL_OES_texture_float GL_OES_texture_float_linear GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_texture_npot GL_OES_vertex_half_float GL_EXT_draw_instanced GL_EXT_texture_sRGB_decode GL_OES_EGL_image GL_OES_depth_texture GL_OES_packed_depth_stencil GL_EXT_texture_type_2_10_10_10_REV GL_NV_conditional_render GL_OES_get_program_binary GL_APPLE_texture_max_level GL_EXT_discard_framebuffer GL_EXT_read_format_bgra GL_NV_pack_subimage GL_EXT_frag_depth GL_NV_fbo_color_attachments GL_OES_EGL_image_external GL_OES_EGL_sync GL_OES_vertex_array_object GL_OES_viewport_array GL_ANGLE_pack_reverse_row_order GL_ANGLE_texture_compression_dxt3 GL_ANGLE_texture_compression_dxt5 GL_EXT_occlusion_query_boolean GL_EXT_robustness GL_EXT_texture_rg GL_EXT_unpack_subimage GL_NV_draw_buffers GL_NV_read_buffer GL_NV_read_depth GL_NV_read_depth_stencil GL_NV_read_stencil GL_EXT_draw_buffers GL_EXT_map_buffer_range GL_KHR_debug GL_KHR_robustness GL_KHR_texture_compression_astc_ldr GL_NV_pixel_buffer_object GL_OES_depth_texture_cube_map GL_OES_required_internalformat GL_OES_surfaceless_context GL_EXT_color_buffer_float GL_EXT_sRGB_write_control GL_EXT_separate_shader_objects GL_EXT_shader_group_vote GL_EXT_shader_implicit_conversions GL_EXT_shader_integer_mix GL_EXT_tessellation_point_size GL_EXT_tessellation_shader GL_ANDROID_extension_pack_es31a GL_EXT_base_instance GL_EXT_compressed_ETC1_RGB8_sub_texture GL_EXT_copy_image GL_EXT_draw_buffers_indexed GL_EXT_draw_elements_base_vertex GL_EXT_gpu_shader5 GL_EXT_polygon_offset_clamp GL_EXT_primitive_bounding_box GL_EXT_render_snorm GL_EXT_shader_io_blocks GL_EXT_texture_border_clamp GL_EXT_texture_buffer GL_EXT_texture_cube_map_array GL_EXT_texture_norm16 GL_EXT_texture_view GL_KHR_blend_equation_advanced GL_KHR_context_flush_control GL_KHR_robust_buffer_access_behavior GL_NV_image_formats GL_OES_copy_image GL_OES_draw_buffers_indexed GL_OES_draw_elements_base_vertex GL_OES_gpu_shader5 GL_OES_primitive_bounding_box GL_OES_sample_shading GL_OES_sample_variables GL_OES_shader_io_blocks GL_OES_shader_multisample_interpolation GL_OES_tessellation_point_size GL_OES_tessellation_shader GL_OES_texture_border_clamp GL_OES_texture_buffer GL_OES_texture_cube_map_array GL_OES_texture_stencil8 GL_OES_texture_storage_multisample_2d_array GL_OES_texture_view GL_EXT_blend_func_extended GL_EXT_buffer_storage GL_EXT_float_blend GL_EXT_geometry_point_size GL_EXT_geometry_shader GL_EXT_texture_filter_minmax GL_EXT_texture_sRGB_R8 GL_KHR_no_error GL_KHR_texture_compression_astc_sliced_3d GL_NV_conservative_raster GL_NV_conservative_raster_dilate GL_NV_conservative_raster_pre_snap_triangles GL_NV_sample_locations GL_NV_viewport_array2 GL_NV_viewport_swizzle GL_OES_EGL_image_external_essl3 GL_OES_geometry_point_size GL_OES_geometry_shader GL_OES_shader_image_atomic GL_EXT_clear_texture GL_EXT_clip_cull_distance GL_EXT_disjoint_timer_query GL_EXT_texture_compression_s3tc_srgb GL_EXT_window_rectangles GL_MESA_shader_integer_functions GL_EXT_clip_control GL_EXT_color_buffer_half_float GL_EXT_texture_compression_bptc GL_EXT_texture_mirror_clamp_to_edge GL_KHR_parallel_shader_compile GL_EXT_EGL_image_storage GL_EXT_texture_shadow_lod GL_MESA_framebuffer_flip_y GL_EXT_demote_to_helper_invocation GL_EXT_depth_clamp GL_EXT_texture_query_lod GL_MESA_bgra 
+II 16-01-23 00:24:17.645 - [wayfire-0.7.5/src/default-config-backend.cpp:97] Using config file: /home/garuda/.config/wayfire.ini
+II 16-01-23 00:24:17.645 - [wf-config-0.7.1/src/file.cpp:576] Reading XML configuration options from directory /usr/share/wayfire/metadata
+II 16-01-23 00:24:17.646 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/alpha.xml
+II 16-01-23 00:24:17.646 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/animate.xml
+II 16-01-23 00:24:17.646 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/autostart.xml
+II 16-01-23 00:24:17.646 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/blur.xml
+II 16-01-23 00:24:17.647 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/command.xml
+II 16-01-23 00:24:17.647 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/core.xml
+II 16-01-23 00:24:17.647 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/cube.xml
+II 16-01-23 00:24:17.647 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/decoration.xml
+II 16-01-23 00:24:17.648 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/expo.xml
+II 16-01-23 00:24:17.648 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/extra-gestures.xml
+II 16-01-23 00:24:17.648 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/fast-switcher.xml
+II 16-01-23 00:24:17.648 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/fisheye.xml
+II 16-01-23 00:24:17.648 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/grid.xml
+II 16-01-23 00:24:17.648 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/idle.xml
+II 16-01-23 00:24:17.649 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/input-device.xml
+II 16-01-23 00:24:17.649 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/input.xml
+II 16-01-23 00:24:17.649 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/invert.xml
+II 16-01-23 00:24:17.649 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/move.xml
+II 16-01-23 00:24:17.649 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/oswitch.xml
+II 16-01-23 00:24:17.649 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/output.xml
+II 16-01-23 00:24:17.650 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/place.xml
+II 16-01-23 00:24:17.650 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/preserve-output.xml
+II 16-01-23 00:24:17.650 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/resize.xml
+II 16-01-23 00:24:17.650 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/scale-title-filter.xml
+II 16-01-23 00:24:17.650 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/scale.xml
+II 16-01-23 00:24:17.650 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/simple-tile.xml
+II 16-01-23 00:24:17.650 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/switcher.xml
+II 16-01-23 00:24:17.651 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/vswipe.xml
+II 16-01-23 00:24:17.651 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/vswitch.xml
+II 16-01-23 00:24:17.651 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/window-rules.xml
+II 16-01-23 00:24:17.651 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/wm-actions.xml
+II 16-01-23 00:24:17.651 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/wobbly.xml
+II 16-01-23 00:24:17.651 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/workarounds.xml
+II 16-01-23 00:24:17.651 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/wrot.xml
+II 16-01-23 00:24:17.652 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/zoom.xml
+II 16-01-23 00:24:17.652 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/workspace-names.xml
+II 16-01-23 00:24:17.652 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/window-zoom.xml
+II 16-01-23 00:24:17.652 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/water.xml
+II 16-01-23 00:24:17.652 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/showrepaint.xml
+II 16-01-23 00:24:17.652 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/mag.xml
+II 16-01-23 00:24:17.652 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/keycolor.xml
+II 16-01-23 00:24:17.652 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/join-views.xml
+II 16-01-23 00:24:17.653 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/force-fullscreen.xml
+II 16-01-23 00:24:17.653 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/follow-focus.xml
+II 16-01-23 00:24:17.653 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/crosshair.xml
+II 16-01-23 00:24:17.653 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/bench.xml
+II 16-01-23 00:24:17.653 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/background-view.xml
+II 16-01-23 00:24:17.653 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/autorotate-iio.xml
+II 16-01-23 00:24:17.653 - [wf-config-0.7.1/src/file.cpp:589] Reading XML configuration options from file /usr/share/wayfire/metadata/annotate.xml
+II 16-01-23 00:24:17.658 - [backend/headless/backend.c:68] Creating headless backend
+II 16-01-23 00:24:17.659 - [backend/headless/backend.c:16] Starting headless backend
+II 16-01-23 00:24:17.663 - [xwayland/server.c:108] Starting Xwayland on :0
+II 16-01-23 00:24:17.734 - [wayfire-0.7.5/src/main.cpp:311] Using socket name wayland-1
+II 16-01-23 00:24:18.049 - [wayfire-0.7.5/src/core/seat/input-manager.cpp:46] handle new input: Power Button
+II 16-01-23 00:24:18.073 - [wayfire-0.7.5/src/core/seat/input-manager.cpp:46] handle new input: Power Button
+II 16-01-23 00:24:18.097 - [wayfire-0.7.5/src/core/seat/input-manager.cpp:46] handle new input: SONiX USB DEVICE
+II 16-01-23 00:24:18.120 - [wayfire-0.7.5/src/core/seat/input-manager.cpp:46] handle new input: SONiX USB DEVICE Keyboard
+II 16-01-23 00:24:18.130 - [wayfire-0.7.5/src/core/seat/input-manager.cpp:46] handle new input: SONiX USB DEVICE Keyboard
+II 16-01-23 00:24:18.130 - [wayfire-0.7.5/src/core/seat/input-manager.cpp:46] handle new input: Weida Hi-Tech                CoolTouchR System           
+II 16-01-23 00:24:18.130 - [wayfire-0.7.5/src/core/seat/input-manager.cpp:46] handle new input: Weida Hi-Tech                CoolTouchR System            Mouse
+II 16-01-23 00:24:18.130 - [wayfire-0.7.5/src/core/seat/input-manager.cpp:46] handle new input: USB Optical Mouse
+II 16-01-23 00:24:18.131 - [wayfire-0.7.5/src/core/seat/input-manager.cpp:46] handle new input: Full-Speed Mouse Full-Speed Mouse
+II 16-01-23 00:24:18.131 - [backend/drm/drm.c:1338] Scanning DRM connectors on /dev/dri/card0
+II 16-01-23 00:24:18.132 - [backend/drm/drm.c:1389] Found connector 'DVI-D-1'
+II 16-01-23 00:24:18.202 - [backend/drm/drm.c:1389] Found connector 'HDMI-A-1'
+II 16-01-23 00:24:18.202 - [backend/drm/drm.c:1414] 'HDMI-A-1' connected
+II 16-01-23 00:24:18.202 - [util/env.c:9] Loading WLR_NO_HARDWARE_CURSORS option: 1
+II 16-01-23 00:24:18.202 - [backend/drm/drm.c:1230] Physical size: 480x270
+II 16-01-23 00:24:18.202 - [backend/drm/drm.c:1287] Detected modes:
+II 16-01-23 00:24:18.202 - [backend/drm/drm.c:1315]   1920x1080 @ 60.000 Hz (preferred)
+II 16-01-23 00:24:18.202 - [backend/drm/drm.c:1315]   1920x1080 @ 59.940 Hz 
+II 16-01-23 00:24:18.202 - [backend/drm/drm.c:1315]   1920x1080 @ 50.000 Hz 
+II 16-01-23 00:24:18.202 - [backend/drm/drm.c:1315]   1600x1200 @ 60.000 Hz 
+II 16-01-23 00:24:18.203 - [backend/drm/drm.c:1315]   1680x1050 @ 59.883 Hz 
+II 16-01-23 00:24:18.203 - [backend/drm/drm.c:1315]   1280x1024 @ 75.025 Hz 
+II 16-01-23 00:24:18.203 - [backend/drm/drm.c:1315]   1280x1024 @ 60.020 Hz 
+II 16-01-23 00:24:18.203 - [backend/drm/drm.c:1315]   1440x900 @ 74.984 Hz 
+II 16-01-23 00:24:18.203 - [backend/drm/drm.c:1315]   1440x900 @ 59.901 Hz 
+II 16-01-23 00:24:18.203 - [backend/drm/drm.c:1315]   1280x960 @ 60.000 Hz 
+II 16-01-23 00:24:18.203 - [backend/drm/drm.c:1315]   1152x864 @ 75.000 Hz 
+II 16-01-23 00:24:18.203 - [backend/drm/drm.c:1315]   1280x720 @ 60.000 Hz 
+II 16-01-23 00:24:18.203 - [backend/drm/drm.c:1315]   1280x720 @ 59.940 Hz 
+II 16-01-23 00:24:18.203 - [backend/drm/drm.c:1315]   1280x720 @ 50.000 Hz 
+II 16-01-23 00:24:18.203 - [backend/drm/drm.c:1315]   1024x768 @ 75.029 Hz 
+II 16-01-23 00:24:18.203 - [backend/drm/drm.c:1315]   1024x768 @ 70.069 Hz 
+II 16-01-23 00:24:18.203 - [backend/drm/drm.c:1315]   1024x768 @ 60.004 Hz 
+II 16-01-23 00:24:18.203 - [backend/drm/drm.c:1315]   832x624 @ 74.551 Hz 
+II 16-01-23 00:24:18.203 - [backend/drm/drm.c:1315]   800x600 @ 75.000 Hz 
+II 16-01-23 00:24:18.203 - [backend/drm/drm.c:1315]   800x600 @ 72.188 Hz 
+II 16-01-23 00:24:18.203 - [backend/drm/drm.c:1315]   800x600 @ 60.317 Hz 
+II 16-01-23 00:24:18.203 - [backend/drm/drm.c:1315]   800x600 @ 56.250 Hz 
+II 16-01-23 00:24:18.203 - [backend/drm/drm.c:1315]   720x576 @ 50.000 Hz 
+II 16-01-23 00:24:18.203 - [backend/drm/drm.c:1315]   720x480 @ 60.000 Hz 
+II 16-01-23 00:24:18.203 - [backend/drm/drm.c:1315]   720x480 @ 59.940 Hz 
+II 16-01-23 00:24:18.203 - [backend/drm/drm.c:1315]   640x480 @ 75.000 Hz 
+II 16-01-23 00:24:18.203 - [backend/drm/drm.c:1315]   640x480 @ 72.809 Hz 
+II 16-01-23 00:24:18.203 - [backend/drm/drm.c:1315]   640x480 @ 66.667 Hz 
+II 16-01-23 00:24:18.203 - [backend/drm/drm.c:1315]   640x480 @ 60.000 Hz 
+II 16-01-23 00:24:18.203 - [backend/drm/drm.c:1315]   640x480 @ 59.940 Hz 
+II 16-01-23 00:24:18.203 - [backend/drm/drm.c:1315]   720x400 @ 70.082 Hz 
+II 16-01-23 00:24:18.203 - [backend/drm/drm.c:1447] connector HDMI-A-1: Requesting modeset
+II 16-01-23 00:24:18.203 - [wayfire-0.7.5/src/core/output-layout.cpp:1044] new output: HDMI-A-1
+II 16-01-23 00:24:18.203 - [wayfire-0.7.5/src/core/output-layout.cpp:486] loaded mode auto
+II 16-01-23 00:24:18.207 - [backend/drm/drm.c:586] connector HDMI-A-1: Modesetting with 1920x1080 @ 60.000 Hz
+EE 16-01-23 00:24:18.222 - [wayfire-0.7.5/src/output/plugin-loader.cpp:210] Failed to load plugin "view-shot". Make sure it is installed in /usr/lib/wayfire or in $WAYFIRE_PLUGIN_PATH.
+EE 16-01-23 00:24:18.222 - [wayfire-0.7.5/src/output/plugin-loader.cpp:210] Failed to load plugin "wf-ctrl". Make sure it is installed in /usr/lib/wayfire or in $WAYFIRE_PLUGIN_PATH.
+EE 16-01-23 00:24:18.222 - [wayfire-0.7.5/src/output/plugin-loader.cpp:210] Failed to load plugin "wf-info". Make sure it is installed in /usr/lib/wayfire or in $WAYFIRE_PLUGIN_PATH.
+EE 16-01-23 00:24:18.222 - [wayfire-0.7.5/src/output/plugin-loader.cpp:210] Failed to load plugin "firedecor". Make sure it is installed in /usr/lib/wayfire or in $WAYFIRE_PLUGIN_PATH.
+(type equals variant: [type: string, value: toplevel] | (type equals variant: [type: string, value: x-or] & focusable equals variant: [type: bool, value: 1]))
+type equals variant: [type: string, value: overlay]
+false
+type equals variant: [type: string, value: toplevel]
+false
+type equals variant: [type: string, value: toplevel]
+EE 16-01-23 00:24:18.489 - [types/wlr_cursor.c:875] Cannot map device "Power Button" to output (not found in this cursor)
+EE 16-01-23 00:24:18.489 - [types/wlr_cursor.c:875] Cannot map device "Power Button" to output (not found in this cursor)
+EE 16-01-23 00:24:18.489 - [types/wlr_cursor.c:875] Cannot map device "SONiX USB DEVICE" to output (not found in this cursor)
+EE 16-01-23 00:24:18.489 - [types/wlr_cursor.c:875] Cannot map device "SONiX USB DEVICE Keyboard" to output (not found in this cursor)
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Unsupported maximum keycode 708, clipping.
+>                   X11 cannot support keycodes above 255.
+Errors from xkbcomp are not fatal to the X server
+II 16-01-23 00:24:19.459 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Terminal app-id: gnome-terminal-server
+II 16-01-23 00:24:19.459 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Terminal app-id: gnome-terminal-server
+EE 16-01-23 00:24:19.604 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+II 16-01-23 00:24:19.628 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Terminal app-id: gnome-terminal-server
+II 16-01-23 00:24:20.972 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Terminal app-id: gnome-terminal-server
+II 16-01-23 00:24:21.672 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: OpenSnitch v1.5.2 app-id: opensnitch_ui
+EE 16-01-23 00:24:26.696 - [wayfire-0.7.5/src/view/view-impl.cpp:62] Setting minimize hint to unknown surface. Wayfire currentlysupports only setting hints relative to views.
+EE 16-01-23 00:24:26.697 - [wayfire-0.7.5/src/view/view-impl.cpp:62] Setting minimize hint to unknown surface. Wayfire currentlysupports only setting hints relative to views.
+EE 16-01-23 00:24:26.697 - [wayfire-0.7.5/src/view/view-impl.cpp:62] Setting minimize hint to unknown surface. Wayfire currentlysupports only setting hints relative to views.
+EE 16-01-23 00:24:26.697 - [wayfire-0.7.5/src/view/view-impl.cpp:62] Setting minimize hint to unknown surface. Wayfire currentlysupports only setting hints relative to views.
+EE 16-01-23 00:24:26.697 - [wayfire-0.7.5/src/view/view-impl.cpp:62] Setting minimize hint to unknown surface. Wayfire currentlysupports only setting hints relative to views.
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Unsupported maximum keycode 708, clipping.
+>                   X11 cannot support keycodes above 255.
+Errors from xkbcomp are not fatal to the X server
+EE 16-01-23 00:24:30.851 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 21ms, your system is too slow
+
+EE 16-01-23 00:24:34.233 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 23ms, your system is too slow
+
+II 16-01-23 00:24:41.214 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:24:44.915 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:24:46.005 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Terminal app-id: gnome-terminal-server
+II 16-01-23 00:24:55.569 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: OpenSnitch v1.5.2 app-id: opensnitch_ui
+II 16-01-23 00:25:08.685 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: OpenSnitch v1.5.2 app-id: opensnitch_ui
+II 16-01-23 00:25:42.620 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: LibreWolf app-id: LibreWolf
+EE 16-01-23 00:25:43.339 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 60ms, your system is too slow
+
+II 16-01-23 00:25:43.507 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: LibreWolf app-id: LibreWolf
+II 16-01-23 00:25:43.507 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: LibreWolf app-id: LibreWolf
+II 16-01-23 00:25:45.005 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: OpenSnitch v1.5.2 app-id: opensnitch_ui
+EE 16-01-23 00:25:45.534 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 90ms, your system is too slow
+
+EE 16-01-23 00:25:45.534 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 87ms, your system is too slow
+
+EE 16-01-23 00:25:46.048 - [libinput] client bug: timer event8 debounce: scheduled expiry is in the past (-56ms), your system is too slow
+
+EE 16-01-23 00:25:46.048 - [libinput] client bug: timer event8 debounce short: scheduled expiry is in the past (-69ms), your system is too slow
+
+EE 16-01-23 00:25:47.865 - [libinput] client bug: timer event8 debounce: scheduled expiry is in the past (-41ms), your system is too slow
+
+II 16-01-23 00:25:52.878 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: OpenSnitch v1.5.2 app-id: opensnitch_ui
+EE 16-01-23 00:25:57.596 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 27ms, your system is too slow
+
+EE 16-01-23 00:26:01.926 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 28ms, your system is too slow
+
+EE 16-01-23 00:26:01.926 - [libinput] event8  - USB Optical Mouse: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+
+II 16-01-23 00:26:12.345 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 16-01-23 00:26:25.342 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 21ms, your system is too slow
+
+EE 16-01-23 00:26:25.630 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 36ms, your system is too slow
+
+EE 16-01-23 00:26:28.360 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 39ms, your system is too slow
+
+EE 16-01-23 00:26:28.360 - [libinput] event2  - SONiX USB DEVICE: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+
+EE 16-01-23 00:26:28.552 - [libinput] client bug: timer event8 debounce short: scheduled expiry is in the past (-23ms), your system is too slow
+
+II 16-01-23 00:26:36.266 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:26:36.516 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:26:36.893 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:26:37.955 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Terminal app-id: gnome-terminal-server
+II 16-01-23 00:27:04.269 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: OpenSnitch v1.5.2 app-id: opensnitch_ui
+II 16-01-23 00:27:36.146 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Loading… app-id: org.gnome.Nautilus
+II 16-01-23 00:27:38.793 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: OpenSnitch v1.5.2 app-id: opensnitch_ui
+II 16-01-23 00:28:25.850 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: OpenSnitch v1.5.2 app-id: opensnitch_ui
+II 16-01-23 00:28:34.346 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: OpenSnitch v1.5.2 app-id: opensnitch_ui
+II 16-01-23 00:28:42.617 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:28:58.299 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: File Upload app-id: LibreWolf
+II 16-01-23 00:28:58.527 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: OpenSnitch v1.5.2 app-id: opensnitch_ui
+II 16-01-23 00:29:05.111 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: OpenSnitch v1.5.2 app-id: opensnitch_ui
+II 16-01-23 00:31:03.391 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:31:24.676 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: OpenSnitch v1.5.2 app-id: opensnitch_ui
+II 16-01-23 00:32:00.863 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:36:27.315 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:37:17.955 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Terminal app-id: gnome-terminal-server
+II 16-01-23 00:39:06.386 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:39:06.398 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:39:26.099 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:39:27.981 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Terminal app-id: gnome-terminal-server
+II 16-01-23 00:39:45.034 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: OpenSnitch v1.5.2 app-id: opensnitch_ui
+II 16-01-23 00:42:39.747 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:43:05.038 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:43:05.229 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 16-01-23 00:43:41.307 - [libinput] client bug: timer event8 debounce: scheduled expiry is in the past (-28ms), your system is too slow
+
+EE 16-01-23 00:43:41.307 - [libinput] WARNING: log rate limit exceeded (5 msgs per 3600000ms). Discarding future messages.
+
+II 16-01-23 00:46:50.088 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Loading… app-id: org.gnome.Nautilus
+II 16-01-23 00:47:28.594 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: gedit app-id: gedit
+II 16-01-23 00:47:35.102 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: gedit app-id: gedit
+II 16-01-23 00:49:53.480 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:49:54.930 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Select Application app-id: org.gnome.Nautilus
+EE 16-01-23 00:50:33.412 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 16-01-23 00:50:33.412 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 16-01-23 00:50:33.414 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 16-01-23 00:50:33.415 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 16-01-23 00:50:33.887 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+II 16-01-23 00:51:04.866 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:52:55.402 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: gedit app-id: gedit
+II 16-01-23 00:53:14.035 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:53:41.496 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:54:19.676 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: OpenSnitch v1.5.2 app-id: opensnitch_ui
+II 16-01-23 00:54:29.407 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:54:29.502 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:54:29.583 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:54:29.668 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:54:29.741 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:54:29.810 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:54:29.887 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:54:29.958 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:54:30.033 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:54:30.104 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:54:30.187 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:54:30.259 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:54:30.332 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:54:30.404 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:54:30.509 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:54:30.590 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:54:30.661 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:54:30.743 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:54:30.832 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:54:39.732 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:54:39.821 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:54:39.891 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 00:54:39.968 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 16-01-23 00:56:02.775 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+EE 16-01-23 00:57:02.971 - [wayfire-0.7.5/src/view/xwayland.cpp:535] new xwayland surface (null) class: (null) instance: (null)
+II 16-01-23 01:00:42.136 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+*** BUG ***
+In pixman_region32_union_rect: Invalid rectangle passed
+Set a breakpoint on '_pixman_log_error' to debug
+
+*** BUG ***
+In pixman_region32_union_rect: Invalid rectangle passed
+Set a breakpoint on '_pixman_log_error' to debug
+
+*** BUG ***
+In pixman_region32_union_rect: Invalid rectangle passed
+Set a breakpoint on '_pixman_log_error' to debug
+
+*** BUG ***
+In pixman_region32_union_rect: Invalid rectangle passed
+Set a breakpoint on '_pixman_log_error' to debug
+
+*** BUG ***
+In pixman_region32_union_rect: Invalid rectangle passed
+Set a breakpoint on '_pixman_log_error' to debug
+
+*** BUG ***
+In pixman_region32_union_rect: Invalid rectangle passed
+Set a breakpoint on '_pixman_log_error' to debug
+
+*** BUG ***
+In pixman_region32_union_rect: Invalid rectangle passed
+Set a breakpoint on '_pixman_log_error' to debug
+
+*** BUG ***
+In pixman_region32_union_rect: Invalid rectangle passed
+Set a breakpoint on '_pixman_log_error' to debug
+
+*** BUG ***
+In pixman_region32_union_rect: Invalid rectangle passed
+Set a breakpoint on '_pixman_log_error' to debug
+
+II 16-01-23 01:04:14.701 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 01:04:15.295 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 01:06:41.885 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 01:06:43.135 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Terminal app-id: gnome-terminal-server
+II 16-01-23 01:09:18.818 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 01:11:05.320 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 01:19:02.769 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 01:21:57.214 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 01:24:53.585 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 01:25:09.200 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 01:25:10.225 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Terminal app-id: gnome-terminal-server
+EE 16-01-23 01:26:56.323 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 23ms, your system is too slow
+
+EE 16-01-23 01:31:22.023 - [xwayland/xwm.c:1518] xcb error: op ChangeProperty (no minor), code Window (no extension), sequence 2954, value 4194306
+EE 16-01-23 01:31:22.023 - [xwayland/xwm.c:1518] xcb error: op ChangeProperty (no minor), code Window (no extension), sequence 2956, value 4194306
+EE 16-01-23 01:32:10.125 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 22ms, your system is too slow
+
+EE 16-01-23 01:32:11.805 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 30ms, your system is too slow
+
+EE 16-01-23 01:34:32.710 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 33ms, your system is too slow
+
+EE 16-01-23 01:40:44.549 - [libinput] event2  - SONiX USB DEVICE: client bug: event processing lagging behind by 28ms, your system is too slow
+
+EE 16-01-23 01:40:44.550 - [libinput] event2  - SONiX USB DEVICE: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+
+II 16-01-23 01:43:52.261 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 16-01-23 01:45:09.779 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 23ms, your system is too slow
+
+II 16-01-23 02:01:36.187 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: OpenSnitch Network Statistics 1.5.2 app-id: opensnitch_ui
+II 16-01-23 02:01:36.199 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: OpenSnitch Network Statistics 1.5.2 app-id: opensnitch_ui
+II 16-01-23 02:01:36.763 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 02:01:43.320 - [wayfire-0.7.5/src/view/xdg-shell.cpp:201] new xdg_shell_stable surface: Preferences app-id: opensnitch_ui
+II 16-01-23 02:02:34.790 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 02:02:35.758 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 02:02:36.004 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 02:02:39.735 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 02:02:41.045 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 02:02:42.295 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 02:02:43.408 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 02:02:44.510 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 02:02:45.976 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+EE 16-01-23 02:02:52.008 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 22ms, your system is too slow
+
+EE 16-01-23 02:02:52.264 - [libinput] event8  - USB Optical Mouse: client bug: event processing lagging behind by 63ms, your system is too slow
+
+II 16-01-23 02:02:54.307 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 02:06:10.329 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup
+II 16-01-23 02:13:20.847 - [wayfire-0.7.5/src/view/xdg-shell.cpp:25] New xdg popup

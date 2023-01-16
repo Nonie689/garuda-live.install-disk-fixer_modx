@@ -1,0 +1,47 @@
+pacman -Q strace &> /dev/null || sudo pacman -S strace
+
+
+if ! $(pgrep wayfire &> /dev/null)  
+then
+  echo
+  echo Error no wayfire is running!
+  echo
+  echo works only on running wayfire!
+  echo
+  exit
+fi
+
+sys_wayland_logfile="$(ls /proc/$(pgrep wayfire)/fd/ -l | grep -E 'QtGreet-garuda' | head -1 | awk -F '->' '{print $2}')"
+
+echo
+echo "Found Logfile! -> $sys_wayland_logfile"
+
+echo
+echo Backup wayfire log file to script folder,
+echo create every 2 seconds a new fresh backup!!
+echo
+
+## Backup loop
+
+while true
+do
+  #
+  # Save log file to script folder!!
+  #
+
+  cp $sys_wayland_logfile  $(dirname $(realpath $0))/$(basename $sys_wayland_logfile).bac
+
+  # Wait enoug time to see wayfire still runs!!
+  sleep 2
+
+  if $(pgrep wayfire &> /dev/null)
+  then
+    # Create backup subfile
+    ls $(dirname $(realpath $0))/$(basename $sys_wayland_logfile).bac.1 &> /dev/null && mv $(dirname $(realpath $0))/$(basename $sys_wayland_logfile).bac.1 $(dirname $(realpath $0))/$(basename $sys_wayland_logfile).bac.2.old
+    # Create the main backup file store before that the old one!
+    cp $(dirname $(realpath $0))/$(basename $sys_wayland_logfile).bac $(dirname $(realpath $0))/$(basename $sys_wayland_logfile).bac.1
+  else
+    # Exit if wayfire crashes!
+    exit 1
+  fi
+done
