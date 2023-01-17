@@ -19,9 +19,9 @@ function install_fresh {
 }
 
 function forced-refresh {
+	echo
+	echo
 	echo "[))> Using fallback -- [forced mode]--"
-	echo
-	echo
 
 	sudo rm -rf /etc/pacman.d/gnupg
 	sudo pacman-key --init

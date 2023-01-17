@@ -31,6 +31,8 @@ echo "[))> Changing config starting!!"
 ls ~/.cache/config_changed.lck &> /dev/null || ( cp config/wayfire* ~/.config/ &> /dev/null && echo Config wayfire.ini copied!)
 ls ~/.cache/config_changed.lck &> /dev/null || ( cp config/wf-shell.ini ~/.config/wf-shell.ini &> /dev/null && echo "Config wf-shell.ini copied!" )
 
+ls ~/.cache/config_changed.lck &> /dev/null || ( cp config/shortcut-* ~/.config/ &> /dev/null && echo "Keyboard layout changer copied!" )
+
 
 ## Changing various of password options !!!
 cd /tmp
@@ -120,8 +122,8 @@ chmod +x ~/firevigeo
 sudo cp -rf $src_dir/config/proxychains.opera-proxy.conf /etc/ &> /dev/null
 
 
-## Install waysudo - qt/no-xorg-display error workaround to run graphical tools with admin rights!!
-sudo cp -rf $src_dir/waysudo /usr/bin/ &> /dev/null && sudo chmod +x /usr/bin/waysudo
+## Install suway - qt/no-xorg-display error workaround to run graphical tools with admin rights!!
+sudo cp -rf $src_dir/suway /usr/bin/ &> /dev/null && sudo chmod +x /usr/bin/suway
 
 
 ## Install wayfire crosshair shortcut toolset !!!

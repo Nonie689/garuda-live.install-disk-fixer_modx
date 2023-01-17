@@ -24,13 +24,11 @@ opensnitch=true
 src_dir="$(dirname $(realpath $0))"
 cachedir="$(realpath ~/.cache)"
 
-go_dispatch_cmd="go-dispatch-proxy -lport 4711 -tunnel  10.0.0.10:5090 10.0.0.10:5091 10.0.0.10:5092 10.0.0.10:5093 10.0.0.10:5094 10.0.0.10:5095 10.0.0.10:5096 10.0.0.10:5097 10.0.0.10:5098 10.0.0.10:5099 10.0.0.10:5100"
-
 ### All archlinux packages that will grouped be touched or used!!
 
 uninstall_conflicts="poppler wl-clipboard lib32-libelf libelf"
 uninstall_oversized_pkgs="noto-fonts ttf-iosevka-nerd garuda-wallpapers libstaroffice ttf-fira-sans mesa-demos lib32-mesa-demos fwupd gnome-firmware"
-extra_packages="systemd-ui systemdgenie yt-dlp poppler poppler-glib repose pkgfile mate-utils qjournalctl gnome-logs yelp hwinfo usbview hwdetect pacmanlogviewer k3b vlc gparted wayfire-plugins-extra ncdu vnstat gotop tor shellcheck pikaur bat devtools opensnitch axel android-sdk-platform-tools irqbalance ripgrep"
+extra_packages="xorg-xauth systemd-ui systemdgenie yt-dlp poppler poppler-glib repose pkgfile mate-utils qjournalctl gnome-logs yelp hwinfo usbview hwdetect pacmanlogviewer k3b vlc gparted wayfire-plugins-extra ncdu vnstat gotop tor shellcheck pikaur bat devtools opensnitch axel android-sdk-platform-tools irqbalance ripgrep"
 pikaur_pkgs="go-dispatch-proxy-git redsocks hostapd-mana-git wl-clipboard-rs libelf"
 aur_packages_1="libva-vdpau-driver-wayland" # libva-vdpau-driver-wayland -- set vlc to use xvideo output on native xwayland mode!
 aur_packages_2="opera-proxy ix archtorify-git hotspot wvkbd"
@@ -439,8 +437,6 @@ bash -c "sleep 8 && nohup librewolf 'https://check.torproject.org'" &> /dev/null
 
 ## At least show just some infos for usage at the!!
 
-sudo gnome-terminal -t Start firevigeo torloader tool! -- sudo ~/.cache/firevigeo-torloader/firevigeo.sh -s &> /dev/null &
-
 echo "[))> Run if you like to restart firevigeo:"
 echo
 echo "sudo ~/firevigeo -s"
@@ -450,9 +446,8 @@ echo Finish building process!!
 echo
 
 
-## Tweak sudo settings to hardening the base system!!
 
-sudo bash -c "sudo bash $src_dir/sudo-hardening-pro_tweaks.bash && echo 'Restart wayfire desktop in 90 seconds... press ctrl+c to abort the restarting of the Desktop!!' && echo && echo && sleep 90 && sudo killall wayfire"
+sudo bash $src_dir/sudo-hardening-pro_tweaks.bash && killall wayfire
 
 
 #### !!!! END LINE ~>> HOPE ALL DONE WITHOUT FAILURES AND HOW DO YOU LIKE IT <<~ !!!! ####

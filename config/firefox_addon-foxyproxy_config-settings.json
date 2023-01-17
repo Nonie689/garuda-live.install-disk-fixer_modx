@@ -1,0 +1,56 @@
+{
+  "cylwa1673937063138": {
+    "type": 3,
+    "color": "#66cc66",
+    "title": "Direct Tor client 10001",
+    "active": true,
+    "address": "127.0.0.1",
+    "port": 10001,
+    "proxyDNS": true,
+    "username": "",
+    "password": "",
+    "whitePatterns": [
+      {
+        "title": "onion web",
+        "pattern": "*.onion",
+        "type": 1,
+        "protocols": 1,
+        "active": true
+      }
+    ],
+    "blackPatterns": [],
+    "pacURL": "",
+    "index": 9007199254740989
+  },
+  "l7dxm1673936954486": {
+    "type": 1,
+    "color": "#66cc66",
+    "title": "Opera-Proxy",
+    "active": true,
+    "address": "127.0.0.1",
+    "port": 18080,
+    "proxyDNS": false,
+    "username": "",
+    "password": "",
+    "whitePatterns": [
+      {
+        "title": "eclipso mail",
+        "pattern": "eclipso.[de|eu|ch]+",
+        "type": 2,
+        "protocols": 1,
+        "active": true
+      }
+    ],
+    "blackPatterns": [],
+    "pacURL": "",
+    "index": 9007199254740990
+  },
+  "logging": {
+    "size": 100,
+    "active": false
+  },
+  "mode": "patterns",
+  "browserVersion": "108.0.1",
+  "foxyProxyVersion": "7.5.1",
+  "foxyProxyEdition": "standard"
+}

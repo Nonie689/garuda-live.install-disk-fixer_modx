@@ -9,37 +9,37 @@ main_programm="$1"
 
 
 function xauth_create {
-        export DISPLAY=$DISPLAY
+   export DISPLAY=$DISPLAY
 	touch ${HOME}/.Xauthority
 
 	# Generate the magic cookie with 128 bit hex encoding
 	xauth add $(uname -n)${DISPLAY} . $(xxd -l 16 -p /dev/urandom)
 	xauth extract ${myxcookie} $(uname -n)${DISPLAY} &> /dev/null
 	setfacl -m u:${USER}:r ${myxcookie}
-	xauth merge ${myxcookie} 
-	echo $PASSWORD | su -c "${cmd_let_xhost}" && true || false
+	xauth merge ${myxcookie}
+	echo ${PASSWORD} | su -c "${cmd_let_xhost}" && true || false
 }
 
 function xauth_create_sudo {
-        export DISPLAY=${DISPLAY}
+   export DISPLAY=${DISPLAY}
 	touch ${HOME}/.Xauthority
 
 	# Generate the magic cookie with 128 bit hex encoding
 	xauth add $(uname -n):0 . $(xxd -l 16 -p /dev/urandom)
 	xauth extract ${myxcookie} $(uname -n)${DISPLAY} &> /dev/null
 	setfacl -m u:${USER}:r ${myxcookie}
-	xauth merge ${myxcookie} 
+	xauth merge ${myxcookie}
 	sudo -E bash -c "${cmd_let_xhost}" && true || false
 }
 
 function read_pass {
 	while true
 	do
-		bash -c "wvkbd-mobintl -L 280 2> /dev/null &" 2> /dev/null
-		
-		echo -n "[))> Enter passphrase: "
+		kill $(ps -aux | grep -v grep | grep -E "wvkbd-mobintl -L 220" | awk '{print $2}')&> /dev/null
+		bash -c "wvkbd-mobintl -L 220 2> /dev/null &" 2> /dev/null
+		printf "[))> Enter passphrase: "
 
-		stty -echo
+		
 		PASSWORD=""
 		PROMPT=""
 		CHARCOUNT=0
@@ -47,6 +47,7 @@ function read_pass {
 		do
 		    # Enter - accept password
 		    if [[ $CHAR == $'\0' ]] ; then
+		        stty echo
 			break
 		    fi
 		    # Backspace
@@ -55,28 +56,32 @@ function read_pass {
 			    CHARCOUNT=$((CHARCOUNT-1))
 			    PROMPT=$'\b \b'
 			    PASSWORD="${PASSWORD%?}"
+			    stty echo
 			else
 			    PROMPT=''
+			    stty echo
 			fi
 		    else
+		        stty -echo
 			CHARCOUNT=$((CHARCOUNT+1))
 			PROMPT='*'
 			PASSWORD+="$CHAR"
 		    fi
 		done
 		
-		kill $(ps -aux |grep -v grep | grep -E "wvkbd-mobintl -L 280" | awk '{print $2}')&> /dev/null
-		stty echo
-		echo $PASSWORD | su -c "sudo printf '\n\n*** Starting programm with suway!!\n' " && break
+		
+		echo
+		
+		echo "${PASSWORD}" | su -c "printf laa" &> /dev/null && kill $(ps -aux | grep -v grep | grep -E "wvkbd-mobintl -L 220" | awk '{print $2}')&> /dev/null && printf '\n\n*** Starting programm with suway!!\n' && break
 	done
 }
 
 function xhost_run {
-      #xhost +si:localuser:root &> /dev/null 
-      
+      #xhost +si:localuser:root &> /dev/null
+
       xauth_create && succeed || fatal
       #then
-      #   xhost -si:localuser:root &> /dev/null 
+      #   xhost -si:localuser:root &> /dev/null
       #   succeed
       #else
       #   xhost -si:localuser:root &> /dev/null
@@ -98,10 +103,10 @@ function sudo-env_run {
 }
 
 function sudo_xhost-env_run {
-      #xhost +si:localuser:root &> /dev/null 
+      #xhost +si:localuser:root &> /dev/null
       xauth_create_sudo && succeed || false
       #then
-      #   #xhost -si:localuser:root &> /dev/null 
+      #   #xhost -si:localuser:root &> /dev/null
       #   succeed
       #else
       #   #xhost -si:localuser:root &> /dev/null
@@ -132,11 +137,10 @@ function x11_warn {
 
 function ctrl_exit {
      stty echo
-     kill $(ps -aux |grep -v grep | grep -E "wvkbd-mobintl -L 280" | awk '{print $2}') &>/dev/null || false
+     kill $(ps -aux |grep -v grep | grep -E "wvkbd-mobintl -L 220" | awk '{print $2}') &>/dev/null
      echo
      echo suway closed!!
-     stty echo
-     exit
+     stty echo && exit 0 && stty echo
 }
 
 function fatal {
@@ -173,7 +177,7 @@ function missing_dependencies {
 #####  Source is for bash source process!!  #####
 ##################################################
 
-trap ctrl_exit 1 2 3 4 5 6 9 11 15
+trap ctrl_exit INT
 
 export QT_QPA_PLATFORMTHEME="qt5ct"
 export QT_QPA_PLATFORM="wayland;xcb"
@@ -181,9 +185,9 @@ export WAYLAND_DISPLAY="$(find $XDG_RUNTIME_DIR/wayland-*|grep -v '.lock')"
 
 #which xhost &>/dev/null || bash -c "echo  Please install xorg-xhost! && exit 1"
 
-missing_dependencies
+#missing_dependencies
 
-if [[ -z $main_programm ]] 
+if [[ -z $main_programm ]]
 then
    echo "[))> No programm found to run with suway!"
    echo
@@ -194,9 +198,9 @@ fi
 
 which $main_programm &> /dev/null || not_found
 
-
 echo
-echo suway PID: $PID 
+echo
+echo suway PID: $PID
 echo
 
 

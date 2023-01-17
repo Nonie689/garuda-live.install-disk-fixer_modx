@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 script_name=$(basename "$0")
-ls /etc/tor/torrc.* &> /dev/null || exit
+ps -aux | grep -e "tor -f" | grep -v grep || ~/firevigeo -s
 running_tor_ports=$()
 
 command=go-dispatch-proxy
@@ -11,6 +11,8 @@ command_val=""
 #then
 #   kill $(ps -aux | grep -e 'tor -f /etc/tor/torrc.' | grep -v grep| awk '{print $2}')
 #fi
+
+ps -aux | grep -e "tor -f" | grep -v grep &> /dev/null || ~/firevigeo -s
 
 while [ True ] ; do
   if ! pidof $command &> /dev/null ; then
