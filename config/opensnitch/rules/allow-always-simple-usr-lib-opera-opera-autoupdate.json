@@ -1,0 +1,16 @@
+{
+  "created": "2023-02-17T01:42:40.198994331+01:00",
+  "updated": "2023-02-17T01:42:40.199085146+01:00",
+  "name": "allow-always-simple-usr-lib-opera-opera-autoupdate",
+  "enabled": true,
+  "precedence": false,
+  "action": "allow",
+  "duration": "always",
+  "operator": {
+    "type": "simple",
+    "operand": "process.path",
+    "sensitive": false,
+    "data": "/usr/lib/opera/opera_autoupdate",
+    "list": []
+  }
+}

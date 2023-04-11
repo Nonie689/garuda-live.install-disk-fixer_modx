@@ -1,0 +1,31 @@
+{
+  "created": "2023-04-08T04:11:30.677668098+02:00",
+  "updated": "2023-04-08T04:11:30.677763433+02:00",
+  "name": "allow-always-list-home-garuda-rustup-toolchains-stable-x86-64-unknown-linux-gnu-bin-cargo-static-crates-io",
+  "enabled": true,
+  "precedence": false,
+  "action": "allow",
+  "duration": "always",
+  "operator": {
+    "type": "list",
+    "operand": "list",
+    "sensitive": false,
+    "data": "[{\"type\": \"simple\", \"operand\": \"dest.host\", \"data\": \"static.crates.io\"}, {\"type\": \"simple\", \"operand\": \"process.path\", \"data\": \"/home/garuda/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/cargo\"}]",
+    "list": [
+      {
+        "type": "simple",
+        "operand": "dest.host",
+        "sensitive": false,
+        "data": "static.crates.io",
+        "list": null
+      },
+      {
+        "type": "simple",
+        "operand": "process.path",
+        "sensitive": false,
+        "data": "/home/garuda/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/cargo",
+        "list": null
+      }
+    ]
+  }
+}

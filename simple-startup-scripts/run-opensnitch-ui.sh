@@ -10,7 +10,7 @@ script_name=$(basename "$0")
 #fi
 
 while [ True ] ; do
-  if test $(ps aux | grep -E "python $command" | wc -l ) -lt 2 ; then
+  if test $(ps aux | grep -E "python $command" | grep -v grep | wc -l ) -lt 1 ; then
      $command_val
   else
     sleep 1.0

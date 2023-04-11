@@ -1,6 +1,6 @@
 #!/bin/bash
 
-not_important_pkgs="libreoffice-fresh-de libreoffice-fresh-fr libreoffice-fresh-da libreoffice-fresh-de libreoffice-fresh-ru libreoffice-fresh-zh-cn libreoffice-fresh-nl libreoffice-fresh-sa-in libreoffice-fresh-es libreoffice-fresh-it"
+not_important_pkgs="libreoffice-still-de libreoffice-still-fr libreoffice-still-da libreoffice-still-ru libreoffice-still-zh-cn libreoffice-still-nl libreoffice-still-sa-in libreoffice-still-es libreoffice-still-it"
 
 total=45  # total wait time in seconds
 count=0  # counter

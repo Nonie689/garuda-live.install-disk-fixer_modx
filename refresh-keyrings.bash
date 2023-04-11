@@ -10,7 +10,7 @@ function install_fresh {
   if ! test -z $refresh_pkg_list
   then
      echo $refresh_pkg_list
-     sudo pacman -Sy --noconfirm $refresh_pkg_list 2> /dev/null && echo && echo "==> Refreshing done!!" || false
+     sudo pacman -Sy --noconfirm $refresh_pkg_list 2> /dev/null && echo && echo "==> All Archlinux keyring are updated!!" || false
   else
      echo "==> ArchLinux keyrings don't need to be update!!"
      echo
@@ -31,7 +31,7 @@ function forced-refresh {
 }
 
 echo
-echo "[))> Refresh keyrings!!"
+echo "[))> Refresh Archlinux keyrings!!"
 echo
 
 sudo pacman -Sy

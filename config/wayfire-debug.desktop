@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Wayfire
+Exec=env WLR_NO_HARDWARE_CURSORS=1 wayfire -R -d -D
+Icon=
+Type=Application
+DesktopNames=Wayfire

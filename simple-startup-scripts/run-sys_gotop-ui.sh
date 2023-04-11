@@ -7,10 +7,10 @@ script_name=$(basename "$0")
 #fi
 
 command=gotop
-command_val="$command  -l kitchensink -i $(netstat -r | awk ' {print $8}' | head -3 | tail -1)"
+command_val="$command  -l kitchensink -i $(ip route  | awk '{print $5}' | head -1)"
 while [ True ] ; do
   if ! pidof $command &> /dev/null; then
-     gnome-terminal -t "[Monitor - System Stats]" -- $command_val
+      gnome-terminal -t "[Monitor - System Stats]"  --geometry=180x40 -- $command_val
   else
     sleep 1.0
     continue

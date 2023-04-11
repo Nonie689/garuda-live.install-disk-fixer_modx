@@ -4,16 +4,16 @@
     "color": "#66cc66",
     "title": "Direct Tor client 10001",
     "active": true,
-    "address": "127.0.0.1",
-    "port": 10001,
+    "address": "10.0.0.10",
+    "port": 10020,
     "proxyDNS": true,
     "username": "",
     "password": "",
     "whitePatterns": [
       {
         "title": "onion web",
-        "pattern": "*.onion",
-        "type": 1,
+        "pattern": ".onion",
+        "type": 2,
         "protocols": 1,
         "active": true
       }
@@ -39,6 +39,97 @@
         "type": 2,
         "protocols": 1,
         "active": true
+      },
+      {
+        "title": "youtube.com",
+        "pattern": "youtube.com",
+        "type": 2,
+        "protocols": 1,
+        "active": true
+      },
+      {
+        "title": "amazon online shop",
+        "pattern": "amazon.[de|com]+",
+        "type": 2,
+        "protocols": 1,
+        "active": true
+      },
+      {
+        "title": "google online service",
+        "pattern": "google.[de|com]+",
+        "type": 2,
+        "protocols": 1,
+        "active": true
+      },
+      {
+        "title": "pornhub.com [No redirect to onion hidden-tor service page]",
+        "pattern": "pornhub.com",
+        "type": 2,
+        "protocols": 1,
+        "active": true
+      },
+      {
+        "title": "xda-developers forum and board",
+        "pattern": "xda-developers.com",
+        "type": 2,
+        "protocols": 1,
+        "active": true
+      },
+      {
+        "title": "protonmail / proton.me",
+        "pattern": "proton.me",
+        "type": 2,
+        "protocols": 1,
+        "active": true
+      },
+      {
+        "title": "github.com",
+        "pattern": "github.com",
+        "type": 2,
+        "protocols": 1,
+        "active": true
+      },
+      {
+        "title": "streamtape.com",
+        "pattern": "streamadblocker.cc",
+        "type": 2,
+        "protocols": 1,
+        "active": true
+      },
+      {
+        "title": "stackexchange.com",
+        "pattern": "stackexchange.com",
+        "type": 2,
+        "protocols": 1,
+        "active": true
+      },
+      {
+        "title": "stackoverflow.com",
+        "pattern": "stackoverflow.com",
+        "type": 2,
+        "protocols": 1,
+        "active": true
+      },
+      {
+        "title": "superuser.com",
+        "pattern": "superuser.com",
+        "type": 2,
+        "protocols": 1,
+        "active": true
+      },
+      {
+        "title": "github.githubassets.com",
+        "pattern": "github.githubassets.com",
+        "type": 2,
+        "protocols": 1,
+        "active": true
+      },
+      {
+        "title": "streamtape.com",
+        "pattern": "streamtape.com",
+        "type": 2,
+        "protocols": 1,
+        "active": true
       }
     ],
     "blackPatterns": [],
@@ -50,7 +141,7 @@
     "active": false
   },
   "mode": "patterns",
-  "browserVersion": "108.0.1",
+  "browserVersion": "111.0.1",
   "foxyProxyVersion": "7.5.1",
   "foxyProxyEdition": "standard"
 }

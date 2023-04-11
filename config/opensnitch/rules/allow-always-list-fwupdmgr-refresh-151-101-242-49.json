@@ -1,0 +1,31 @@
+{
+  "created": "2023-04-07T18:55:04.693646006+02:00",
+  "updated": "2023-04-07T18:55:04.693794141+02:00",
+  "name": "allow-always-list-fwupdmgr-refresh-151-101-242-49",
+  "enabled": true,
+  "precedence": false,
+  "action": "allow",
+  "duration": "always",
+  "operator": {
+    "type": "list",
+    "operand": "list",
+    "sensitive": false,
+    "data": "[{\"type\": \"simple\", \"operand\": \"dest.ip\", \"data\": \"151.101.242.49\"}, {\"type\": \"simple\", \"operand\": \"process.command\", \"data\": \"fwupdmgr refresh\"}]",
+    "list": [
+      {
+        "type": "simple",
+        "operand": "dest.ip",
+        "sensitive": false,
+        "data": "151.101.242.49",
+        "list": null
+      },
+      {
+        "type": "simple",
+        "operand": "process.command",
+        "sensitive": false,
+        "data": "fwupdmgr refresh",
+        "list": null
+      }
+    ]
+  }
+}

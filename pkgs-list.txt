@@ -1,0 +1,9 @@
+pixman
+xf86-input-libinput
+seatd
+extra/spirv-tools 2022.4-1 (vulkan-devel) [installed: 2022.1-1]
+extra/vulkan-icd-loader 1.3.240-1 [installed: 1.3.221-1]
+extra/vulkan-tools 1.3.240-1 (vulkan-devel) [installed: 1.3.217-1]
+multilib/lib32-vulkan-icd-loader 1.3.240-1 [installed: 1.3.221-1]
+egl-wayland eglexternalplatform wayland  mesa-utils  libxcursor
+vulkan-mesa-layers

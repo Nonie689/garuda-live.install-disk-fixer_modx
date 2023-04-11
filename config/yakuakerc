@@ -1,0 +1,19 @@
+[Appearance]
+BackgroundColor=36,31,49
+BackgroundColorOpacity=35
+Skin=plastik_dark
+Translucency=true
+
+[Behavior]
+OpenAfterStart=true
+
+[Desktop Entry]
+DefaultProfile=My_conf-RC.profile
+
+[Dialogs]
+FirstRun=false
+
+[Window]
+Height=40
+Position=40
+Width=100

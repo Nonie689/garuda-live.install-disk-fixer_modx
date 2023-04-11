@@ -1,19 +1,20 @@
 # Title: PUP Hosts Blocklist
 # Description: Block domains that host potentially unwanted programs (PUP)
-# Updated: 2023-01-16T00:14:52Z
+# Updated: 2023-04-11T00:01:39Z
 # Expires: 1 day (update frequency)
 # Homepage: https://gitlab.com/malware-filter/pup-filter
 # License: https://gitlab.com/malware-filter/pup-filter#license
 # Source: https://github.com/zhouhanc/malware-discoverer
 0.0.0.0 1800petmeds.icu
+0.0.0.0 action-required.us
 0.0.0.0 appcine.net
 0.0.0.0 autoinsurancedepot.org
+0.0.0.0 axisbank.co
 0.0.0.0 best-realprizes.life
 0.0.0.0 bestmoneysurvey.top
 0.0.0.0 bestporn.vip
 0.0.0.0 bonus-for-you.life
 0.0.0.0 bravovideo.ru
-0.0.0.0 bright-parrot.net
 0.0.0.0 cajasdigitalreporting.net
 0.0.0.0 camhub.site
 0.0.0.0 carsnspeed.net
@@ -28,14 +29,12 @@
 0.0.0.0 cryptocrawler.io
 0.0.0.0 curfiositystream.com
 0.0.0.0 curiositydstream.com
-0.0.0.0 dailyboard.org
 0.0.0.0 danceview.ru
 0.0.0.0 dealdoctor.co
 0.0.0.0 discount-deal.org
 0.0.0.0 eastvideo.ru
 0.0.0.0 easycucina.net
 0.0.0.0 elementstrangepick.xyz
-0.0.0.0 emolumentsurvey.top
 0.0.0.0 enjoy1volcano.xyz
 0.0.0.0 enjoy7plains.xyz
 0.0.0.0 eskivideo.ru
@@ -65,6 +64,7 @@
 0.0.0.0 hansview.ru
 0.0.0.0 healthguards.co
 0.0.0.0 heritagetrust.co
+0.0.0.0 heya.today
 0.0.0.0 initiategreatlyfreethefile.vip
 0.0.0.0 initiategreatlyrecentthefile.vip
 0.0.0.0 initiateheavilydevelopedtheproduct.vip
@@ -94,15 +94,14 @@
 0.0.0.0 militaryautoinsurance.biz
 0.0.0.0 misticview.ru
 0.0.0.0 mistikvideo.ru
-0.0.0.0 mkluzkoviny.cz
 0.0.0.0 multipleincomestreams.co
 0.0.0.0 mygiftportal.app
 0.0.0.0 neckcolonyunit.buzz
 0.0.0.0 newchange.io
 0.0.0.0 news-deluhi.cc
-0.0.0.0 newsinformer.net
 0.0.0.0 nordvpnhosting.com
 0.0.0.0 nutritio.news
+0.0.0.0 omgyouwon.xyz
 0.0.0.0 on-program-course-us-intl-ok.live
 0.0.0.0 pandasummerb.xyz
 0.0.0.0 peetco.co
@@ -165,7 +164,6 @@
 0.0.0.0 topedvideo.ru
 0.0.0.0 toplamvideo.ru
 0.0.0.0 toptechprivacy.cyou
-0.0.0.0 tracksystem.online
 0.0.0.0 trafficbounce.net
 0.0.0.0 tronvideo.ru
 0.0.0.0 tunevideo.ru
