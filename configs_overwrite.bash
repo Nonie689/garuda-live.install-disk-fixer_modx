@@ -1,17 +1,78 @@
 
 
-# Init stuff -- set some variable and options
+###
+########################################################################
+ #### Script startup init Area -- set some base variable and options ####
+   #####################################################################
+####
+##########
+##
+###################################
+  ##########################################################
+####
+
+
 
 trap "exit 130" INT
 LC_ALL=C
 src_dir="$(dirname $(realpath $0))"
 
+####################################################################
 
+  #######################################
+#### Tweak gnome-terminal config setup ####
+  ########################################
+
+  ##########################################
+####   ----------------------------      ####
+####     Infos to do it manually      #####
+####       to edit or debug      ######
+  ##################################
+
+
+
+##############################################################
+##
+# Save all settings from dconf folder as bkp backup-file!!
+#
+###### dconf dump /org/gnome/terminal/legacy/ > ./config/gsettings_gnome-terminal.bkp
+
+##############################################################
+##
+# Manually load new custimized gnome-terminal settings
+#
+# dconf load /org/gnome/terminal/legacy/ < ./config/gsettings_gnome-terminal.bkp
+#
+
+##############################################################
+##
+# Load my designed gnome-terminal optionbs setup
+
+dconf load /org/gnome/terminal/legacy/ < $src_dir/config/gsettings_gnome-terminal.bkp
+
+############
+##############################################################
+#####
+
+
+  #############################
+#### END OF SCRIPT INIT AREA ####
+  #############################
+
+
+##########
+################################
+######################
+###
+
+
+
+   ###################################################
 ##########################################
 ##                                      ##
 # Change basic important setup options   #
-###                                      ##
-  ########################################
+ ###                                      ##
+   ##########################################
 
 sudo bash $src_dir/my_config/change_timezone_keylang.bash
 
@@ -55,7 +116,7 @@ cp $src_dir/config/config.rasi ~/.config/rofi/config.rasi
   ###########----------------------------#########
        ####################################
                    #################
-                   
+
 
 
 ############################################################################
@@ -109,7 +170,6 @@ then
    touch ~/.cache/passwd.lck &>/dev/null
    cat ~/.cache/passwd_init.lck &> /dev/null || nohup sudo bash -c `gnome-terminal -t 'Do you want to choose the password?' -- sudo bash $src_dir/change_password.bash garuda` &> /dev/null
 
-   
    sleep 0.25
    touch ~/.cache/passwd_init.lck &>/dev/null
 fi
@@ -138,7 +198,7 @@ mkdir ~/.cache/pikaur/ &>/dev/null
 
 # Mount the persitent pikaur folder to the user folder!
 mkdir ~/.cache/pikaur/ &> /dev/null
-mount | grep -E ".cache/pikaur" &> /dev/null || sudo mount --rbind $src_dir/pikaur-cache ~/.cache/pikaur/
+stat --file-system  $src_dir | grep -E "Type:"| grep -v fat &> /dev/null && ( mount | grep -E ".cache/pikaur" &> /dev/null || sudo mount --rbind $src_dir/pikaur-cache ~/.cache/pikaur/ )
 
 
 ###################################################
@@ -149,7 +209,7 @@ mount | grep -E ".cache/pikaur" &> /dev/null || sudo mount --rbind $src_dir/pika
 
 
 ## Install custom bashrc settings !!!
-cp -rf $src_dir/config/bashrc_* ~/ 
+cp -rf $src_dir/config/bashrc_* ~/
 
 cat ~/.config/fish/config.fish | grep -E "source ~/bashrc_my_settings.conf"  &> /dev/null || ( bash -c "echo 'source ~/bashrc_my_settings.conf' >> ~/.config/fish/config.fish && echo 'source ~/bashrc_functions.fish' >> ~/.config/fish/config.fish && echo 'source ~/bashrc_my_settings.conf' >> ~/.bashrc && echo 'source ~/bashrc_functions.source' >> ~/.bashrc" )
 
@@ -162,15 +222,6 @@ sed -i "s/gtk-font-name=.*/gtk-font-name=Liberation Mono,  14/g" ~/.config/gtk-3
 sudo cp /usr/lib/systemd/system/gpm.service /usr/lib/systemd/system/gpm-mouse1.service
 sudo sed -i "s/ExecStart=/usr/bin/gpm.*/ExecStart=/usr/bin/gpm -m /dev/input/mouse1 -t imps2/g" /usr/lib/systemd/system/gpm-mouse1.service
 sudo systemctl enable --now gpm-mouse1
-
-
-# Save all settings from dconf folder as bkp backup-file!!
-#
-# dconf dump /org/gnome/terminal/legacy/ > $src_dir/config/gsettings_gnome-terminal.bkp 
-
-# Load new custimized gnome-terminal settings
-#
-dconf load /org/gnome/terminal/legacy/ < $src_dir/config/gsettings_gnome-terminal.bkp
 
 
 ## Install htop config file and simple startup scripts !!!
@@ -188,7 +239,7 @@ cp -rf  $src_dir/config/pacman.conf $src_dir/my_config
 # Modify my new pacman.conf!
 sed -i "s/ParallelDownloads.*/ParallelDownloads = 16/g" $src_dir/my_config/pacman.conf
 sed -i "s|LogFile.*|LogFile = /var/log/pacman.log|g" $src_dir/my_config/pacman.conf
-sed -i "s|CacheDir.*|CacheDir = ${src_dir}/pacman-cache/|g" $src_dir/my_config/pacman.conf
+stat --file-system  $src_dir | grep -E "Type:"| grep -v fat &> /dev/null && sed -i "s|CacheDir.*|CacheDir = ${src_dir}/pacman-cache/|g" $src_dir/my_config/pacman.conf
 
 # Save the new modified pacman.conf to system configs to use them!
 sudo cp $src_dir/my_config/pacman.conf /etc/pacman.conf
@@ -208,10 +259,10 @@ sudo cp -rf $src_dir/config/proxychains.opera-proxy.conf /etc/ &> /dev/null
 ## Install suway - qt/no-xorg-display error workaround to run graphical tools with admin rights!!
 sudo cp -rf $src_dir/suway /usr/bin/ &> /dev/null && sudo chmod +x /usr/bin/suway
 
-cp $src_dir/config/yakuakerc ~/.config/yakuakerc 
+cp $src_dir/config/yakuakerc ~/.config/yakuakerc
 cp $src_dir/config/yakuake.notifyrc  ~/.config/yakuake.notifyrc
 mkdir ~/.local/share/konsole/
-cp $src_dir/config/My_conf-RC.profile ~/.local/share/konsole/My_conf-RC.profile 
+cp $src_dir/config/My_conf-RC.profile ~/.local/share/konsole/My_conf-RC.profile
 
 
 

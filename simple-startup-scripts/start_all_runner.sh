@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-simple_runner_list="run-go-dispatch-proxy.sh run-mako.sh run-opensnitch-ui.sh run-opera-proxy.sh run-sys_gotop-ui.sh run-update_adlists.sh run-vnstat-day.sh run-waybar.sh run-wf-background.sh run-wf-panel.sh"
+## Remove temparely -> run-opera-proxy.sh
+simple_runner_list="run-go-dispatch-proxy.sh run-mako.sh run-opensnitch-ui.sh run-sys_gotop-ui.sh run-update_adlists.sh run-vnstat-day.sh run-waybar.sh run-wf-background.sh run-wf-panel.sh"
 
 
 kill $(ps -aux | grep run-| awk '{print $2}')

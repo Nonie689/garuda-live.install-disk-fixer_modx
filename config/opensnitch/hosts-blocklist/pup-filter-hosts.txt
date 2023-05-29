@@ -1,10 +1,11 @@
 # Title: PUP Hosts Blocklist
 # Description: Block domains that host potentially unwanted programs (PUP)
-# Updated: 2023-04-11T00:01:39Z
+# Updated: 2023-05-14T00:15:18Z
 # Expires: 1 day (update frequency)
 # Homepage: https://gitlab.com/malware-filter/pup-filter
 # License: https://gitlab.com/malware-filter/pup-filter#license
 # Source: https://github.com/zhouhanc/malware-discoverer
+# Update (2023-05-10): Daily update has been paused. gitlab.com/malware-filter/pup-filter/-/issues/2
 0.0.0.0 1800petmeds.icu
 0.0.0.0 action-required.us
 0.0.0.0 appcine.net
@@ -15,8 +16,10 @@
 0.0.0.0 bestporn.vip
 0.0.0.0 bonus-for-you.life
 0.0.0.0 bravovideo.ru
+0.0.0.0 bright-parrot.net
 0.0.0.0 cajasdigitalreporting.net
 0.0.0.0 camhub.site
+0.0.0.0 captchatest.live
 0.0.0.0 carsnspeed.net
 0.0.0.0 clarioaff.co
 0.0.0.0 classicvideo.ru
@@ -48,8 +51,8 @@
 0.0.0.0 findsexy.life
 0.0.0.0 flowvideo.ru
 0.0.0.0 gadget.land
+0.0.0.0 gainrulesurvey.top
 0.0.0.0 galacontent.ru
-0.0.0.0 gameoverhere.net
 0.0.0.0 getixvideo.fun
 0.0.0.0 getway2updatesalways.click
 0.0.0.0 getway4upgradingnow.click
@@ -77,6 +80,7 @@
 0.0.0.0 installstronghighlythefile.vip
 0.0.0.0 installsuperoriginaltheproduct.vip
 0.0.0.0 insuranceforyourcars.co
+0.0.0.0 investinfo.net
 0.0.0.0 invoicingsoftware.co
 0.0.0.0 jakeview.ru
 0.0.0.0 koalaspringb.xyz
@@ -94,6 +98,8 @@
 0.0.0.0 militaryautoinsurance.biz
 0.0.0.0 misticview.ru
 0.0.0.0 mistikvideo.ru
+0.0.0.0 mkluzkoviny.cz
+0.0.0.0 monetizer.co
 0.0.0.0 multipleincomestreams.co
 0.0.0.0 mygiftportal.app
 0.0.0.0 neckcolonyunit.buzz
@@ -151,6 +157,7 @@
 0.0.0.0 syncgreatlyprecisetheproduct.vip
 0.0.0.0 syncintenselyquickthefile.vip
 0.0.0.0 syncintenselyspeedythefile.vip
+0.0.0.0 tdsshark.club
 0.0.0.0 techandgadgets.net
 0.0.0.0 techynews.org
 0.0.0.0 termovideo.ru
@@ -163,6 +170,7 @@
 0.0.0.0 topamdeia.ru
 0.0.0.0 topedvideo.ru
 0.0.0.0 toplamvideo.ru
+0.0.0.0 topsummerapps.net
 0.0.0.0 toptechprivacy.cyou
 0.0.0.0 trafficbounce.net
 0.0.0.0 tronvideo.ru

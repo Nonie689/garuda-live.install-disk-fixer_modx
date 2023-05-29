@@ -29,8 +29,9 @@ cachedir="$(realpath ~/.cache)"
 #########################################################################
 ##### List of unwanted packages to remove! ########################
 
-
-uninstall_conflicts="poppler wl-clipboard lib32-libelf libelf ffmpeg kanshi"
+## Not to remove anymore?? 
+# lib32-libelf libelf
+uninstall_conflicts="poppler wl-clipboard ffmpeg kanshi"
 
 uninstall_oversized_pkgs="noto-fonts ttf-iosevka-nerd garuda-wallpapers libstaroffice ttf-fira-sans mesa-demos lib32-mesa-demos fwupd gnome-firmware"
 
@@ -40,7 +41,7 @@ uninstall_late="noto-fonts-cjk js102 breezy"
 ## List of pacman repo packages that will be updated and installed when needed! ##
 #################################################################################
 
-update_pkgs_early_stage="wayfire wcm wf-config waybar wf-shell fmt spdlog wireplumber libwireplumberjson-glib glib2"
+update_pkgs_early_stage="wayfire wcm wf-config waybar wf-shell fmt spdlog wireplumber libwireplumberjson-glib glib2 python"
 
 depends_pkg="proxychains-ng conky alacritty gpm python-stem systemd systemd-libs"
 
@@ -55,7 +56,7 @@ extra_packages="scdoc yakuake gthumb lshw hardinfo dmidecode hwdata mate-utils y
 ####
 #
 # icu71-bin gnethogs
-pikaur_pkgs="fnott yambar-wayland nsntrace netinfo-ffi nethogs darkstat netproc-git ntopng go-dispatch-proxy-git redsocks wl-clipboard-rs wshowkeys-git libelf wf-recorder"
+pikaur_pkgs="fnott yambar-wayland nsntrace netinfo-ffi nethogs darkstat netproc-git ntopng-bin go-dispatch-proxy-git redsocks wl-clipboard-rs wshowkeys-git libelf wf-recorder"
 
 #TODO fnott notifier implemention -> https://codeberg.org/dnkl/fnott
 
@@ -428,7 +429,7 @@ cd -
 
 
 ## Start librewolf with various of usefull sites!
-pidof librewolf &> /dev/null || nohup librewolf $src_dir/Librewolf-extensions/bin/ 'https://github.com/Nonie689/garuda-live.install-disk-fixer_modx/' 'https://mediatheksuche.de/' 'about:addons' &> /dev/null &
+pidof librewolf &> /dev/null || nohup librewolf $src_dir/Librewolf-extensions/bin/ 'about:addons' &> /dev/null &
 
 sudo pacman -S $(expac -Q %D vlc) $(expac -Q %o vlc) gst-libav gst-plugin-gtk gst-python gst-plugins-ugly gst-plugins-good  gst-plugins-base gst-plugins-bad gst-plugins-bad-libs mpv libsndfile libopenmpt lib32-ncurses lib32-alsa-lib gstreamer-vaapi pipewire --noconfirm
 
@@ -552,8 +553,25 @@ kill $(ps -aux | grep -E "bash $HOME/run-.*.sh" | grep -v grep | head --lines=-1
 #### Open in browser the torproject checker url! See if tor is running!! #####
 ##############################################################################
 
-librewolf 'https://check.torproject.org' 'about:preferences' 'about:config' 'about:performance' 'about:support' &> /dev/null
+librewolf 'about:preferences' 'about:support' 'about:performance' &> /dev/null
 
+############################################
+### Create Tor checking background loop ###
+##                                     ###
+#########################################
+
+while true
+do
+  # Background check to look for tor service to open
+  # webpages securely in librewolf ,-
+  #
+  ## -- Prevent sharing unnecassary stuff that could demasq your identity or your operating hostsystem to others,
+  #      e.g. the Network IPS or the local Network Admin!
+
+  sleep 3
+  pidof tor &> /dev/null && librewolf 'https://check.torproject.org' 'https://mediatheksuche.de/' && sleep 9 && librewolf 'https://github.com/Nonie689/garuda-live.install-disk-fixer_modx/releases' &&  break
+	  ## redo it every 3 seconds!
+done &
 
 ########################################################
 ## At least show just some infos for usage at the!! ##
@@ -607,8 +625,8 @@ gnome-terminal --title="[Wayfire restarting in a few seconds! ]" -- sh -c "echo 
 #          =   crashing and freezing less often   =           ######
 #                            xXx                              ###
 #####        <<<<<<<<<<------------->>>>>>>>>>                #######
-#                 ----------(000}----------                  ###
-#                  >>>>>---[[777]]]---<<<<<                   ##
+###               ----------(000}----------                     ###
+##                 >>>>>---[[777]]]---<<<<<                   ##
 ###                                                        #####
 ######                                                  ##########
 ####################################################################

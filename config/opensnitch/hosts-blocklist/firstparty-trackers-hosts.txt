@@ -12,16 +12,16 @@
 # Acknowledgements: https://hostfiles.frogeye.fr/#acknowledgements
 #
 # Generation software: eulaurarien v3.0.0
-# List generation date: 2023-04-11T00:13:45+02:00
+# List generation date: 2023-05-29T00:13:56+02:00
 # Oldest record: 2021-12-31T14:30:24+01:00
 # Number of source websites: 873
 # Number of source subdomains: 18981
-# Number of source DNS records: 18114
+# Number of source DNS records: 18024
 #
 # Input rules: asns: 6, zones: 48
-# Subsequent rules: asns: 6, hostnames: 14122, ip4s: 64, zones: 48
-# … no dupplicates: asns: 6, hostnames: 11897, zones: 48
-# Output rules: hostnames: 14122
+# Subsequent rules: asns: 6, hostnames: 14131, ip4s: 64, zones: 48
+# … no dupplicates: asns: 6, hostnames: 11898, zones: 48
+# Output rules: hostnames: 14131
 #
 
 0.0.0.0 101230059950694.wt-eu02.net
@@ -1482,6 +1482,7 @@
 0.0.0.0 customer-account-management-webapp.da1.vip.prod.criteo.com
 0.0.0.0 customer-account-management-webapp.fr3.vip.prod.criteo.com
 0.0.0.0 customer-account-management-webapp.par.vip.prod.criteo.com
+0.0.0.0 customer-account-management-webapp.va1.vip.prod.criteo.com
 0.0.0.0 customer.newsflare.com
 0.0.0.0 custvpn.cainus.teradatadmc.com
 0.0.0.0 custvpn.wcohus.teradatadmc.com
@@ -1740,6 +1741,7 @@
 0.0.0.0 dynamic.am5.vip.prod.criteo.com
 0.0.0.0 dynamic.criteo.com
 0.0.0.0 dynamic.da1.vip.prod.criteo.com
+0.0.0.0 dynamic.fr3.vip.prod.criteo.com
 0.0.0.0 dynamic.jp2.vip.prod.criteo.com
 0.0.0.0 dynamic.nl3.vip.prod.criteo.com
 0.0.0.0 dynamic.par.vip.prod.criteo.com
@@ -1813,6 +1815,7 @@
 0.0.0.0 ea.norauto.fr
 0.0.0.0 ea.odalys-vacances.com
 0.0.0.0 ea.odalys-vacation-rental.com
+0.0.0.0 ea.officedepot.fr
 0.0.0.0 ea.pixmania.de
 0.0.0.0 ea.pixmania.it
 0.0.0.0 ea.placedestendances.com
@@ -2718,6 +2721,7 @@
 0.0.0.0 gannett.hb.omtrdc.net
 0.0.0.0 gazette-news-gb.gazette-news.co.uk
 0.0.0.0 gbc0.da.us.criteo.com
+0.0.0.0 gbc0.fr3.eu.criteo.com
 0.0.0.0 gbc0.fr.eu.criteo.com
 0.0.0.0 gbc0.jp2.as.criteo.com
 0.0.0.0 gbc0.nl3.eu.criteo.com
@@ -2725,6 +2729,7 @@
 0.0.0.0 gbc0.sg1.as.criteo.com
 0.0.0.0 gbc0.va.us.criteo.com
 0.0.0.0 gbc1.da.us.criteo.com
+0.0.0.0 gbc1.fr3.eu.criteo.com
 0.0.0.0 gbc1.fr.eu.criteo.com
 0.0.0.0 gbc1.jp2.as.criteo.com
 0.0.0.0 gbc1.nl3.eu.criteo.com
@@ -2732,6 +2737,7 @@
 0.0.0.0 gbc1.sg1.as.criteo.com
 0.0.0.0 gbc1.va.us.criteo.com
 0.0.0.0 gbc2.da.us.criteo.com
+0.0.0.0 gbc2.fr3.eu.criteo.com
 0.0.0.0 gbc2.fr.eu.criteo.com
 0.0.0.0 gbc2.jp2.as.criteo.com
 0.0.0.0 gbc2.nl3.eu.criteo.com
@@ -2747,6 +2753,7 @@
 0.0.0.0 gbc3.sg1.as.criteo.com
 0.0.0.0 gbc3.va.us.criteo.com
 0.0.0.0 gbc4.da.us.criteo.com
+0.0.0.0 gbc4.fr3.eu.criteo.com
 0.0.0.0 gbc4.fr.eu.criteo.com
 0.0.0.0 gbc4.jp2.as.criteo.com
 0.0.0.0 gbc4.nl3.eu.criteo.com
@@ -2762,6 +2769,7 @@
 0.0.0.0 gbc5.sg1.as.criteo.com
 0.0.0.0 gbc5.va.us.criteo.com
 0.0.0.0 gbc6.da.us.criteo.com
+0.0.0.0 gbc6.fr3.eu.criteo.com
 0.0.0.0 gbc6.fr.eu.criteo.com
 0.0.0.0 gbc6.jp2.as.criteo.com
 0.0.0.0 gbc6.nl3.eu.criteo.com
@@ -2785,6 +2793,7 @@
 0.0.0.0 gbc8.sg1.as.criteo.com
 0.0.0.0 gbc8.va.us.criteo.com
 0.0.0.0 gbc.criteo.com
+0.0.0.0 gbc.nl3.vip.prod.criteo.com
 0.0.0.0 gblock.greenhousedata.com
 0.0.0.0 gbr.pg.com
 0.0.0.0 gbs1.supdecreation.com
