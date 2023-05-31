@@ -1,0 +1,16 @@
+{
+  "created": "2023-01-18T20:41:33.552656744+01:00",
+  "updated": "2023-01-18T20:41:33.553051346+01:00",
+  "name": "allow-always-simple-opt-safing-portmaster-updates-linux-amd64-notifier-portmaster-notifier-v0-3-5",
+  "enabled": true,
+  "precedence": false,
+  "action": "allow",
+  "duration": "always",
+  "operator": {
+    "type": "simple",
+    "operand": "process.path",
+    "sensitive": false,
+    "data": "/opt/safing/portmaster/updates/linux_amd64/notifier/portmaster-notifier_v0-3-5",
+    "list": []
+  }
+}

@@ -1,0 +1,731 @@
+diff --git a/change_password.bash b/change_password.bash
+index 14decf5..e3b9ade 100644
+--- a/change_password.bash
++++ b/change_password.bash
+@@ -1,3 +1,4 @@
++#!/bin/bash
+ 
+ same_pass=false
+ root=false
+diff --git a/config/gsettings_gnome-terminal.bkp b/config/gsettings_gnome-terminal.bkp
+index 1566d06..1bdcccf 100644
+--- a/config/gsettings_gnome-terminal.bkp
++++ b/config/gsettings_gnome-terminal.bkp
+@@ -11,27 +11,33 @@ theme-variant='system'
+ unified-menu=false
+ 
+ [keybindings]
+-close-tab='<Alt>Delete'
+-close-window='<Alt>Insert'
+-copy='<Primary><Shift>c'
+-copy-html='<Alt>c'
+-detach-tab='F4'
+-find='F6'
+-find-next='F8'
+
+ ╭─garuda@garuda in repo: garuda-live.install-disk-fixer_modx on  master [$] took 9s
+ ╰─λ git stash pop stash@{3}
+fatal: log for 'stash' only has 3 entries
+
+ ╭─garuda@garuda in repo: garuda-live.install-disk-fixer_modx on  master [$] took 9ms
+[🔴] × git stash show -p
+diff --git a/change_password.bash b/change_password.bash
+index 14decf5..e3b9ade 100644
+--- a/change_password.bash
++++ b/change_password.bash
+@@ -1,3 +1,4 @@
++#!/bin/bash
+ 
+ same_pass=false
+ root=false
+diff --git a/config/gsettings_gnome-terminal.bkp b/config/gsettings_gnome-terminal.bkp
+index 1566d06..1bdcccf 100644
+--- a/config/gsettings_gnome-terminal.bkp
++++ b/config/gsettings_gnome-terminal.bkp
+@@ -11,27 +11,33 @@ theme-variant='system'
+ unified-menu=false
+ 
+ [keybindings]
+-close-tab='<Alt>Delete'
+-close-window='<Alt>Insert'
+-copy='<Primary><Shift>c'
+-copy-html='<Alt>c'
+-detach-tab='F4'
+-find='F6'
+-find-next='F8'
+-find-previous='F7'
++close-tab='<Primary><Alt>Delete'
++close-window='<Primary>Escape'
++copy='KP_Divide'
++copy-html='<Alt>KP_Divide'
++detach-tab='<Alt>Up'
++find='<Primary><Shift>f'
++find-clear='F8'
++find-next='F7'
++find-previous='F6'
+ header-menu='Menu'
+-move-tab-left='<Primary><Alt>Left'
+-move-tab-right='<Primary><Alt>Right'
+-new-tab='Menu'
+-new-window='<Shift>Menu'
+-next-tab='<Primary>Right'
+-paste='<Primary><Shift>v'
++help='F1'
++move-tab-left='<Alt>Left'
++move-tab-right='<Alt>Right'
++new-tab='<Alt>Insert'
++new-window='<Shift>Insert'
++next-tab='KP_Page_Up'
++paste='KP_Multiply'
+ preferences='<Primary><Shift>p'
+-prev-tab='<Primary>Left'
+-read-only='<Primary>Menu'
+-reset-and-clear='<Shift>Delete'
++prev-tab='KP_Home'
++read-only='<Primary><Alt>Print'
++reset-and-clear='<Primary><Alt>Home'
+ select-all='<Primary><Shift>a'
+-switch-to-tab-last='KP_Insert'
++switch-to-tab-last='<Alt>dead_grave'
++toggle-menubar='<Primary>Menu'
++zoom-in='<Shift>Page_Up'
++zoom-normal='<Primary>0'
++zoom-out='<Shift>Page_Down'
+ 
+ [profiles:]
+ default='b1dcc9dd-5262-4d8d-a863-c897e6d979b9'
+@@ -40,38 +46,39 @@ list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9']
+ [profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+ audible-bell=true
+ background-color='rgb(1,25,31)'
+-background-transparency-percent=17
+-backspace-binding='ascii-backspace'
+-bold-color='rgb(0,255,92)'
++background-transparency-percent=67
++backspace-binding='auto'
++bold-color='rgb(255,192,0)'
+ bold-color-same-as-fg=false
+ bold-is-bright=true
+-cell-width-scale=1.05
++cell-height-scale=1.0
++cell-width-scale=1.0
+ cjk-utf8-ambiguous-width='narrow'
+ cursor-background-color='rgb(255,114,0)'
+-cursor-blink-mode='off'
++cursor-blink-mode='on'
+ cursor-colors-set=true
+-cursor-foreground-color='rgb(0,255,180)'
++cursor-foreground-color='rgb(48,255,0)'
+ cursor-shape='block'
+-default-size-columns=84
+-default-size-rows=28
+-delete-binding='delete-sequence'
++default-size-columns=75
++default-size-rows=26
++delete-binding='auto'
+ enable-shaping=true
+ enable-sixel=false
+-font='Terminus 14'
++font='Liberation Mono 10'
+ foreground-color='rgb(0,247,255)'
+-highlight-background-color='rgb(115,67,5)'
++highlight-background-color='rgb(44,0,162)'
+ highlight-colors-set=true
+-highlight-foreground-color='rgb(0,255,195)'
++highlight-foreground-color='rgb(183,255,0)'
+ login-shell=false
+-palette=['rgb(0,0,0)', 'rgb(205,0,0)', 'rgb(0,205,0)', 'rgb(205,205,0)', 'rgb(0,0,238)', 'rgb(205,0,205)', 'rgb(0,205,205)', 'rgb(229,229,229)', 'rgb(127,127,127)', 'rgb(255,0,0)', 'rgb(0,255,0)', 'rgb(255,255,0)', 'rgb(92,92,255)', 'rgb(255,0,255)', 'rgb(0,255,255)', 'rgb(255,255,255)']
++palette=['rgb(0,0,0)', 'rgb(205,0,0)', 'rgb(0,205,0)', 'rgb(205,205,0)', 'rgb(0,0,205)', 'rgb(205,0,205)', 'rgb(0,205,205)', 'rgb(250,235,215)', 'rgb(64,64,64)', 'rgb(255,0,0)', 'rgb(0,255,0)', 'rgb(255,255,0)', 'rgb(0,0,255)', 'rgb(255,0,255)', 'rgb(0,255,255)', 'rgb(255,255,255)']
+ rewrap-on-resize=true
+ scroll-on-keystroke=true
+ scrollback-lines=150000
+ scrollbar-policy='always'
+-text-blink-mode='unfocused'
++text-blink-mode='always'
+ use-custom-command=false
+ use-system-font=false
+ use-theme-colors=false
+ use-transparent-background=true
+-visible-name='Customized_garuda'
++visible-name='Tweaked Output Profile - 2023/05'
+ word-char-exceptions=@ms nothing
+diff --git a/config/opensnitch/settings.conf b/config/opensnitch/settings.conf
+index a1da8a2..b8a1267 100644
+--- a/config/opensnitch/settings.conf
++++ b/config/opensnitch/settings.conf
+@@ -27,7 +27,7 @@ enabled=true
+ type=0
+ 
+ [promptDialog]
+-geometry=@ByteArray(\x1\xd9\xd0\xcb\0\x3\0\0\0\0\x2\xb9\0\0\x1\x62\0\0\x4\xc6\0\0\x2\xba\0\0\x2\xbc\0\0\x1\x80\0\0\x4\xc3\0\0\x2\xb7\0\0\0\0\0\0\0\0\a\x80\0\0\x2\xbc\0\0\x1\x80\0\0\x4\xc3\0\0\x2\xb7)
++geometry=@ByteArray(\x1\xd9\xd0\xcb\0\x3\0\0\0\0\x2\xaf\0\0\x1<\0\0\x4\xb6\0\0\x2\x87\0\0\x2\xb2\0\0\x1Z\0\0\x4\xb3\0\0\x2\x84\0\0\0\0\0\0\0\0\a\x80\0\0\x2\xb2\0\0\x1Z\0\0\x4\xb3\0\0\x2\x84)
+ 
+ [statsDialog]
+ firewall_columns_state=@ByteArray(\0\0\0\xff\0\0\0\0\0\0\0\x1\0\0\0\x1\0\0\0\b\x1\0\0\0\0\0\0\0\0\0\0\0\v\x3\0\0\0\0\x2\0\0\0\x1\0\0\0\x64\0\0\0\0\0\0\0\x64\0\0\x4\xaa\0\0\0\v\0\x1\x1\x1\0\0\0\0\0\0\0\0\0\0\0\0\x64\xff\xff\xff\xff\0\0\0\x84\0\0\0\0\0\0\0\v\0\0\0\0\0\0\0\x1\0\0\0\0\0\0\0\0\0\0\0\x1\0\0\0\0\0\0\0\x64\0\0\0\x1\0\0\0\0\0\0\0\x64\0\0\0\x1\0\0\0\0\0\0\0\x64\0\0\0\x1\0\0\0\0\0\0\0\x64\0\0\0\x1\0\0\0\0\0\0\0\x64\0\0\0\x1\0\0\0\0\0\0\0\x64\0\0\0\x1\0\0\0\0\0\0\0\xe7\0\0\0\x1\0\0\0\0\0\0\0\x64\0\0\0\x1\0\0\0\0\0\0\x1\a\0\0\0\x1\0\0\0\0\0\0\x3\xe8\0\0\0\0\x64)
+diff --git a/config/shortcut-de-adnw.bash b/config/shortcut-de-adnw.bash
+index bd23c40..fd34f15 100644
+--- a/config/shortcut-de-adnw.bash
++++ b/config/shortcut-de-adnw.bash
+@@ -1,5 +1,12 @@
++#!/bin/bash
++
++### kill running wcm, to unlock the wayfire config files
+ killall wcm
+ 
++
++### Change the layouts with keyboard  shortcut event!!
++##
++
+ sed -i "s/xkb_layou.*/xkb_layout = de/g" ~/.config/wayfire.ini
+ sed -i "s/xkb_option.*/xkb_options = compose:rctrl/g" ~/.config/wayfire.ini
+ sed -i "s/xkb_varian.*/xkb_variant = adnw/g" ~/.config/wayfire.ini
+diff --git a/config/shortcut-de-koy.bash b/config/shortcut-de-koy.bash
+index 25bc858..5a001f9 100644
+--- a/config/shortcut-de-koy.bash
++++ b/config/shortcut-de-koy.bash
+@@ -1,5 +1,12 @@
++#!/bin/bash
++
++### kill running wcm, to unlock the wayfire config files
+ killall wcm
+ 
++
++### Change the layouts with keyboard  shortcut event!!
++##
++
+ sed -i "s/xkb_layou.*/xkb_layout = de/g" ~/.config/wayfire.ini
+ sed -i "s/xkb_option.*/xkb_options = compose:rctrl/g" ~/.config/wayfire.ini
+ sed -i "s/xkb_varian.*/xkb_variant = koy/g" ~/.config/wayfire.ini
+diff --git a/config/shortcut-de-neo.bash b/config/shortcut-de-neo.bash
+index 7e61037..87ee05e 100644
+--- a/config/shortcut-de-neo.bash
++++ b/config/shortcut-de-neo.bash
+@@ -1,5 +1,12 @@
++#!/bin/bash
++
++### kill running wcm, to unlock the wayfire config files
+ killall wcm
+ 
++
++### Change the layouts with keyboard  shortcut event!!
++##
++
+ sed -i "s/xkb_layou.*/xkb_layout = de/g" ~/.config/wayfire.ini
+ sed -i "s/xkb_option.*/xkb_options = compose:rctrl/g" ~/.config/wayfire.ini
+ sed -i "s/xkb_varian.*/xkb_variant = neo/g" ~/.config/wayfire.ini
+diff --git a/config/shortcut-de.bash b/config/shortcut-de.bash
+index 52d967a..d9fdb72 100644
+--- a/config/shortcut-de.bash
++++ b/config/shortcut-de.bash
+@@ -1,5 +1,12 @@
++#!/bin/bash
++
++### kill running wcm, to unlock the wayfire config files
+ killall wcm
+ 
++
++### Change the layouts with keyboard  shortcut event!!
++##
++
+ sed -i "s/xkb_layou.*/xkb_layout = de/g" ~/.config/wayfire.ini
+ sed -i "s/xkb_option.*/xkb_options = compose:rctrl/g" ~/.config/wayfire.ini
+ sed -i "s/xkb_varian.*/xkb_variant =/g" ~/.config/wayfire.ini
+diff --git a/config/shortcut-en.bash b/config/shortcut-en.bash
+index d180ead..da061d2 100644
+--- a/config/shortcut-en.bash
++++ b/config/shortcut-en.bash
+@@ -1,5 +1,12 @@
++#!/bin/bash
++
++### kill running wcm, to unlock the wayfire config files
+ killall wcm
+ 
++
++### Change the layouts with keyboard  shortcut event!!
++##
++
+ sed -i "s/xkb_layou.*/xkb_layout = us/g" ~/.config/wayfire.ini
+ sed -i "s/xkb_option.*/xkb_options = compose:rctrl/g" ~/.config/wayfire.ini
+ sed -i "s/xkb_varian.*/xkb_variant =/g" ~/.config/wayfire.ini
+diff --git a/configs_overwrite.bash b/configs_overwrite.bash
+index bd6452c..2abb0dc 100644
+--- a/configs_overwrite.bash
++++ b/configs_overwrite.bash
+@@ -1,28 +1,35 @@
++#!/bin/bash
+ 
+ 
+-# Init stuff -- set some variable and options
++##################################################################
++#### Script init area ,- Setupbasic things to work correct!  ####
++  ##############################################################
+ 
+ trap "exit 130" INT
+ LC_ALL=C
+ src_dir="$(dirname $(realpath $0))"
+ 
++  ##########################################
++  ##                                      ##
++##  Change basic important setup options   ##
++###                                      ###
++ #########################################
+ 
+-##########################################
+-##                                      ##
+-# Change basic important setup options   #
+-###                                      ##
+-  ########################################
+-
++# Todo - ask for the timezone on first time
+ sudo bash $src_dir/my_config/change_timezone_keylang.bash
+ 
++
++# Save wayfire xdg desktop files!
+ sudo cp $src_dir/config/wayfire.desktop /usr/share/wayland-sessions/wayfire.desktop
+ sudo cp $src_dir/config/wayfire-debug.desktop /usr/share/wayland-sessions/wayfire-debug.desktop
+ 
+-# Save my display settings to system
++
++# Load display settings to wayfire!
++# Todo - optional editablity
+ cp $src_dir/my_config/wlr-randr-multihead-my_own_config.bash ~/wlr-randr-multihead-my_own_config.bash
+ 
+ 
+-# Disable garuda pacman foreign.hook programm!
++# Disable/remove garuda pacman foreign.hook programm!
+ sudo mv /usr/share/libalpm/hooks/foreign.hook /usr/share/libalpm/hooks/foreign.hook.bac &> /dev/null
+ sudo mv /usr/share/libalpm/hooks/orphans.hook /usr/share/libalpm/hooks/orphans.hook.bac &> /dev/null
+ 
+@@ -32,9 +39,6 @@ mkdir ~/.config/rofi/ &> /dev/null
+ cp $src_dir/config/config.rasi ~/.config/rofi/config.rasi
+ 
+ 
+-#
+-####
+-##
+ 
+ 
+                     #### ###     # ## ## ### ####
+@@ -55,7 +59,7 @@ cp $src_dir/config/config.rasi ~/.config/rofi/config.rasi
+   ###########----------------------------#########
+        ####################################
+                    #################
+-                   
++
+ 
+ 
+ ############################################################################
+@@ -63,7 +67,9 @@ cp $src_dir/config/config.rasi ~/.config/rofi/config.rasi
+ 
+ 
+ echo
+-echo " --- Garuda LiveCD ModX config changer tool!!"
++echo " ---"
++echo ' --- Garuda LiveCD running since - $(uptime -s)!!!'
++echo " --- Change Garuda_wayfire LiveCD settings and configs!!"
+ echo
+ echo
+ echo "[))> Changing config starting!!"
+diff --git a/firevigeo-install.bash b/firevigeo-install.bash
+index 6c6e752..68b83ef 100644
+--- a/firevigeo-install.bash
++++ b/firevigeo-install.bash
+@@ -1,3 +1,5 @@
++#!/bin/bash
++
+ echo
+ echo Install all depencies to use firevigeo !!
+ echo
+diff --git a/garuda-live.install-disk-fixer_modx.bash b/garuda-live.install-disk-fixer_modx.bash
+index d54bd45..11af945 100644
+--- a/garuda-live.install-disk-fixer_modx.bash
++++ b/garuda-live.install-disk-fixer_modx.bash
+@@ -1,3 +1,5 @@
++#!/bin/bash
++
+ ## Just the init Area!
+ 
+ ####################################################################################################
+@@ -8,7 +10,7 @@
+ trap 'exit 130' INT
+ 
+ # Set lange for programm outputs to US/UK-English to have an unified stout/sterr experience !!
+-version=0.97beta
++version='0.98/2023/05.BETA_1'
+ LC_ALL=C
+ opensnitch=true
+ ################################################
+diff --git a/github-wiki-to-pdf.bash b/github-wiki-to-pdf.bash
+index b775b03..f3bf259 100644
+--- a/github-wiki-to-pdf.bash
++++ b/github-wiki-to-pdf.bash
+@@ -1,5 +1,5 @@
++#!/bin/bash
+ 
+-#!/usr/bin/env bash
+ ## https://github.com/sensepost/hostapd-mana/wiki/KARMA---MANA-Attack-Theory
+ mkdir ~/wiki-github/ &>/dev/null
+ cd ~/wiki-github/
+diff --git a/install-lxqt.bash b/install-lxqt.bash
+index 6153964..8b9ecf7 100644
+--- a/install-lxqt.bash
++++ b/install-lxqt.bash
+@@ -1,3 +1,5 @@
++#!/bin/bash
++
+ cd ~/.cache
+ 
+ sudo pacman -Rdd manjaro-application-utility --noconfirm
+diff --git a/luks-easy_closer.bash b/luks-easy_closer.bash
+index 1077169..5c5827a 100644
+--- a/luks-easy_closer.bash
++++ b/luks-easy_closer.bash
+@@ -1,3 +1,5 @@
++#!/bin/bash
++
+ ## Init area - Set variables and create functions!!
+ 
+ ask=true
+diff --git a/luks-easy_opener.bash b/luks-easy_opener.bash
+index 20a59ee..10c2abb 100644
+--- a/luks-easy_opener.bash
++++ b/luks-easy_opener.bash
+@@ -1,3 +1,4 @@
++#!/bin/bash
+ 
+ ### Init area - Set variables!
+ 
+diff --git a/make_own_local_buildsystem.bash b/make_own_local_buildsystem.bash
+index adc22fd..1a21ca8 100644
+--- a/make_own_local_buildsystem.bash
++++ b/make_own_local_buildsystem.bash
+@@ -1,3 +1,5 @@
++#!/bin/bash
++
+ git clone --depth=1 https://github.com/archlinux/aur; cd aur
+ git remote set-branches --add origin package_name
+ git fetch
+diff --git a/opensnitch_rule-saver.bash b/opensnitch_rule-saver.bash
+index c7b7015..1002e87 100644
+--- a/opensnitch_rule-saver.bash
++++ b/opensnitch_rule-saver.bash
+@@ -1,3 +1,10 @@
++#!/bin/bash
++
++#Init variable
+ src_dir="$(dirname $(realpath $0))"
+ 
++# Check that opensnitch are installed on the system!
++pacman -Q | grep opensnitch &> /dev/null || exit
++
++# Save to default folder!!
+ cp -rf ~/.config/opensnitch/ $src_dir/config/ && printf "\nAll Opensnitch settings saved to config folder:\n\n-----------------------------------------------\n\n~> garuda-live.install-disk-fixer_modx [git clone]\n\nBackup-folder: config/opensnitch/\n\n]" || printf "\nFailed to copy opensnitch settings from userdir!! \n\n"
+diff --git a/ps_output_style-No1.bash b/ps_output_style-No1.bash
+index 5c83b46..ac431d8 100644
+--- a/ps_output_style-No1.bash
++++ b/ps_output_style-No1.bash
+@@ -1,3 +1,16 @@
+-export PS4='> $(date +%H:%M-%S)\\\\__*** <{0_*)> ~x-==*,*&jPK, LineN0.$LINENO &>_\$ '
+-# Fine text output. - For shell inserts with new lines with the \ at the end
+-export PS2="${blue} continue -> ${reset}"
++#!/bin/bash
++
++## Set custom tweaked rearranged bash output, with some extra infos!
++##
++# [OUTDATED] -- Work in process, outdated and not check since 2023!
++##
++
++## ->> PS4 Area
++
++  export PS4='> $(date +%H:%M-%S)\\\\__*** <{0_*)> ~x-==*,*&jPK, LineN0.$LINENO &>_\$ '
++
++
++##  ->> PS2 Area
++
++  # Fine text output. - For shell inserts with new lines with the \ at the end
++  export PS2="${blue} continue -> ${reset}"
+diff --git a/refresh-keyrings.bash b/refresh-keyrings.bash
+index 518846c..55b1834 100644
+--- a/refresh-keyrings.bash
++++ b/refresh-keyrings.bash
+@@ -1,3 +1,5 @@
++#!/bin/bash
++
+ function package_old {
+   for package in $@
+   do
+diff --git a/remount-filesytem.bash b/remount-filesytem.bash
+index 74338f8..25e5f1b 100644
+--- a/remount-filesytem.bash
++++ b/remount-filesytem.bash
+@@ -1,3 +1,4 @@
++#!/bin/bash
+ 
+ echo " $$__Tool to remount filesystems every second__$$"
+ echo
+@@ -9,7 +10,7 @@ do
+    for devices in $(mount | grep -E "/dev/sd|/dev/mapper" | awk '{print $3}')
+    do
+      echo " *** Remounting $devices with rw mount option!!"
+-     sudo mount -o remount,rw $devices &>/dev/null && echo "[Done!]" || echo "[Fault!]"
++     jobs | grep $devices | grep -v Running &> /dev/null && sudo mount -o remount,rw $devices &>/dev/null &
+    done
+ sleep 2
+-done &
++done
+diff --git a/remounting-info-loop.bash b/remounting-info-loop.bash
+index fdcf445..575b760 100644
+--- a/remounting-info-loop.bash
++++ b/remounting-info-loop.bash
+@@ -1,3 +1,5 @@
++#!/bin/bash
++
+ echo
+ echo Default garuda subvols with mountpoint!
+ echo
+diff --git a/remove-unwanted-garuda-stuff.bash b/remove-unwanted-garuda-stuff.bash
+index ef825b6..08aaa4f 100644
+--- a/remove-unwanted-garuda-stuff.bash
++++ b/remove-unwanted-garuda-stuff.bash
+@@ -1,3 +1,4 @@
++#!/bin/bash
+ 
+ function package_installed {
+   for package in $@
+@@ -15,4 +16,4 @@ function uninstall_existing {
+ }
+ 
+ 
+-uname -a | grep garuda &>/dev/null && uninstall_existing snapper snapper-tools snap-pac firedragon kfiredragonhelper garuda-browser-settings garuda-common-settings garuda-system-maintenance garuda-migrations archlinux-appstream-data-pamac libpamac-aur pamac-aur
++uname -a | grep garuda &>/dev/null && uninstall_existing snapper snapper-tools snap-pac firedragon garuda-boot-options kfiredragonhelper garuda-browser-settings garuda-common-settings garuda-system-maintenance garuda-migrations archlinux-appstream-data-pamac libpamac-aur pamac-aur garuda-hooks garuda-hotfixes garuda-live-systemd garuda-starship-prompt garuda-welcome mhwd-db-garuda-git  mhwd-garuda-git
+diff --git a/show_filesystem-diffs.bash b/show_filesystem-diffs.bash
+index 4e31db2..3e5ece4 100644
+--- a/show_filesystem-diffs.bash
++++ b/show_filesystem-diffs.bash
+@@ -1,3 +1,4 @@
++#!/bin/bash
+ 
+ echo "This tool shows you easiely the differenz when you changing a physical filesystem on the /dev/sdX list!!"
+ echo
+diff --git a/simple-startup-scripts/run-ifstat-list.bash b/simple-startup-scripts/run-ifstat-list.bash
+index 9c900bc..3005711 100644
+--- a/simple-startup-scripts/run-ifstat-list.bash
++++ b/simple-startup-scripts/run-ifstat-list.bash
+@@ -1,3 +1,4 @@
++#!/bin/bash
+ 
+ ifstat  | head --lines=+2
+ echo
+diff --git a/start-hotspot.bash.deps.bash b/start-hotspot.bash.deps.bash
+index 4b358c3..f3d0181 100644
+--- a/start-hotspot.bash.deps.bash
++++ b/start-hotspot.bash.deps.bash
+@@ -1,2 +1,3 @@
++#!/bin/bash
+ 
+ sudo pikaur -S rtl88x2bu-dkms-git
+diff --git a/stop-simple-startup-scripts.bash b/stop-simple-startup-scripts.bash
+index 673df50..7853156 100644
+--- a/stop-simple-startup-scripts.bash
++++ b/stop-simple-startup-scripts.bash
+@@ -1,3 +1,4 @@
++#!/bin/bash
+ 
+ ### To kill all simple run services
+ kill $(ps -aux | grep -E "run-" | grep -v "grep" | awk '{print $2}') &> /dev/null
+diff --git a/sudo-hardening-pro_tweaks-disabler.bash b/sudo-hardening-pro_tweaks-disabler.bash
+index 506586a..9aa9c4c 100644
+--- a/sudo-hardening-pro_tweaks-disabler.bash
++++ b/sudo-hardening-pro_tweaks-disabler.bash
+@@ -1,3 +1,5 @@
++#!/bin/bash
++
++++ b/refresh-keyrings.bash
+@@ -1,3 +1,5 @@
++#!/bin/bash
++
+ function package_old {
+   for package in $@
+   do
+diff --git a/remount-filesytem.bash b/remount-filesytem.bash
+index 74338f8..25e5f1b 100644
+--- a/remount-filesytem.bash
++++ b/remount-filesytem.bash
+@@ -1,3 +1,4 @@
++#!/bin/bash
+ 
+ echo " $$__Tool to remount filesystems every second__$$"
+ echo
+@@ -9,7 +10,7 @@ do
+    for devices in $(mount | grep -E "/dev/sd|/dev/mapper" | awk '{print $3}')
+    do
+      echo " *** Remounting $devices with rw mount option!!"
+-     sudo mount -o remount,rw $devices &>/dev/null && echo "[Done!]" || echo "[Fault!]"
++     jobs | grep $devices | grep -v Running &> /dev/null && sudo mount -o remount,rw $devices &>/dev/null &
+    done
+ sleep 2
+diff --git a/change_password.bash b/change_password.bash
+index 14decf5..e3b9ade 100644
+--- a/change_password.bash
++++ b/change_password.bash
+@@ -1,3 +1,4 @@
++#!/bin/bash
+ 
+ same_pass=false
+ root=false
+diff --git a/config/gsettings_gnome-terminal.bkp b/config/gsettings_gnome-terminal.bkp
+index 1566d06..1bdcccf 100644
+--- a/config/gsettings_gnome-terminal.bkp
++++ b/config/gsettings_gnome-terminal.bkp
+@@ -11,27 +11,33 @@ theme-variant='system'
+ unified-menu=false
+ 
+ [keybindings]
+-close-tab='<Alt>Delete'
+-close-window='<Alt>Insert'
+-copy='<Primary><Shift>c'
+-copy-html='<Alt>c'
+-detach-tab='F4'
+-find='F6'
+-find-next='F8'
+-find-previous='F7'
++close-tab='<Primary><Alt>Delete'
++close-window='<Primary>Escape'
++copy='KP_Divide'
++copy-html='<Alt>KP_Divide'
++detach-tab='<Alt>Up'
++find='<Primary><Shift>f'
++find-clear='F8'
++find-next='F7'
++find-previous='F6'
+ header-menu='Menu'
+-move-tab-left='<Primary><Alt>Left'
+-move-tab-right='<Primary><Alt>Right'
+-new-tab='Menu'
+-new-window='<Shift>Menu'
+-next-tab='<Primary>Right'
+-paste='<Primary><Shift>v'
++help='F1'
++move-tab-left='<Alt>Left'
++move-tab-right='<Alt>Right'
++new-tab='<Alt>Insert'
++new-window='<Shift>Insert'
++next-tab='KP_Page_Up'
++paste='KP_Multiply'
+ preferences='<Primary><Shift>p'
+-prev-tab='<Primary>Left'
+-read-only='<Primary>Menu'
+-reset-and-clear='<Shift>Delete'
++prev-tab='KP_Home'
++read-only='<Primary><Alt>Print'
++reset-and-clear='<Primary><Alt>Home'
+ select-all='<Primary><Shift>a'
+-switch-to-tab-last='KP_Insert'
++switch-to-tab-last='<Alt>dead_grave'
++toggle-menubar='<Primary>Menu'
++zoom-in='<Shift>Page_Up'
++zoom-normal='<Primary>0'
++zoom-out='<Shift>Page_Down'
+ 
+ [profiles:]
+ default='b1dcc9dd-5262-4d8d-a863-c897e6d979b9'
+@@ -40,38 +46,39 @@ list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9']
+ [profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+ audible-bell=true
+ background-color='rgb(1,25,31)'
+-background-transparency-percent=17
+-backspace-binding='ascii-backspace'
+-bold-color='rgb(0,255,92)'
++background-transparency-percent=67
++backspace-binding='auto'
++bold-color='rgb(255,192,0)'
+ bold-color-same-as-fg=false
+ bold-is-bright=true
+-cell-width-scale=1.05
++cell-height-scale=1.0
++cell-width-scale=1.0
+ cjk-utf8-ambiguous-width='narrow'
+ cursor-background-color='rgb(255,114,0)'
+-cursor-blink-mode='off'
++cursor-blink-mode='on'
+ cursor-colors-set=true
+-cursor-foreground-color='rgb(0,255,180)'
++cursor-foreground-color='rgb(48,255,0)'
+ cursor-shape='block'
+-default-size-columns=84
+-default-size-rows=28
+-delete-binding='delete-sequence'
++default-size-columns=75
++default-size-rows=26
++delete-binding='auto'
+ enable-shaping=true
+ enable-sixel=false
+-font='Terminus 14'
++font='Liberation Mono 10'
+ foreground-color='rgb(0,247,255)'
+-highlight-background-color='rgb(115,67,5)'
++highlight-background-color='rgb(44,0,162)'
+ highlight-colors-set=true
+-highlight-foreground-color='rgb(0,255,195)'
++highlight-foreground-color='rgb(183,255,0)'
+ login-shell=false
+-palette=['rgb(0,0,0)', 'rgb(205,0,0)', 'rgb(0,205,0)', 'rgb(205,205,0)', 'rgb(0,0,238)', 'rgb(205,0,205)', 'rgb(0,205,205)', 'rgb(229,229,229)', 'rgb(127,127,127)', 'rgb(255,0,0)', 'rgb(0,255,0)', 'rgb(255,255,0)', 'rgb(92,92,255)', 'rgb(255,0,255)', 'rgb(0,255,255)', 'rgb(255,255,255)']
++palette=['rgb(0,0,0)', 'rgb(205,0,0)', 'rgb(0,205,0)', 'rgb(205,205,0)', 'rgb(0,0,205)', 'rgb(205,0,205)', 'rgb(0,205,205)', 'rgb(250,235,215)', 'rgb(64,64,64)', 'rgb(255,0,0)', 'rgb(0,255,0)', 'rgb(255,255,0)', 'rgb(0,0,255)', 'rgb(255,0,255)', 'rgb(0,255,255)', 'rgb(255,255,255)']
+ rewrap-on-resize=true
+ scroll-on-keystroke=true
+ scrollback-lines=150000
+ scrollbar-policy='always'
+-text-blink-mode='unfocused'
++text-blink-mode='always'
+ use-custom-command=false
+ use-system-font=false
+ use-theme-colors=false
+diff --git a/change_password.bash b/change_password.bash
+index 14decf5..e3b9ade 100644
+--- a/change_password.bash
++++ b/change_password.bash
+@@ -1,3 +1,4 @@
++#!/bin/bash
+ 
+ same_pass=false
+ root=false
+diff --git a/config/gsettings_gnome-terminal.bkp b/config/gsettings_gnome-terminal.bkp
+index 1566d06..1bdcccf 100644
+--- a/config/gsettings_gnome-terminal.bkp
++++ b/config/gsettings_gnome-terminal.bkp
+@@ -11,27 +11,33 @@ theme-variant='system'
+ unified-menu=false
+ 
+ [keybindings]
+-close-tab='<Alt>Delete'
+-close-window='<Alt>Insert'
+-copy='<Primary><Shift>c'
+-copy-html='<Alt>c'
+-detach-tab='F4'
+-find='F6'
+-find-next='F8'
+-find-previous='F7'
++close-tab='<Primary><Alt>Delete'
++close-window='<Primary>Escape'
++copy='KP_Divide'
++copy-html='<Alt>KP_Divide'
++detach-tab='<Alt>Up'
++find='<Primary><Shift>f'
++find-clear='F8'
++find-next='F7'
++find-previous='F6'
+ header-menu='Menu'
+-move-tab-left='<Primary><Alt>Left'
+-move-tab-right='<Primary><Alt>Right'
+-new-tab='Menu'
+-new-window='<Shift>Menu'
+-next-tab='<Primary>Right'
+-paste='<Primary><Shift>v'
++help='F1'
++move-tab-left='<Alt>Left'
++move-tab-right='<Alt>Right'
++new-tab='<Alt>Insert'
++new-window='<Shift>Insert'
++next-tab='KP_Page_Up'
++paste='KP_Multiply'
+

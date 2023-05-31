@@ -1,3 +1,4 @@
+#!/bin/bash
 
 echo "This tool shows you easiely the differenz when you changing a physical filesystem on the /dev/sdX list!!"
 echo

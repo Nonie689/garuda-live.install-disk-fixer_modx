@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+randomcolor="line_color = \\\\$(shuf -n 1 ~/.config/wayfire.color-table.db)FF"
+
+sed -i "s/line_color.*/$randomcolor/g" ~/.config/wayfire.ini
+

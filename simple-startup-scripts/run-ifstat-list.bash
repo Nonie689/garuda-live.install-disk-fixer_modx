@@ -1,3 +1,4 @@
+#!/bin/bash
 
 ifstat  | head --lines=+2
 echo

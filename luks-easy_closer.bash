@@ -1,3 +1,4 @@
+#!/bin/bash
 ## Init area - Set variables and create functions!!
 
 ask=true

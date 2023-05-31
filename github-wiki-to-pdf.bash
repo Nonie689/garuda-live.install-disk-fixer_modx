@@ -1,5 +1,5 @@
+#!/bin/bash
 
-#!/usr/bin/env bash
 ## https://github.com/sensepost/hostapd-mana/wiki/KARMA---MANA-Attack-Theory
 mkdir ~/wiki-github/ &>/dev/null
 cd ~/wiki-github/

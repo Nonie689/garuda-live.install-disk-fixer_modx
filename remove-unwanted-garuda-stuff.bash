@@ -1,3 +1,4 @@
+#!/bin/bash
 
 function package_installed {
   for package in $@
@@ -15,4 +16,4 @@ function uninstall_existing {
 }
 
 
-uname -a | grep garuda &>/dev/null && uninstall_existing snapper snapper-tools snap-pac firedragon kfiredragonhelper garuda-browser-settings garuda-common-settings garuda-system-maintenance garuda-migrations archlinux-appstream-data-pamac libpamac-aur pamac-aur
+uname -a | grep garuda &>/dev/null && uninstall_existing snapper snapper-tools snap-pac firedragon garuda-boot-options kfiredragonhelper garuda-browser-settings garuda-common-settings garuda-system-maintenance garuda-migrations archlinux-appstream-data-pamac libpamac-aur pamac-aur garuda-hooks garuda-hotfixes garuda-live-systemd garuda-starship-prompt garuda-welcome mhwd-db-garuda-git  mhwd-garuda-git

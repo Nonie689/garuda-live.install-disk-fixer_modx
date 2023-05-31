@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo
 echo Default garuda subvols with mountpoint!
 echo

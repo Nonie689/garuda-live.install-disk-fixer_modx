@@ -1,0 +1,4 @@
+#!/bin/env bash
+
+grep -E "plugins =.*crosshair" ~/.config/wayfire.ini   &>/dev/null && sed -i "s/crosshair//g") ~/.config/wayfire.ini || sed -i "s/plugins = /plugins = crosshair /g" ~/.config/wayfire.ini
+

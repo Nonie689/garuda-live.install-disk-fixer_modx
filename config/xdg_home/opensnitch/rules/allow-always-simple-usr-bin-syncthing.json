@@ -1,0 +1,16 @@
+{
+  "created": "2023-03-13T21:40:19.998611374+01:00",
+  "updated": "2023-03-13T21:40:19.998917597+01:00",
+  "name": "allow-always-simple-usr-bin-syncthing",
+  "enabled": true,
+  "precedence": false,
+  "action": "allow",
+  "duration": "always",
+  "operator": {
+    "type": "simple",
+    "operand": "process.path",
+    "sensitive": false,
+    "data": "/usr/bin/syncthing",
+    "list": []
+  }
+}

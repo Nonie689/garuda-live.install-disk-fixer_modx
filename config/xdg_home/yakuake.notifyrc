@@ -1,0 +1,26 @@
+[Event/BellInvisible]
+Action=Execute|TTS
+Execute=/run/media/garuda/NEW_SDCARD_1-128gb/github.com/nonie689/garuda-live.install-disk-fixer_modx/notify-send -a "Yakuake" "## $(date +%T) ##         TERM BELL "  " \\n  **** Interact with me ****"\n
+Logfile=
+TTS=%e
+
+[Event/BellVisible]
+Action=
+Execute=
+Logfile=
+Sound=
+TTS=
+
+[Event/activity]
+Action=
+Execute=
+Logfile=
+Sound=
+TTS=
+
+[Event/silence]
+Action=Execute|TTS
+Execute=/run/media/garuda/NEW_SDCARD_1-128gb/github.com/nonie689/garuda-live.install-disk-fixer_modx/notify-send -a "Yakuake" "## $(date +%T) ##         SILENT TERM"  " \\n  **** EXEC DONE ****"\n
+Logfile=
+Sound=
+TTS=%e

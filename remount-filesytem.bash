@@ -1,3 +1,4 @@
+#!/bin/bash
 
 echo " $$__Tool to remount filesystems every second__$$"
 echo

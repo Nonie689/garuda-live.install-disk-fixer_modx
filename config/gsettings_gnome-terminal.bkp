@@ -1,20 +1,8 @@
-[/]
-always-check-default-terminal=false
-context-info=['numbers']
-headerbar=@mb true
-menu-accelerator-enabled=true
-mnemonics-enabled=true
-new-tab-position='next'
-new-terminal-mode='window'
-tab-policy='always'
-theme-variant='system'
-unified-menu=false
-
 [keybindings]
 close-tab='<Primary><Alt>Delete'
 close-window='<Primary>Escape'
-copy='KP_Divide'
-copy-html='<Alt>KP_Divide'
+copy='<Shift>c'
+copy-html='<Shift><Alt>c'
 detach-tab='<Alt>Up'
 find='<Primary><Shift>f'
 find-clear='F8'
@@ -27,7 +15,7 @@ move-tab-right='<Alt>Right'
 new-tab='<Alt>Insert'
 new-window='<Shift>Insert'
 next-tab='KP_Page_Up'
-paste='KP_Multiply'
+paste='<Shift>v'
 preferences='<Primary><Shift>p'
 prev-tab='KP_Home'
 read-only='<Primary><Alt>Print'
@@ -46,7 +34,7 @@ list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9']
 [profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
 audible-bell=true
 background-color='rgb(1,25,31)'
-background-transparency-percent=67
+background-transparency-percent=51
 backspace-binding='auto'
 bold-color='rgb(255,192,0)'
 bold-color-same-as-fg=false

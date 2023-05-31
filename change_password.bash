@@ -1,3 +1,4 @@
+#!/bin/bash
 
 same_pass=false
 root=false

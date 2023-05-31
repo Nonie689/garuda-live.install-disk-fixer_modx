@@ -1,4 +1,4 @@
-
+#!/bin/bash
 src_dir="$(dirname $(realpath $0))"  
 
 echo

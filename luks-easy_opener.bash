@@ -1,3 +1,4 @@
+#!/bin/bash
 
 ### Init area - Set variables!
 

@@ -1,4 +1,4 @@
-
+#!/bin/bash
 
 ###
 ########################################################################
@@ -23,11 +23,14 @@ src_dir="$(dirname $(realpath $0))"
 #### Tweak gnome-terminal config setup ####
   ########################################
 
-  ##########################################
+  ###############################
 ####   ----------------------------      ####
 ####     Infos to do it manually      #####
 ####       to edit or debug      ######
   ##################################
+           ################
+               ##########
+
 
 
 
@@ -37,18 +40,21 @@ src_dir="$(dirname $(realpath $0))"
 #
 ###### dconf dump /org/gnome/terminal/legacy/ > ./config/gsettings_gnome-terminal.bkp
 
-##############################################################
-##
 # Manually load new custimized gnome-terminal settings
 #
 # dconf load /org/gnome/terminal/legacy/ < ./config/gsettings_gnome-terminal.bkp
 #
 
+############
 ##############################################################
-##
+#####
+
+
 # Load my designed gnome-terminal optionbs setup
 
 dconf load /org/gnome/terminal/legacy/ < $src_dir/config/gsettings_gnome-terminal.bkp
+
+
 
 ############
 ##############################################################
@@ -123,10 +129,11 @@ cp $src_dir/config/config.rasi ~/.config/rofi/config.rasi
 ############################################################################
 
 
+echo " ---"
+echo ' --- Garuda LiveCD running since - $(uptime -s)!!!'
+echo " --- Change Garuda_wayfire LiveCD settings and configs!!"
 echo
-echo " --- Garuda LiveCD ModX config changer tool!!"
-echo
-echo
+
 echo "[))> Changing config starting!!"
 
 

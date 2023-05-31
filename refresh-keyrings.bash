@@ -1,3 +1,5 @@
+#!/bin/bash
+
 function package_old {
   for package in $@
   do

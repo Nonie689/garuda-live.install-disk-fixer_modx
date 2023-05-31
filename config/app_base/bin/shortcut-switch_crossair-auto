@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+if test $(ps -ef | grep -v grep | grep -E "bash.*command_switch.*cross.*auto"| wc -l) -gt 2
+then
+  kill $(ps -ef | grep -v grep | grep -E "bash.*command_switch.*cross.*auto" | awk '{print $2}' | head --lines=+1)
+  echo "Auto switch is now disabled!"
+  exit
+fi
+
+if ! [[ -z $1 ]]
+then
+   interval=$1
+else
+   interval=0.500
+fi
+
+echo "Auto switch is now enabled!"
+
+while true
+do
+   shortcut-switch_crossair-set_randomcolor
+   sleep $interval
+done &

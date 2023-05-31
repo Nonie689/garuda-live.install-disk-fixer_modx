@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo
 echo Install all depencies to use firevigeo !!
 echo

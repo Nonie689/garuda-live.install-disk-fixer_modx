@@ -1,0 +1,16 @@
+{
+  "created": "2023-01-18T22:07:12.812936358+01:00",
+  "updated": "2023-01-18T22:07:12.813080885+01:00",
+  "name": "allow-always-simple-opt-safing-portmaster-updates-linux-amd64-app-portmaster-app-v0-2-5-portmaster-app-v0-2-5",
+  "enabled": true,
+  "precedence": false,
+  "action": "allow",
+  "duration": "always",
+  "operator": {
+    "type": "simple",
+    "operand": "process.path",
+    "sensitive": false,
+    "data": "/opt/safing/portmaster/updates/linux_amd64/app/portmaster-app_v0-2-5/portmaster-app_v0-2-5",
+    "list": []
+  }
+}

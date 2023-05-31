@@ -1,0 +1,16 @@
+{
+  "created": "2023-03-13T23:00:21.931298+01:00",
+  "updated": "2023-03-13T23:00:21.931427683+01:00",
+  "name": "allow-always-simple-usr-lib-gvfsd-http",
+  "enabled": true,
+  "precedence": false,
+  "action": "allow",
+  "duration": "always",
+  "operator": {
+    "type": "simple",
+    "operand": "process.path",
+    "sensitive": false,
+    "data": "/usr/lib/gvfsd-http",
+    "list": []
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "created": "2023-05-29T18:40:58.499868541+02:00",
+  "updated": "2023-05-29T18:40:58.499915296+02:00",
+  "name": "allow-always-simple-usr-bin-python3-11",
+  "enabled": true,
+  "precedence": false,
+  "action": "allow",
+  "duration": "always",
+  "operator": {
+    "type": "simple",
+    "operand": "process.path",
+    "sensitive": false,
+    "data": "/usr/bin/python3.11",
+    "list": []
+  }
+}

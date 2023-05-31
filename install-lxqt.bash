@@ -1,3 +1,5 @@
+#!/bin/bash
+
 cd ~/.cache
 
 sudo pacman -Rdd manjaro-application-utility --noconfirm
